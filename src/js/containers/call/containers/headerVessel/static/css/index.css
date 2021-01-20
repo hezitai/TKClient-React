@@ -1,0 +1,201 @@
+
+/* header */
+.skin_beyond_default .mask2{
+  position: absolute;
+  top: 0.42rem;
+  left:0;
+  right: 0; 
+  width: 100%;
+  z-index: 500;
+}
+.skin_beyond_default .header-wrap {
+    /* background-color: #503A8F; */
+    background-color:#F7F7FF;
+    box-shadow: none;
+}
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-help {
+    background: url('../img/default/default/help.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-help:hover {
+    background: url('../img/default/hover/help.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-help:active,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-help.active {
+    background: url('../img/default/active/help.png') no-repeat;
+    background-size: 100%;
+}
+
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-switchLayout{
+    background-image: url("../img/default/default/btn_buju_default@2x.png");
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-switchLayout:hover{
+    background-image: url("../img/default/hover/btn_buju_hover@2x.png");
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-switchLayout:active,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-switchLayout.active{
+    background-image: url("../img/default/active/btn_buju_selected@2x.png");
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-switchLayout.disabled{
+    background-image: url("../img/default/disabled/btn_buju_disable@2x.png");
+}
+
+
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-roster {
+    background: url('../img/default/newicon/biaoshilei_renlianmingdan@2x.png') no-repeat;
+    background-size: 100%;
+    position: relative;
+
+}
+.skin_beyond_default .showHand {
+    color: #FF3F3F;
+    background: url('../img/default/default/handup@2x.png') no-repeat center;
+    background-size: 100% 100%;
+    width: 1.26rem;
+    height:0.4rem;
+    line-height: 0.36rem;
+    font-size: 0.12rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-roster.hand::after{
+    content:'';
+    display: block;
+    width: 0.08rem;
+    height: 0.08rem;
+    background: #FF3F3F;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-roster:hover {
+    /* background: url('../img/default/hover/roster.png') no-repeat; */
+    background: url('../img/default/newicon/biaoshilei_renlianmingdan@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-roster:active,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-roster.active {
+    /* background: url('../img/default/active/roster.png') no-repeat; */
+    background: url('../img/default/newicon/biaoshilei_renlianmingdan@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-courseware {
+    background: url('../img/default/newicon/zhuanyeziyuanku@2x.png') no-repeat;
+    /* background: url('../img/default/default/courseware.png') no-repeat; */
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-courseware:hover {
+    /* background: url('../img/default/hover/courseware.png') no-repeat; */
+    background: url('../img/default/newicon/zhuanyeziyuanku@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-courseware:active ,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-courseware.active {
+    /* background: url('../img/default/active/courseware.png') no-repeat; */
+    background: url('../img/default/newicon/zhuanyeziyuanku@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-tools {
+    background: url('../img/default/newicon/gongjuxiang_2@2x.png') no-repeat;
+    /* background: url('../img/default/default/tools.png') no-repeat; */
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-tools:hover {
+    /* background: url('../img/default/hover/tools.png') no-repeat; */
+    background: url('../img/default/newicon/gongjuxiang_2@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-tools:active ,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-tools.active {
+    /* background: url('../img/default/active/tools.png') no-repeat; */
+    background: url('../img/default/newicon/gongjuxiang_2@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-option {
+    /* background: url('../img/default/default/option.png') no-repeat; */
+    background: url('../img/default/newicon/kongzhitai_@2x.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-option:hover {
+    /* background: url('../img/default/hover/option.png') no-repeat; */
+    background: url('../img/default/newicon/kongzhitai_@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-option:active ,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-option.active {
+    /* background: url('../img/default/active/option.png') no-repeat; */
+    background: url('../img/default/newicon/kongzhitai_@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-chat {
+    background: url('../img/default/default/chat.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-chat:hover {
+    background: url('../img/default/hover/chat.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-chat:active,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-chat.active {
+    background: url('../img/default/active/chat.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-setting {
+    /* background: url('../img/default/default/setting.png') no-repeat; */
+    background: url('../img/default/newicon/Group10@2x.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-setting:hover {
+    /* background: url('../img/default/hover/setting.png') no-repeat; */
+    background: url('../img/default/newicon/Group10@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-setting:active ,
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-setting.active {
+    /* background: url('../img/default/active/setting.png') no-repeat; */
+    background: url('../img/default/newicon/Group10@2x_hover.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-f11 {
+    background: url('../img/default/default/f11.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-f11:hover {
+    background: url('../img/default/hover/f11.png') no-repeat;
+    background-size: 100%;
+}
+.skin_beyond_default .Tk-header-othericon .Tk-header-icon.icon-reset {
+    background: url('../img/default/default/reset.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .h-btn-wrap button {
+    /* color: #B94D12; */
+    color:#fff;
+    background-color: #F35623;
+    border-radius: 4px;
+    /* background: url('../img/default/default/class.png') no-repeat; */
+    /* background-size: 100%; */
+}
+.skin_beyond_default .h-btn-wrap button:hover {
+    /* background: url('../img/default/hover/class.png') no-repeat; */
+    /* background-size: 100%; */
+}
+.skin_beyond_default .h-btn-wrap button:active {
+    /* background: url('../img/default/active/class.png') no-repeat; */
+    /* background-size: 100%; */
+}

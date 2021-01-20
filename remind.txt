@@ -1,0 +1,8 @@
+发布包打包说明【备注：文件打包出来的文件夹(h5_new)和当前项目所在目录同级】：
+   方式1：当前项目中运行npm run build即可打包发布版的包
+   方式2：修改cmd_compile/clearDir.bat文件，第三行命令cd talkcloud_v2.1.7.3-source/cmd_compile修改为cd [当前项目的文件夹名字]/cmd_compile , 然后运行cmd_compile/build.bat即可
+
+开发启用热更新说明：
+  方式1：当前项目中运行npm run dev-hrm即可运行热更新
+  方式2：运行dev-hrm.bat即可
+  备注：开启热更新需要确保热更新ip地址为自己机器的ip，如果ip不是自己的ip，请到webpack.config.js文件修改devServerIp ， 如：let devServerIp = '192.168.1.182' ;修改为let devServerIp = '自己的ip' ;

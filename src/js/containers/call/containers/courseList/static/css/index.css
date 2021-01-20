@@ -1,0 +1,425 @@
+/*新版课件库默认紫色皮肤样式*/
+.showPptAlert{
+    position:fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+    margin:1rem auto;
+    width: 3rem;
+    height:1rem;
+    background:#F0F9EB;
+    color:#76C84D;
+    border-radius: 10px;
+}
+.showPptAlert p{
+    text-align: center;
+    font-size: .2rem;
+}
+.showUpdatePpt p{
+    line-height: 1rem;
+}
+.showUpdatePptError p{
+    line-height: 1rem;
+}
+.mask{
+    position: absolute;
+    top: 0.42rem;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+}
+.courseware_box{
+    position: absolute;
+    height: calc(100% - 0.42rem);
+    top: 0;
+    right: 0;
+    width:5.88rem;
+    z-index: 300;
+    /* background: rgba(34, 23, 70, 0.96); */
+    background: rgba(95,102,114, 0.8);
+    border-left: 1px solid rgba(240, 240, 240, .1);
+    animation: slideInRight 0.3s;
+}
+/*左侧切换按钮*/
+.courseware_box .courseware_left_button{
+    display: inline-block;
+    height: 100%;
+    /* background: rgba(121,92,191,0.27); */
+    background: rgba(77,85,99,0.9); 
+    vertical-align: top;
+}
+.courseware_box .tool-icon{
+    width: 0.88rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0.2rem .08rem 0 .11rem;
+    /* background-color: #795CBF; */
+    /* background-color:rgba(77,85,99,0.9); */
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.12rem;
+}
+.courseware_box .tool-icon.active{
+    /* background-color: #fff; */
+    background-color:rgba(255, 255, 255, 0.192);
+    /* color: #795CBF; */
+    color: #fff;
+}
+
+/*右侧课件列表*/
+.courseware_box .courseware_content{
+    width: 4.59rem;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%
+}
+.courseware_content .fileFilter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 0.62rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.fileFilter .filterItem{
+    margin-left: 0.2rem;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+}
+.fileFilter .filterItem.active{
+    /* color: #FFDC54; */
+}
+.fileFilter .filterItem.active .up.on{
+    background: url("../img/up_selected.png") no-repeat center;
+    background-size: 100%;
+}
+.fileFilter .filterItem.active .down.off{
+    background: url("../img/dwon_selected.png") no-repeat center;
+    background-size: 100%;
+}
+.fileFilter .flexBox{
+    display: flex;
+    align-items: center;
+}
+.fileFilter .filterItem .flex_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.07rem;
+}
+.fileFilter .filterItem .up{
+    width: 0.07rem;
+    height: 0.05rem;
+    margin-bottom: 0.03rem;
+    background: url("../img/up_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileFilter .filterItem .down{
+    width: 0.07rem;
+    height: 0.05rem;
+    background: url("../img/dwon_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileFilter .filterItem.searching{
+    display: inline-block;
+    width: 2.4rem;
+    height: 0.35rem;
+    background:rgba(244,239,255,0.2);
+    line-height: 0.35rem;
+    border-radius: 0.18rem;
+    padding-left: 0.12rem;
+}
+.fileFilter .search{
+    background: url("../img/search_default.png") no-repeat center;
+    background-size: 100%;
+    width: 0.15rem;
+    height: 0.14rem;
+    vertical-align: middle;
+}
+.fileFilter .close{
+    width: 0.12rem;
+    height: 0.12rem;
+    margin-left: 0.06rem;
+    /* background: url("../img/close_default@2x.png") no-repeat center;close_press@2x */
+    background: url("../img/close_press@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.fileFilter .filterItem.searching input{
+    color: rgba(244,239,255,0.2);
+    width: 75%;
+    border: none;
+    margin-left: 0.15rem;
+    outline:medium;
+    height: 100%;
+    background: rgba(244,239,255,0)
+}
+.fileFilter .addCourse,
+.fileFilter .addH5{
+    width: 0.85rem;
+    height: 0.32rem;
+    /* color: #FFDC54; */
+    color:#ffffff;
+    border-radius: 6px;
+    /* border: 1px solid #FFDC54; */
+    border:1px solid #ffffff;
+    margin: 0 0.08rem;
+    font-size: 0.13rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fileContainer::-webkit-scrollbar-thumb{
+    width: 4px;
+    border-radius: 0.02rem;
+    background: #635B78;
+}
+.fileContainer::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 0.02rem;
+    background: rgba(255,255,255,0.1)
+}
+.fileContainer{
+    margin-top: 0.15rem;
+    height: calc(100% - 0.77rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.fileContainer .classification{
+    width: 100%;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    /* background: rgba(162,145,211,0.3); */
+    background: rgba(92,100,113,0.78);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.14rem;
+    padding-left: 0.1rem;
+}
+.fileContainer .classification .arrow{
+    display: inline-block;
+    width: 0.12rem;
+    height: 0.12rem;
+    margin: 0.12rem 0.13rem 0 0;
+    float: right;
+    background: url("../img/up@2x (1).png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .classification .arrow.on{
+    background: url("../img/up@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem{
+    padding: 0 0.25rem 0 0.16rem;
+    height: 0.52rem;
+    color: #fff;
+    margin-bottom: 0.06rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.fileContainer .fileItem.hide{
+    display: none;
+}
+.fileContainer .fileItem .fileListIcon{
+    display: inline-block;
+    width: 0.34rem;
+    height: 0.34rem;
+}
+.fileContainer .fileItem .whiteboard{
+    background: url("../img/baiban.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .pptx{
+    background: url("../img/ppt.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .word{
+    background: url("../img/word.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .pdf{
+    background: url("../img/pdf.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .html{
+    background: url("../img/icon_html.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .excle{
+    background: url("../img/excle.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .png{
+    background: url("../img/pic.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .txt{
+    background: url("../img/txt.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .zip{
+    background: url("../img/icon_h5.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .undefined{
+    background: url("../img/icon_unknow.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .mp3{
+    background: url("../img/icon_mp3.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .mp4{
+    background: url("../img/icon_mp4.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .fileListTest{
+    width: 2.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 100%;
+    line-height: 0.52rem;
+    font-size: 0.14rem;
+    align-items: center;
+    margin:0 0.15rem;
+}
+.fileContainer .fileItem .closeIcon{
+    width: 0.18rem;
+    height: 0.2rem;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/close eye_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .closeIcon.on{
+    background: url("../img/open eye_press@2x.png") no-repeat center;
+    background-size: 100%;
+    pointer-events: none;
+    cursor: default !important;
+}
+.fileContainer .fileItem .closeIcon:hover{
+    background: url("../img/close eye_hover.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .closeIcon:active{
+    background: url("../img/close eye_press.png") no-repeat center;
+    background-size: 100%;
+}
+
+.fileContainer.media .fileItem .closeIcon{
+    width: 0.16rem;
+    height: 0.16rem;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/play_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer.media .fileItem .closeIcon.on{
+    background: url("../img/pause_default.png") no-repeat center;
+    background-size: 100%;
+    pointer-events: none;
+    cursor: default !important;
+}
+.fileContainer.media .fileItem .closeIcon:hover{
+    background: url("../img/play_hover.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer.media .fileItem .closeIcon:active{
+    background: url("../img/play_press.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer.media .fileItem .closeIcon.on{
+    background: url("../img/pause_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer.media .fileItem .closeIcon.on:hover{
+    background: url("../img/pause_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer.media .fileItem .closeIcon.on:active{
+    background: url("../img/pause_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .fileListTool{
+    display: inline-block;
+    width: auto;
+    height: 0.2rem;
+}
+.fileContainer .fileItem .deleteIcon{
+    width: 0.15rem;
+    height: 0.2rem;
+    margin-left: 0.3rem;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/delete_default.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .deleteIcon:hover{
+    background: url("../img/delete_hover.png") no-repeat center;
+    background-size: 100%;
+}
+.fileContainer .fileItem .deleteIcon:active{
+    background: url("../img/delete_press.png") no-repeat center;
+    background-size: 100%;
+}
+
+
+/*课件上传样式*/
+.courseware_content .fileContainer .progress-bar-box{
+    width: 100%;
+    height: 0.52rem;
+    color: #fff;
+    background:rgba(193,179,231,0.5);
+    position: relative;
+}
+.courseware_content .fileContainer .progress-bar-box .progress-bar{
+    display: inline-block;
+    background:rgba(71,45,145,0.7);
+    height: 100%;
+    line-height: 0.52rem;
+}
+.courseware_content .fileContainer .progress-bar-box .progress-bar .curr-progress{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.courseware_content .fileContainer .progress-bar-box .cancel-file-upload{
+    width: 0.1rem;
+    height: 0.1rem;
+    background: url("../img/close_press@2x.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    right: 0.32rem;
+    top:0.22rem;
+}
+
+
+
+
+
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+}

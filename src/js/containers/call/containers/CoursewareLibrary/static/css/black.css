@@ -1,0 +1,89 @@
+.skin_black .courseware_container{
+    background: rgba(31,32,39,0.96);
+    border-left: 1px solid rgba(255,255,255,0.1);
+
+}
+.skin_black .mask{
+    position: absolute;
+    top: 0.42rem;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+}
+.skin_black .courseware_container .tool-icon-wrap{
+    background:rgba(26,26,32,0.6);
+}
+.skin_black .courseware_container .tool-icon{
+    background-color: #3A3A3D;
+    color: #8C8C93;
+}
+.skin_black .courseware_container .tool-icon.active{
+    background-color: #0077FF;
+    color: #fff;
+}
+.skin_black .courseware_container .tool-extend .tk-app-list-button-container .upload-btn{
+    color: #ADADAD;
+    border: 1px solid #ADADAD;
+}
+
+.skin_black .courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.off{
+    background: url("../img/black/close eye_default@2x.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_black .courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.on{
+    background: url("../img/black/open eye_hover@2x.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_black .courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:hover{
+    background: url("../img/black/close eye_hover@2x.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_black .courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:active{
+    background: url("../img/black/close eye_press@2x.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_black .tk-list-button-context.searchContainer .btn-container.search .close{
+    background: url(../img/black/close_default.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+.skin_black .courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.off{
+    background: url("../img/black/play_default.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_black .courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:hover{
+    background: url("../img/black/play_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_black .courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:active{
+    background: url("../img/black/play_press.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_black .courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.on{
+    background: url("../img/black/pause_default.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.skin_black .courseware_container .progress-bar-box .progress-bar-wrap,
+.skin_black .courseware_container .progress-bar-wrap .progress-bar{
+    background:rgba(92,92,92,0.5);
+}
+.skin_black .courseware_container .progress-bar-wrap .progress-bar{
+    background:rgba(0,119,255,0.7);
+}
+.skin_black .courseware_container .cancel-file-upload{
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background: url(../img/black/close_default.png) no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    top:50%;
+    transform: translateY(-50%);
+    right: .06rem;
+}
+.skin_black .courseware_container .file_button{
+    background:rgba(171,171,171,0.3);
+    border-bottom:1px solid  rgba(171,171,171,0.3);
+}

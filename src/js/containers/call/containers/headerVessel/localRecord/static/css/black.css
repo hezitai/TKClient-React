@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.skin_black .local-recording-container{
+    display: flex;
+    align-items: center;
+    background: #6550A3;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    padding: 0 0.3rem 0 0.21rem;
+    border-radius: 0.2rem;
+    margin-left: 0.5rem;
+}
+.skin_black .local-recording-container .text{
+    display: block;
+    color: #fff;
+    font-size: 0.13rem;
+}
+.skin_black .local-recording-container .text.notStart{
+    color: #4b7bff;
+}
+.skin_black .local-recording-container .text.recording , .local-recording-container .text.recordPaused{
+    padding-left: 0.115rem;
+    position: relative;
+}
+.skin_black .local-recording-container .text.recording{
+    color: #ff021d;
+}
+.skin_black .local-recording-container .text.recording::before , .local-recording-container .text.recordPaused::before{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    width: 0.1rem;
+    height:0.1rem;
+    content: '' ;
+    background:  no-repeat center center;
+    background-size: 0.1rem auto;
+}
+.skin_black .local-recording-container .text.recordPaused{
+    color: #FF2E18;
+}
+.skin_black .local-recording-container .play-pause-record , .local-recording-container .start-stop-record{
+    width: 0.18rem;
+    height: 0.18rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 0.13rem;
+}
+.skin_black .local-recording-container .start-stop-record.notStart{
+    margin-right: 0.115rem;
+}
+.skin_black .local-recording-container .start-stop-record.notStart[disabled]{
+    pointer-events: none;
+}
+.skin_black .local-recording-container .checkbox{
+    width: 0.18rem;
+    height: 0.16rem;
+    background-size: 100% 100%;
+    margin-right: 0.115rem;
+}
+.skin_black .local-recording-container .checkbox.on{
+    background-image: url("../image/black/gouxuan_default@2x.png");
+}
+.skin_black .local-recording-container .checkbox.off{
+    background-image: url("../image/black/weigouxuan_default@2x.png");
+}
+.skin_black .local-recording-container .play-pause-record,
+.skin_black .local-recording-container .start-stop-record{
+    width: 0.18rem;
+    height: 0.18rem;
+    display: block;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 0.13rem;
+}
+.skin_black .local-recording-container .play-pause-record{
+    margin-right: 0.15rem;
+}
+.skin_black .local-recording-container .play-pause-record.recording{
+    background-image: url("../image/black/btn_luzhi_pause_default@2x.png");
+}
+.skin_black .local-recording-container .play-pause-record.recording:hover{
+    background-image: url("../image/black/btn_luzhi_pause_hover@2x.png");
+}
+.skin_black .local-recording-container .play-pause-record.recording:active{
+    background-image: url("../image/black/btn_luzhi_pause_press@2x.png");
+}
+
+
+.skin_black .local-recording-container .play-pause-record.recordPaused{
+    background-image: url("../image/black/btn_luzhi_play_default@2x.png");
+}
+.skin_black .local-recording-container .play-pause-record.recordPaused:hover{
+    background-image: url("../image/black/btn_luzhi_play_hover@2x.png");
+}
+.skin_black .local-recording-container .play-pause-record.recordPaused:active{
+    background-image: url("../image/black/btn_luzhi_play_press@2x.png");
+}
+
+.skin_black .local-recording-container .start-stop-record.recording,
+.skin_black .local-recording-container .start-stop-record.recordPaused{
+    background-image: url("../image/black/btn_luzhi_stop_default@2x.png");
+}
+.skin_black .local-recording-container .start-stop-record.recording:hover,
+.skin_black .local-recording-container .start-stop-record.recordPaused:hover{
+    background-image: url("../image/black/btn_luzhi_stop_hover@2x.png");
+}
+.skin_black .local-recording-container .start-stop-record.recording:active,
+.skin_black .local-recording-container .start-stop-record.recordPaused:active{
+    background-image: url("../image/black/btn_luzhi_stop_press@2x.png");
+}
+
+.skin_black .local-recording-container .start-stop-record.notStart{
+    background-image: url("../image/black/btn_luzhi_start_default@2x.png");
+}
+.skin_black .local-recording-container .start-stop-record.notStart:hover{
+    background-image: url("../image/black/btn_luzhi_start_hover@2x.png");
+}
+.skin_black .local-recording-container .start-stop-record.notStart:active{
+    background-image: url("../image/black/btn_luzhi_start_press@2x.png");
+}

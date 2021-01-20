@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.tool-extend-container.tk-weight .tk-app-list .tk-list{
+    /*overflow-x: hidden;*/
+    padding-right: 0.19rem;
+}
+
+/*用户列表*/
+.tool-user-list-extend .user-extend-list {
+    display: none;
+    width: auto;
+    height: auto;
+    min-width: 1rem;
+    left: 0.58rem;
+    top:0;
+    background: #feaf55;
+    /* display: table; */
+    z-index: 130;
+    pointer-events: initial ;
+    cursor:pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 0.08rem;
+}
+
+.triangle{
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.5rem;
+    background-size:100% 100%;
+    z-index: 131;
+}
+.tool-user-list-extend .user-extend-list .icon-btn{
+  	min-width: 1rem;
+    width: auto;
+    height: auto;
+    display: block;
+	color: #1588f1;
+    padding: 0.03rem 0 0.03rem 0.08rem;
+    text-align: left;
+    position: relative;
+}
+.tool-user-list-extend .user-extend-list .extend-container{
+    position: relative;
+    height: auto;
+    right: auto;
+}
+.tool-user-list-extend .user-extend-list .extend-container .extend-option{
+    width: 1.5rem;
+    height: 100%;
+    min-width: 1.5rem;
+    display: block;
+    color: #913705;
+    padding: 0.01rem 0.1rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    border:0.01rem solid #913705;
+}
+.tool-user-list-extend .user-extend-list .extend-container .extend-option:first-child{
+    border-top-left-radius: 0.08rem;
+    border-top-right-radius: 0.08rem;
+    border-bottom: 0rem;
+
+}
+.tool-user-list-extend .user-extend-list .extend-container .extend-option:last-child{
+    border-bottom-left-radius: 0.08rem;
+    border-bottom-right-radius: 0.08rem;
+    border-top: 0rem;
+}
+
+.tool-user-list-extend .user-extend-list .extend-container .extend-option:not(:first-of-type):not(:last-of-type){
+    border-top: 0;
+    border-bottom: 0;
+}
+
+
+.tool-user-list-extend .user-extend-list .extend-container .extend-option:hover{
+    background: #ffbe75;
+}
+
+.tool-user-list-extend .user-extend-list .extend-container .extend-option:active{
+    background:#ff9f32;
+}
+.tool-user-list-extend .user-extend-list .extend-container .extend-option.get-doc-address:hover{
+    background-color: #ffbe75;
+}
+.get-doc-address .line-panel{
+    width: 100%;
+    position: absolute;
+    left: calc( 100% + 0.02rem);
+    bottom: 0;
+    display: none;
+}
+.line-item{
+    display: block;
+    width: 100%;
+    height: .35rem;
+    background: #FEAF55;
+    line-height: .3rem;
+    text-align: center;
+    border: .01rem solid #913705 ;
+    border-radius: .06rem;
+    margin-bottom: .01rem;
+}
+.line-item:hover{
+    background: #FF9F32;
+}
+.line-item.active{
+    background: #FF9F32;
+}
+.line-item .line-item-icon{
+    width: .1rem;
+    height: .1rem;
+    margin-right: .1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.line-item.active .line-item-icon{
+    background-size: 100% auto;
+}
+.tool-user-list-extend .user-extend-list .extend-option.refresh > span{
+    color: #913705;
+    padding: 0;
+    background: rgba(0,0,0,0);
+    border-radius: 0;
+    font-weight: normal;
+}
+.line-item .add-nowrap{
+    width: auto;
+    max-width: calc( 80% - .2rem );
+    vertical-align: middle;
+}

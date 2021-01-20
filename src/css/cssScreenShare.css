@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*桌面共享 xgd 2017-10-12*/
+.screen-share-wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: 1.5rem 1.5rem;
+}
+
+/*桌面共享 xgd 2017-10-12*/
+.screen-share-all {
+    width: 100%;
+    height: 100%;
+    z-index: 249;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+.screen-share-unall{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+/*桌面共享 wlm 2018-5-23*/
+.screen-share-wrap_button {
+    position: absolute;
+    width: 1.34rem;
+    height: 0.4rem;
+    font-size: .16rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    border-radius: .2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
+
+}
+.desktop-share-container{
+    position: fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:400;
+}
+.desktop-share-container.areaExchange .screen-share-wrap_button{
+    top: 81%;
+}

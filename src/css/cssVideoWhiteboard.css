@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/*视频上的标注画板样式*/
+.video-drawing-board-box{
+    margin:auto;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 110;
+}
+.video-drawing-board{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+}
+.video-drawing-board-box .blackboard-tool{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 0.6rem;
+    height:auto;
+    left: 0.1rem;
+    z-index: 110;
+}
+.video-drawing-board-box .blackboard-tool>li{
+    width: 0.6rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    margin-bottom: 0.48rem;
+    position: relative;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn{
+    width: 0.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin: 0;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon{
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon:hover{
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon:active{
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon.active{
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon.disable{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon.disable:hover{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon.disable:active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon:hover{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon:active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon.active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.colors-icon{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.colors-icon:hover{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.colors-icon:active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.colors-icon.active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.exit-icon{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.exit-icon:hover{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.exit-icon:active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_5AC9FA{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_5AC9FA.active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_FFCC00{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_FFCC00.active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_ED3E3A{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_ED3E3A.active{
+    background-size: 100% 100%;
+}.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_4740D2{
+     background-size: 100% 100%;
+ }
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_4740D2.active{
+    background-size: 100% 100%;
+}.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_007BFF{
+     background-size: 100% 100%;
+ }
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_007BFF.active{
+    background-size: 100% 100%;
+}.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_09C62B{
+     background-size: 100% 100%;
+ }
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_09C62B.active{
+    background-size: 100% 100%;
+}.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_000000{
+     background-size: 100% 100%;
+ }
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_000000.active{
+    background-size: 100% 100%;
+}.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_EDEDED{
+     background-size: 100% 100%;
+ }
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option.color_EDEDED.active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option.active,.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.active{
+    /*background: none;*/
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .tool-btn.colors-icon .current-color{
+    width: 0.2rem;
+    margin: 0.02rem auto;
+    height: 0.2rem;
+    display: block;
+    border: 0.02rem solid #fff;
+    border-radius: 0.04rem;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg{
+    width: 2.24rem;
+    height: 1.78rem;
+    top:-1.1rem;
+    left: 100%;
+    bottom: auto;
+    z-index: 9;
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container{
+    margin-left:0.13rem;
+    padding: 0.09rem 0.05rem;
+    margin-top: 0.06rem;
+    display: block;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option{
+    border: none;
+    margin: -0.03rem 0;
+}
+.video-drawing-board-box .blackboard-tool .blackboard-tool-option .blackboard-color-size-box.pinkBg .colors-container .color-option div{
+    border-radius: 0.04rem;
+}
+.video-drawing-board-box .video-drawing-board .literally{
+    background-color: transparent;
+}
+.video-drawing-board-box .blackboard-tool  .blackboard-tool-option .colors-container {
+    width: 2.02rem;
+    height: 0.35rem;
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.video-drawing-board-box .blackboard-tool  .blackboard-tool-option .colors-container .color-option {
+    width: 0.235rem;
+    height: 0.235rem;
+    box-sizing: border-box;
+    margin: 0.02rem;
+}
+.video-drawing-board-box .blackboard-tool  .blackboard-tool-option.colors:hover .blackboard-color-size-box {
+    display: block;
+}
+.video-drawing-board-box .blackboard-tool  .blackboard-tool-option .blackboard-color-size-box {
+    width: 2.2rem;
+    height: 0.6rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: calc(100% + 0.02rem);
+    right: calc(-1.9 * 0.32rem);
+    padding: 0 0.01rem;
+    color: #fff;
+    display: none;
+    z-index: 9;
+    background-size: 100% 100%;
+}
+.pointer-modal{
+    font-size: 0;
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    z-index: 999;
+    background: url("../img/pointer_bg_cartoon.png") center center no-repeat;
+    background-size: 100% 100%;
+    left: 2.5%;
+    top: 2.5%;
+    display: none;
+}
+.pointer-modal .request-close-pointer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 3rem;
+    height: 1rem;
+    background: url("../img/click_request_button_cartoon.png") center center no-repeat;
+    background-size: contain;
+    margin-left: -1.5rem;
+    margin-top: 0;
+}
+.big-literally-wrap.big-literally-wrap-videowhiteboard  .tk-video-player-container .tk-video-player-close-btn{
+    display: none;
+}
+.big-literally-wrap.show-video-close-btn .tk-video-player-container .tk-video-player-close-btn{
+    display: block!important;
+}
+.tk-videodraw-player-close-btn{
+    position: absolute;
+    z-index: 10;
+    width: 0.23rem;
+    height: 0.23rem;
+    right:0.2rem;
+    top: 0.2rem;
+    background-size: 100% 100%;
+}
+.tk-videodraw-player-close-btn:hover{
+    background-size: 100% 100%;
+}
+.tk-videodraw-player-close-btn:active{
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .tkSliderDumb-container{
+    width: 2.02rem;
+    height: 0.32rem;
+    margin-left: 0.13rem;
+    border-radius: 0.05rem;
+    background: #fff;
+}
+.video-drawing-board-box .blackboard-tool-option .rc-slider{
+    height: 0.32rem;
+    width: 90%;
+}
+.video-drawing-board-box .blackboard-tool-option .rc-slider-step{
+    height: 0.1rem;
+    top: 0.12rem;
+    width: 130%;
+    background-size: 100% 100%;
+}
+.video-drawing-board-box .blackboard-tool-option .rc-slider-rail{
+    background-color: #fff;
+}
+.video-drawing-board-box .blackboard-tool-option .rc-slider-handle{
+    border-color: #FF6B58;
+    background-color: #FF6B58;
+    margin-left: 3px;
+    margin-top: 4px;
+}
+.video-drawing-board-box .blackboard-tool-option .rc-slider-track{
+    background-color: transparent;
+}
+.video-drawing-board-box .tkSliderDumb-container-wrap{
+     width: 2.02rem;
+ }

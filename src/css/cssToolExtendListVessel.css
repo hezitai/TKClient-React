@@ -1,0 +1,806 @@
+@charset "UTF-8";
+/*@desc tool-container start*/
+.tool-container{
+    width: 0.5rem;
+    height: 100%;
+    z-index: 125 ;
+}
+
+.tool-extend-container.userListSmart{
+    width:6.82rem;
+    z-index: 350;
+}
+
+.tool-extend-container.tk-weight{
+    transition: width 0.2s;
+}
+
+.tk-app-list .tk-app-list-title{
+    padding: 0rem 0.14rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    /* height: 0.52rem; */
+    /* border-bottom: 0.01rem solid #3c486a;
+    background: #1c2947; */
+}
+.tk-app-list .tk-app-list-title .tk-list-title-context{
+    flex: 1;
+    height: 100%;
+    /* line-height: 0.17rem; */
+    width: 100%;
+    font-size: 0.16rem;
+    padding-left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tk-app-list .tk-app-list-title .tk-list-title-context span{
+    margin-top: 0.05rem;
+}
+.tk-list-button-context .text{
+    display: inline-block;
+    padding-right: 0.02rem;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.tk-list-button-context .btn-container{
+    width: 0.15rem;
+    height: 0.25rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+.tk-list-button-context .btn-container .up , .tk-list-button-context .btn-container .down{
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-size: 0.1rem auto;
+}
+
+.tk-list-button-context .btn-container .down{
+}
+.tk-list-button-context.searchContainer .btn-container.search.isShow.user{
+    opacity: 1;
+    width: 5.48rem;
+}
+.tk-list-button-context.searchContainer .btn-container.search .close{
+    position: absolute;
+    right: 0.12rem;
+    background-size:100% 100%;
+    width: 0.1rem;
+    height: 0.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.tk-list-button-context.searchContainer .btn-container.search input:focus{
+    border:none;
+    outline:none;
+}
+.tk-list-button-context.searchContainer .btn-container.search input::-webkit-input-placeholder{
+    color: #D79737;
+    font-size: 0.14rem;
+}
+.tk-list-button-context.searchContainer .btn-container.search input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #D79737;
+    font-size: 0.14rem;
+}
+.tk-list-button-context.searchContainer .btn-container.search input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #D79737;
+    font-size: 0.14rem;
+}
+.tk-list-button-context.searchContainer .btn-container.search input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color: #D79737;
+    font-size: 0.14rem;
+}
+.tk-list-container .tk-list-container-title .tk-list-btngroup{
+    width: 2.34rem;
+    height: 0.35rem;
+    border:0.01rem solid #913706;
+    border-radius: 0.18rem;
+    display: flex;
+    line-height: 0.3rem;
+    align-items: center;
+}
+.tk-list-container .tk-list-container-title .tk-list-btngroup span{
+    flex: 1;
+    text-align: center;
+    color: #913706;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.tk-list-container .tk-list-container-title .tk-list-btngroup span.active{
+    background: #913706;
+    border-top-left-radius: 0.18rem;
+    border-bottom-left-radius: 0.18rem;
+    margin: 0.02rem;
+    color: #fff;
+}
+.tk-list-container .tk-list-container-title .tk-list-btngroup span.active:hover{
+    background: #B23D0B;
+}
+
+.tk-list-container .tk-list-content .tk-list-thead{
+    display: flex;
+    margin-bottom: 0.13rem;
+    padding-right: 0.2rem;
+}
+.tk-list-container .tk-list-content .tk-list-thead span{
+    text-align: center;
+    color: #913706;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.tk-list-container .tk-list-content .tk-list-thead .tk-list-thead-facility span{
+    width: 0.5rem;
+    display: block;
+    text-align: center;
+}
+.tk-list-container .tk-list-content .tk-list-thead .tk-list-thead-name{
+    flex: 1;
+}
+.tk-list-container .tk-list-content .tk-list-thead .tk-list-thead-name.textCenter span{
+    text-align: center;
+}
+.tk-list-container .tk-list-content .tk-list-thead .tk-list-thead-name span{
+    display: block;
+    text-align: left;
+}
+.tk-list-container .tk-list-content .tk-list-thead .tk-list-thead-botton span{
+    width: 0.54rem;
+    display: inline-block;
+}
+.tk-list-container .tk-list-content .tk-list-thead .tk-list-thead-botton{
+    padding-right: 0.22rem;
+}
+.tool-user-list-extend .tk-list-container .loading-box{
+    height: 2.82rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tool-user-list-extend .tk-list-container .loading-box .loading{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.tk-list-container .paging-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+
+.tk-list-container .paging-container .paging-left{
+    width: 0.07rem;
+    height: 0.14rem;
+    background-size: 100% 100%;
+    margin-right: 0.2rem;
+    cursor: pointer;
+}
+
+
+.tk-list-container .paging-container .paging-left.disabled{
+    cursor: default;
+}
+.tk-list-container .paging-container .paging-right{
+    width: 0.07rem;
+    height: 0.14rem;
+    background-size: 100% 100%;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+.tk-list-container .paging-container .paging-right.disabled{
+    cursor:default;
+}
+.tk-list-container .paging-container .paging-container-info{
+    display: flex;
+    color: #913705;
+    font-size: 0.14rem;
+    align-items: center;
+}
+
+.tk-list-container .paging-container .paging-container-info .paging-input{
+    display:block;
+    font-size: 0.14rem;
+    line-height: 0.22rem; 
+    border-radius: 0.04rem;
+    width: 0.38rem;
+    height: 0.22rem;
+    background: #FFE99E;
+    border:0.01rem solid #913705;
+    text-align: center;
+    outline: none;
+    margin-right: 0.08rem;
+}
+
+.tk-list-container .paging-container .paging-container-info .paging-input:focus{
+    background-color: #FFDC54;
+    border-color: #913705;
+}
+
+.tk-list-container .paging-container .paging-container-info .paging-sum{
+    margin-left: 0.1rem;
+}
+
+
+.tk-app-list .tk-list-item.user-container{
+    padding-left: 0;
+}
+.tk-app-list .tk-list-item.user-container .tk-listitem-context{
+    padding-left: 0;
+}
+.tk-app-list .tk-list-item .tk-listitem-context.textCenter{
+    text-align: center;
+}
+.tk-app-list .tk-list-item .tk-icon-after-container.tk-icon-size-0{
+    display: none;
+}
+
+.tool-extend .tk-app-list-button-container{
+	width: 100%;
+}
+.tool-extend .tk-app-list-button-container_h5{
+    width: 100%;
+    position: absolute;
+    bottom: 0.45rem;
+    left: 0;
+}
+.tool-extend .tk-app-list-button-container_h5 .upload-btn{
+    display: block;
+    margin: 0.1rem auto;
+    width: 2rem;
+    height: 0.4rem;
+    border-radius: 0.02rem;
+    background-color: #3278fe;
+    color: #fff;
+    font-size: 0.14rem;
+}
+/*用户列表*/
+.t-participant-user-list.add-over-auto-max-height{
+    /* height: calc(100% - 0.55rem); */
+}
+.t-participant-user-list li .user-portrait.use-pic{
+    height: 0.5rem;
+    width: 0.5rem;
+}
+.t-participant-user-list li .user-portrait.use-pic.userRemoteActive::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 160%;
+    height: 130%;
+}
+.t-participant-user-list .use-pic{
+    pointer-events: initial ;
+    cursor:pointer;
+    position: relative;
+    z-index: 135;
+    height: 0.5rem;
+    width: 0.5rem;
+    background:  no-repeat center center;
+    background-size: 0.24rem auto;
+    background-position-x: calc(100% - 0.1rem);
+}
+.t-participant-user-list .use-pic.userRemoteActive{
+    z-index: 136;
+}
+.t-participant-user-list .use-pic.disabled{
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.t-participant-user-list .use-pic.netWindowPc{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_win_explorer@2x.png);
+}
+.t-participant-user-list .use-pic.netMacPc{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_mac_explorer@2x.png) ;
+}
+.t-participant-user-list .use-pic.netIPad
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_ipad@2x.png) ;
+}
+.t-participant-user-list .use-pic.netWindowClient
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_win@2x.png) ;
+}
+.t-participant-user-list .use-pic.netMacClient
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_imac@2x.png) ;
+}
+.t-participant-user-list .use-pic.netIPhone
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_iphone@2x.png) ;
+}
+.t-participant-user-list .use-pic.netAndroid
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_Androidphone@2x.png) ;
+}
+.t-participant-user-list .use-pic.netAndroidPad
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_Androidpad@2x.png) ;
+}
+.t-participant-user-list .use-pic.netAndroidTV
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_TV@2x.png) ;
+}
+.t-participant-user-list .use-pic.unknownDevice
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_unknow@2x.png) ;
+}
+
+
+.t-participant-user-list .use-pic.netWindowPc.udp-notOnceSuccess{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_win_explorer_error@2x.png);
+}
+.t-participant-user-list .use-pic.netMacPc.udp-notOnceSuccess{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_mac_explorer_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.netIPad.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_ipad_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.netWindowClient.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_win_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.netMacClient.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_imac_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.netIPhone.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_iphone_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.netAndroid.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_Androidphone_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.netAndroidPad.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_Androidpad_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.netAndroidTV.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_TV_error@2x.png) ;
+}
+.t-participant-user-list .use-pic.unknownDevice.udp-notOnceSuccess
+{
+    background-image: url(../img/newInterface/Library/whiteboard/icon_unknow_error@2x.png) ;
+}
+
+
+/*.t-participant-user-list li{*/
+    /*cursor: pointer;*/
+/*}*/
+.t-participant-user-list li .user-portrait{
+    width: 0.24rem;
+    height: 0.24rem;
+    border-radius: 50%;
+    /*margin-top: 0.14rem;*/
+}
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.mute-icon.disabled{
+    /* background-image: url("../img/newInterface/Library/icon/button_disabled_speak_gray.png") !important; */
+    opacity: 0;
+}
+
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.remove-icon.disabled{
+    /* background-image: url("../img/newInterface/Library/icon/button_disabled_remove_gray.png") !important; */
+    opacity: 0;
+}
+
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.video-icon.no{
+    opacity: 1;
+}
+
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.audio-icon.no{
+    opacity: 1;
+}
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.star-icon.on {
+    background-image: url(../img/call_layout/left/video/userlist_sign_on.png);
+    /*background-size: 0.2rem;*/
+}
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.star-icon.off{
+    background-image: url(../img/call_layout/left/video/userlist_sign_off.png);
+   /* background-size: 0.2rem;*/
+}
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.hand-icon.off {
+    /*display: none!important;*/
+    visibility: hidden;
+}
+.t-participant-user-list li .tk-icon-after-container .tk-listitem-icon.hand-icon.on {
+    display: block!important;
+}
+.t-participant-user-list li  .beyond-max-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 0.5rem;
+    text-align: center;
+    background-color: rgba(26, 38, 66, 0.9);
+    left: 0;
+    top: 0;
+    color: #ea2e0d;
+    font-weight: bolder;
+    z-index: 200;
+}
+
+/*禁用按钮:*/
+.tool-container .disable_audio{
+	position: absolute;
+	width: 0.5rem;
+	height: 0.5rem;
+	bottom: 1.5rem;
+	left: 0;
+	background: url("../img/call_layout/left/video/icon_disable_audio.png") no-repeat center;
+	background-size: 0.3rem;
+}
+.tool-container .disable_video{
+	position: absolute;
+	width: 0.5rem;
+	height: 0.5rem;
+	bottom: 1rem;
+	left: 0;
+    background: url("../img/call_layout/left/video/icon_disable_video.png") no-repeat center;
+    background-size: 0.3rem;
+}
+.tool-container .disable_audio.off{
+	background: url("../img/call_layout/left/video/icon_disable_audio_off.png") no-repeat center;
+	background-size: 0.3rem;
+}
+.tool-container .disable_video.off{
+	background: url("../img/call_layout/left/video/icon_disable_video_off.png") no-repeat center;
+	background-size: 0.3rem;
+}
+
+/*文件列表和媒体列表*/
+
+.tool-file-list-extend.student .t-participant-file-list{
+    /*height: calc(100% - 0.52rem);!*LJH一起作业调试样式注释掉 !*!*/
+}
+
+.tool-file-list-extend .t-participant-file-list .tk-listitem-context{
+    width: calc(100% - 1rem);
+}
+
+
+
+
+/*播放*/
+
+.tk-app-list.media .tk-list-item  .tk-icon-after-container .file-list-eye-icon.on{
+    background-size: 100%;
+}
+.tk-app-list.media .tk-list-item  .tk-icon-after-container .file-list-eye-icon.on:hover{
+    background-size: 100%;
+}
+.tk-app-list.media .tk-list-item  .tk-icon-after-container .file-list-eye-icon.on:active{
+    background-size: 100%;
+}
+.tk-app-list.media .tk-list-item  .tk-icon-after-container .file-list-eye-icon.off{
+    background-size: 100%;
+}
+.tk-app-list.media .tk-list-item  .tk-icon-after-container .file-list-eye-icon.off:hover{
+    background-size: 100%;
+}
+.tk-app-list.media .tk-list-item  .tk-icon-after-container .file-list-eye-icon.off:active{
+    background-size: 100%;
+}
+
+
+
+
+/*删除*/
+.tk-app-list .tk-list-item  .tk-icon-after-container .file-list-delete-icon{
+    width: 0.13rem;
+    height: 0.14rem;
+    background-size: 100%;
+}
+.tk-app-list .tk-list-item  .tk-icon-after-container .file-list-delete-icon:hover{
+    width: 0.13rem;
+    height: 0.14rem;
+    background-size: 100%;
+}
+.tk-app-list .tk-list-item  .tk-icon-after-container .file-list-delete-icon:active{
+    width: 0.13rem;
+    height: 0.14rem;
+    background-size: 100%;
+}
+/*媒体列表*/
+.tool-file-list-extend.media .tk-list .tk-list-item .tk-icon-before.tk-icon-mp4{
+    background: url("../img/newInterface/Library/whiteboard/icon_mp4.png") no-repeat center center;
+    background-size: 100%;
+}
+.tool-file-list-extend.media .tk-list .tk-list-item .tk-icon-before.tk-icon-mp3{
+    background: url("../img/newInterface/Library/whiteboard/icon_mp3.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.t-participant-file-list .progress-bar-wrap .progress-bar .curr-progress{
+    width: 100%;
+    text-align: center;
+}
+.progress-bar-wrap .upload-failure{
+    color: #fff662;
+    position: relative;
+    z-index: 31;
+    width:100%;
+ }
+
+.tool-list-box{
+    width: 2.8rem;
+    height:100%;
+}
+
+
+/*左侧工具栏侧滑菜单*/
+.t-participant-user-list.add-over-auto-max-height{
+    /*height: 85%;*/
+    /*height: calc(100% - 0.55rem);*/
+    height:2.82rem;
+    padding-right: 0.2rem;
+}
+.t-participant-user-list li {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    position: relative;
+}
+.tk-app-list-title{
+    /*height: 0.44rem;*/
+    padding: 0 0.14rem;
+    /* border-bottom: 0.01rem solid #3c486a; */
+    color: #fff;
+}
+.t-participant-user-list li  , .tool-courseware-list-extend li  {
+    /*height: 0.44rem;*/
+    padding: 0 0.14rem;
+    height: 0.52rem;
+    /* border-bottom: 0.01rem solid #3c486a; */
+    color: #fff;
+}
+.t-participant-user-list li.active  , .tool-courseware-list-extend li.active {
+    border: 0.01rem solid #c67f58;
+}
+.t-participant-user-list li .user-portrait ,.tool-courseware-list-extend .t-option-img-wrap{
+    width: 0.24rem;
+    height: 0.24rem;
+    border-radius: 50%;
+}
+.t-participant-user-list li .user-portrait{
+    /*margin-top: 0.14rem;*/
+}
+ .tk-app-list-title .tk-list-title-context{
+    width: 1.58rem;
+    width: calc(100% - 0.24rem  - 1.21rem  - 0.1rem );
+    color: #9ba6bf;
+    padding-left: 0.1rem;
+    flex: 1;
+    height: 100%;
+ }
+.t-participant-user-list li .tk-list-title-context  ,  .tool-courseware-list-extend .t-option-content-wrap{
+    width: 1.58rem;
+    width: calc(100% - 0.24rem  - 1.21rem  - 0.1rem );
+    color: #9ba6bf;
+    padding-left: 0.1rem;
+    line-height: 0.24rem;
+}
+.t-participant-user-list li .tk-list-title-context {
+    flex: 1;
+    height: 100%;
+    line-height: 0.52rem;
+}
+.t-participant-user-list li  .not-publish-remind{
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 31, 29, 0.9);
+    color: #920303;
+    text-align: center;
+    line-height: 0.5rem;
+    font-weight: 500;
+    font-size: 0.13rem;
+}
+/* div.tk-app-list-title{
+    background: #1c2947;
+} */
+div.tk-app-list-title .tk-list-title-context {
+    padding-left: 0;
+    color: #fff;
+    width: 100%;
+    font-size: 0.14rem;
+}
+.t-participant-user-list li .user-icon-wrap{
+    width: auto;
+    height: 100%;
+}
+.t-participant-user-list li .user-icon-container {
+    display: block;
+    position: relative;
+    width:auto ;
+    height: 100%;
+    /*top: 50%;*/
+}
+
+.t-participant-user-list li .user-icon-container button{
+    width: 0.3rem;
+    height:100%;
+    float: left;
+    background: url(../img/call_layout/left/video/icon_hand_bottom.png) no-repeat center center;
+    background-size: 0.3rem auto;
+    cursor: pointer;
+}
+.t-participant-user-list li .user-icon-container button.hand-icon{
+    cursor: default;
+    pointer-events: none;
+}
+/*.progress-bar-wrap .upload-failure{
+	color: rgb(121, 25, 2);
+	position: relative;
+	z-index: 31;
+}
+.cancel-file-upload{
+	width: 0.3rem;
+	height: 0.3rem;
+	position: absolute;
+	right: 0.1rem;
+	top: 50%;
+	background: rgb(16, 22, 38) url(../img/call_layout/left/cancel-file-upload.png) no-repeat center center;
+	border-radius: 50%;
+	background-size: 100% auto;
+	margin-top: -0.15rem;
+	z-index: 99;
+}*/
+
+/*=======================wj-2017-5-22==================*/
+
+.tool-courseware-list-extend li {
+    padding: 0.12rem 0.02rem 0.12rem 0.14rem;
+    height: 0.52rem;
+    position: relative;
+    font-family: arial;
+    color: #fff;
+}
+
+.tool-courseware-list-extend li .t-ul-option-wrap {
+    height: 0.28rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.tool-courseware-list-extend li .t-option-content-wrap {
+    width: 1.55rem;
+    width: calc(100% - 0.24rem - 0.7rem);
+    flex: 1;
+}
+
+
+/*删除按钮*/
+.tool-courseware-list-extend .t-option-file-delete-btn {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin: 0.02rem 0.05rem 0 0rem;
+    background: url(../img/call_layout/left/video/btn_delete_nomal.png) no-repeat center center;
+    background-size:100% auto ;
+}
+
+.tool-courseware-list-extend .t-option-file-delete-btn:hover {
+    background-image:url(../img/call_layout/left/video/btn_delete_hover.png) ;
+}
+
+.tool-courseware-list-extend .t-option-file-delete-btn:active {
+    background-image:url(../img/call_layout/left/video/btn_delete_pressed.png) ;
+}
+
+
+/*播放按钮*/
+.tool-courseware-list-extend .t-option-file-play-btn {
+    width: 0.24rem;
+    height: 0.24rem;
+    margin: 0 0.06rem 0 0.05rem;
+    background: url(../img/call_layout/left/video/player/btn_play_normal.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.tool-courseware-list-extend .t-option-file-play-btn:hover{
+    background-image: url(../img/call_layout/left/video/player/btn_play_hover.png);
+}
+.tool-courseware-list-extend .t-option-file-play-btn:active{
+    background-image: url(../img/call_layout/left/video/player/btn_play_pressed.png);
+}
+
+
+/*眼睛按钮*/
+
+.tool-courseware-list-extend .t-option-file-eye-btn {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.06rem;
+    background: url(../img/call_layout/left/video/icon_eye_off.png) no-repeat center;
+    background-size:100% auto ;
+}
+.tool-courseware-list-extend .t-option-file-eye-btn.on{
+    background-image: url(../img/call_layout/left/video/icon_eye_on.png) ;
+}
+
+
+/*止*/
+/*=======================wj-2017-5-22==================*/
+.tool-courseware-list-extend li.active{
+    background: #202c44;
+}
+/*.tool-courseware-list-extend li .progress-bar-wrap , .tool-courseware-list-extend li .progress-bar-wrap .progress-bar{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(5,24,58,1);
+	left: 0;
+	top: 0;
+	z-index: 28;
+	opacity: 0.9;
+	pointer-events: none;
+	cursor: default !important;
+}
+.tool-courseware-list-extend li .progress-bar-wrap .progress-bar{
+	width: 0%;
+	background-color: rgba(239,200,12,1);
+	z-index: 30;
+	text-align: center;
+	line-height: 0.52rem;
+	font-size: 0.12rem;
+	pointer-events: none;
+	cursor: default !important;
+}*/
+.tool-courseware-list-extend .tool-extent-ul-wrap{
+    height: 85%;
+    height: calc(100% - 1.1rem);
+}
+.tool-courseware-list-extend .tk-app-list-button-container .upload-btn{
+    display: block;
+    margin: 0.1rem auto 0.2rem;
+    width: 2rem;
+    height: 0.4rem;
+    border-radius: 0.02rem;
+    background-color: #3278fe;
+    color: #fff;
+}
+
+
+.tk-file-list-container-navChildren button{
+    width: 50%;
+    height: 0.35rem;
+    line-height: 0.33rem;
+    text-align: center;
+    font-size: 0.14rem;
+    color: #913706;
+}
+.tk-file-list-container-navChildren button.activeL:hover,
+.tk-file-list-container-navChildren button.activeR:hover{
+    color: #FFFFFF;
+}
+.tk-file-list-container-navChildren button:hover{
+    color: #b23d0b;
+}
+.tk-file-list-container-navChildren button.activeR{
+    color: #FFFFFF;
+    background: #913706;
+    border: 0.02rem solid ;
+    border-radius: 0 0.18rem 0.18rem 0;
+    border-color: #FFDC54;
+    box-sizing: border-box;
+}
+/*@desc tool-container end*/
+

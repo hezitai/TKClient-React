@@ -1,0 +1,512 @@
+.skin_black #beyond_tools{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 98;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container{
+    width: 0.48rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 0.06rem;
+    z-index: 110;
+    border: 0.01rem solid rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option{
+    width: 0.4rem;
+    height: 0.36rem;
+    margin: 0.14rem 0.03rem;
+    border-radius: 0.02rem;
+    cursor: pointer;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option:hover{
+    background:rgba(61,61,61,1);
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.active{
+    background: rgba(24,24,24,1);
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option:after{
+    display: none;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.icon:hover{
+    background: none;
+    background-image: url('./imgs/black/default/tools@2x.png');
+    background-repeat: no-repeat;
+    background-size: 0.37rem 0.1rem;
+    background-position: center;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.icon {
+    height: 0.25rem;
+    background-image: url('./imgs/black/default/tools@2x.png');
+    background-repeat: no-repeat;
+    background-size: 0.37rem 0.1rem;
+    background-position: center;
+    width: 100%;
+    border-bottom: 0.01rem solid rgba(167,167,167,0.2);
+    margin: 0;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.icon-show {
+    height: 0.32rem;
+    width: 100%;
+    background: url("./imgs/black/default/down.png") no-repeat center center;
+    background-size: 0.13rem 0.07rem;
+    margin: 0;
+    padding: 0;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.icon-show.show {
+    height: 0.32rem;
+    width: 0.36rem;
+    margin: 0 0.05rem;
+    background: url("./imgs/black/default/tools_up_default@2x.png") no-repeat center center;
+    background-size: 0.13rem 0.07rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+/* 主工具样式 */
+/* 鼠标 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_mouse .icon{
+    background: url("./imgs/black/default/mouse_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_mouse.active .icon{
+    background: url("./imgs/black/active/mouse_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 激光笔 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_laser .icon{
+    background: url("./imgs/black/default/jiguang_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_laser.active .icon{
+    background: url("./imgs/black/active/jiguang_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 画笔 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_pencil .icon{
+    background: url("./imgs/black/default/pen_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_pencil.active .icon{
+    background: url("./imgs/black/active/pen_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_highlighter .icon{
+    background: url("./imgs/black/default/yingguangbi_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_highlighter.active .icon{
+    background: url("./imgs/black/active/yingguangbi_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_line .icon{
+    background: url("./imgs/black/default/line_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_line.active .icon{
+    background: url("./imgs/black/active/line_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_arrow .icon{
+    background: url("./imgs/black/default/jiantou_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.tool_arrow.active .icon{
+    background: url("./imgs/black/active/jiantou_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 文字 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text .icon{
+    background: url("./imgs/black/default/text_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .icon{
+    background: url("./imgs/black/active/text_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .tool-pen-list-extend .font-container .font-content-container  .font-family-container .font-family-option.active,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .tool-pen-list-extend .font-container .font-content-container  .font-family-container .font-family-option.active:hover,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .tool-pen-list-extend .font-container .font-content-container  .font-size-container .font-size-list .font-size-option.active{
+    background-color: #1D86FF;
+    color: #fff;
+    border-color: #1D86FF;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .tool-pen-list-extend .font-container .font-content-container  .font-family-container .font-family-option,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .tool-pen-list-extend .font-container .font-content-container  .font-size-container .font-size-list .font-size-option{
+    background-color: transparent;
+    color: rgba(230,233,236,0.8);
+    border-color: rgba(230,233,236,0.8);
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .tool-pen-list-extend .font-container .font-content-container  .font-family-container .font-family-option:hover,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active .tool-pen-list-extend .font-container .font-content-container  .font-size-container .font-size-list .font-size-option:hover{
+    background-color: transparent;
+    color: rgba(230,233,236,1);
+    border-color: rgba(230,233,236,1);
+}
+/* 图形 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_rectangle_empty .icon{
+    background: url("./imgs/black/default/kongxinjuxing_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_rectangle_empty.active .icon{
+    background: url("./imgs/black/active/kongxinjuxing_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_rectangle .icon{
+    background: url("./imgs/black/default/shixinjuxing_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_rectangle.active .icon{
+    background: url("./imgs/black/active/shixinjuxing_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_ellipse_empty .icon{
+    background: url("./imgs/black/default/kongxinyuan_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_ellipse_empty.active .icon{
+    background: url("./imgs/black/active/kongxinyuan_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_ellipse .icon{
+    background: url("./imgs/black/default/shixinyuan_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.tool_ellipse.active .icon{
+    background: url("./imgs/black/active/shixinyuan_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 橡皮 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_eraser .icon{
+    background: url("./imgs/black/default/xiangpi_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_eraser.active .icon{
+    background: url("./imgs/black/active/xiangpi_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_eraser.disabled .icon{
+    background: url("./imgs/black/disable/xiangpi_disable@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 撤销 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_undo .icon{
+    background: url("./imgs/black/default/back_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_undo.active .icon{
+    background: url("./imgs/black/active/back_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_undo.disabled .icon{
+    background: url("./imgs/black/disable/back_disable@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 恢复 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_redo .icon{
+    background: url("./imgs/black/default/before_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_redo.active .icon{
+    background: url("./imgs/black/active/before_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_redo.disabled .icon{
+    background: url("./imgs/black/disable/before_disable@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 清屏 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_clear .icon{
+    background: url("./imgs/black/default/delete_default@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_clear.active .icon{
+    background: url("./imgs/black/active/delete_selected@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_clear.disabled .icon{
+    background: url("./imgs/black/disable/delete_disable@2x.png") no-repeat center center;
+    background-size: 0.22rem;
+}
+/* 选框 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend{
+    position: absolute;
+    top: 0.8rem;
+    left: calc(-3.28rem + -0.2rem);
+    width: 3.28rem;
+    border-radius: .24rem;
+    overflow: unset;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.7);
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend.student {
+    top: 1.2rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend::after,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend::after {
+    content: '';
+    display: block;
+    width: 0.07rem;
+    height: 0.2rem;
+    position: absolute;
+    right: -0.07rem;
+    top: 30%;
+    transform: translateY(-50%);
+    background: url("./imgs/black/jiantou@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend.student::after {
+    top: 18%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-eraser-list-extend{
+    position: absolute;
+    top: 0.2rem;
+    left: calc(-3.28rem + -0.2rem);
+    width: 3.28rem;
+    border-radius: .24rem;
+    overflow: unset;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.7);
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-eraser-list-extend::after{
+    content: '';
+    display: block;
+    width: 0.07rem;
+    height: 0.2rem;
+    position: absolute;
+    right: -0.063rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("./imgs/black/jiantou@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list .tool-pen-container  ,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text .font-container  ,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list .tool-shape-container{
+    display: flex;
+    justify-content: space-around;
+    height: .52rem;
+    width: 100%;
+    background: none;
+    background-image: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list .tool-slider,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text .tool-slider,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list .tool-slider,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_eraser .tool-slider{
+    height: 0.45rem;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list .color-picker,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text .color-picker,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list .color-picker{
+    z-index:999999;
+    /* position: absolute; */
+    display: flex;
+    top:0;left:0;
+    padding: .13rem;
+    background:none;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .pen-option .tool_pencil,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .pen-option .tool_highlighter  ,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .pen-option .tool_line,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .pen-option .tool_arrow{
+    width: 0.22rem;
+    height: 0.22rem;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_eraser .tool-pen-list-extend{
+    top: 0.18rem;
+    border-radius: 0.18rem;
+}
+/* 画笔 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_pencil .pen-icon{
+    background: url("./imgs/black/default/pen_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_pencil:hover .pen-icon{
+    background: url("./imgs/black/hover/pen_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_pencil.active .pen-icon{
+    background: url("./imgs/black/active/pen_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_highlighter .pen-icon{
+    background: url("./imgs/black/default/yingguangbi_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_highlighter:hover .pen-icon{
+    background: url("./imgs/black/hover/yingguangbi_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_highlighter.active .pen-icon{
+    background: url("./imgs/black/active/yingguangbi_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_line .pen-icon{
+    background: url("./imgs/black/default/line_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_line:hover .pen-icon{
+    background: url("./imgs/black/hover/line_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_line.active .pen-icon{
+    background: url("./imgs/black/active/line_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_arrow .pen-icon{
+    background: url("./imgs/black/default/jiantou_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_arrow:hover .pen-icon{
+    background: url("./imgs/black/hover/jiantou_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .tool-pen-container .pen-option.tool_arrow.active .pen-icon{
+    background: url("./imgs/black/active/jiantou_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+/* .skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-pen-list-extend .color-picker{
+    padding: 0 0.13rem;
+} */
+/* 图形 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_rectangle_empty .shape-icon{
+    background: url("./imgs/black/default/kongxinjuxing_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_rectangle_empty:hover .shape-icon{
+    background: url("./imgs/black/hover/kongxinjuxing_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_rectangle_empty.active .shape-icon{
+    background: url("./imgs/black/active/kongxinjuxing_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_rectangle .shape-icon{
+    background: url("./imgs/black/default/shixinjuxing_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_rectangle:hover .shape-icon{
+    background: url("./imgs/black/hover/shixinjuxing_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_rectangle.active .shape-icon{
+    background: url("./imgs/black/active/shixinjuxing_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_ellipse_empty .shape-icon{
+    background: url("./imgs/black/default/kongxinyuan_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_ellipse_empty:hover .shape-icon{
+    background: url("./imgs/black/hover/kongxinyuan_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_ellipse_empty.active .shape-icon{
+    background: url("./imgs/black/active/kongxinyuan_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_ellipse .shape-icon{
+    background: url("./imgs/black/default/shixinyuan_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_ellipse:hover .shape-icon{
+    background: url("./imgs/black/hover/shixinyuan_hover@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .tool-shape-container .shape-option.tool_ellipse.active .shape-icon{
+    background: url("./imgs/black/active/shixinyuan_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+/* .skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .tool-shape-list-extend .color-picker{
+    padding: 0 0.13rem;
+} */
+
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .color-picker{
+    z-index:999999;
+    /* position: absolute; */
+    display: flex;
+    top:0;left:0;
+    padding: .2rem .15rem 0 .15rem;
+    background-color:rgba(24,17,57,.5);
+    border-radius: .24rem .24rem 0 0;
+  }
+  .skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .color-picker .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: .22rem;
+  }
+  .skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .cp {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .color-picker .label {
+    width: .26rem;
+    height: .27rem;
+    border: 1px solid #fff;
+    border-radius: .03rem;
+  }
+  .skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .color-picker .hue {
+    width: .27rem;
+    height: 1.51rem;
+  }
+  .skin_black #beyond_tools .whiteboard-tool-list-container .tool-option .color-picker .saturation {
+    width: 2.8rem;
+    height: 1.89rem;
+  }
+
+  /* 小三角 */
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list::after,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text::after,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list::after,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_eraser::after{
+    content: '';
+    display: block;
+    width: 0.05rem;
+    height: 0.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: unset;
+    left: unset;
+    background: url("./imgs/black/default/more_default@2x.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.pen-list.active::after,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_text.active::after,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.shape-list.active::after,
+.skin_black #beyond_tools .whiteboard-tool-list-container .tool-option.tool_eraser.active::after{
+    content: '';
+    display: block;
+    width: 0.05rem;
+    height: 0.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: unset;
+    left: unset;
+    background: url("./imgs/black/active/more_selected@2x.png") no-repeat center center;
+    background-size: 100%;
+}

@@ -1,0 +1,299 @@
+/*修改工具箱的样式*/
+.skin_beyond_default .hold-all-box {
+  width: 3.2rem;
+  position: absolute;
+  left: 50%;
+  top: .51rem;
+  transform: translateX(-50%);
+  padding: .2rem 0 0 .3rem;
+  background: rgba(95,102,114, 0.7);
+  border: 1px solid rgba(95,102,114,1);
+  box-sizing: content-box;
+  border-radius: 0.24rem;
+  z-index: 1000;
+}
+
+.skin_beyond_default .hold-all-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.11rem;
+  left: 47%;
+  /* transform: translateX(-50%);
+  width: 0.2rem;
+  height: 0.07rem;
+  background-image: url('../../../../../../../../publish/img/beyondDefault/common/jiantou@2x.png');
+  background-size: 100% 100%; */
+  width:0;
+  height:0;
+   border-width:0rem .11rem .11rem;
+    border-style:none solid solid;
+     border-color:transparent transparent rgba(95,102,114, 0.7);
+}
+
+.skin_beyond_default .hold-all-box  .holdItemBox {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skin_beyond_default .hold-all-box  .holdAllitem {
+  width: 50%;
+  height: .4rem;
+  float: left;
+  color: #fff;
+  margin-bottom: .2rem;
+  cursor: pointer;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div {
+  margin-right: .3rem;
+  overflow: hidden;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover {
+  background: rgba(95,102,114, 1);
+  border-radius: .31rem;
+  /* color: #FFDC54; */
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:active {
+    background: rgba(95,102,114, 1);
+    border-radius: .31rem;
+  /* background: rgba(136, 118, 187, .4); */
+  /* border-radius: .31rem; */
+  /* color: #FFCC28; */
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled{
+  cursor: default;
+}
+.skin_beyond_default .hold-all-box .holdAllitem.disabled span {
+  opacity: .3;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem button {
+  width: .4rem;
+  height: .4rem;
+  float: left;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem span {
+  display: block; 
+  height: 100%;
+  text-align: left;
+  line-height: .4rem;
+  margin-left: .46rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skin_beyond_default .hold-all-box.hold-all-box-student{
+  width: auto;
+}
+.skin_beyond_default .hold-all-box.hold-all-box-student .holdAllitem {
+  width: 100%;
+}
+
+/* 工具箱按钮各状态显示 */
+.skin_beyond_default .hold-all-box .holdAllitem .answerBtn {
+  background: url('../img/holdArr/answer_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .answerBtn {
+  background: url('../img/holdArr/answer_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .answerBtn {
+  background: url('../img/holdArr/answer_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .answerBtn {
+  background: url('../img/holdArr/answer_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .turnplateBtn {
+  background: url('../img/holdArr/turnplate_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .turnplateBtn {
+  background: url('../img/holdArr/turnplate_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .turnplateBtn {
+  background: url('../img/holdArr/turnplate_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .turnplateBtn {
+  background: url('../img/holdArr/turnplate_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .timerBtn {
+  background: url('../img/holdArr/timer_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .timerBtn {
+  background: url('../img/holdArr/timer_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .timerBtn {
+  background: url('../img/holdArr/timer_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .timerBtn {
+  background: url('../img/holdArr/timer_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .qrCodeBtn {
+  background: url('../img/holdArr/qrCode_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .qrCodeBtn {
+  background: url('../img/holdArr/qrCode_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .qrCodeBtn {
+  background: url('../img/holdArr/qrCode_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .qrCodeBtn {
+  background: url('../img/holdArr/qrCode_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .responderBtn {
+  background: url('../img/holdArr/responder_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .responderBtn {
+  background: url('../img/holdArr/responder_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .responderBtn {
+  background: url('../img/holdArr/responder_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .responderBtn {
+  background: url('../img/holdArr/responder_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .sharingBtn {
+  background: url('../img/holdArr/sharing_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .sharingBtn {
+  background: url('../img/holdArr/sharing_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .sharingBtn {
+  background: url('../img/holdArr/sharing_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .sharingBtn {
+  background: url('../img/holdArr/sharing_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .blackboardBtn {
+  background: url('../img/holdArr/blackboard_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .blackboardBtn {
+  background: url('../img/holdArr/blackboard_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .blackboardBtn
+
+{
+  background: url('../img/holdArr/blackboard_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .blackboardBtn {
+  background: url('../img/holdArr/blackboard_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .movieShareBtn {
+  background: url('../img/holdArr/movie_share_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .movieShareBtn {
+  background: url('../img/holdArr/movie_share_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .movieShareBtn {
+  background: url('../img/holdArr/movie_share_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .movieShareBtn {
+  background: url('../img/holdArr/movie_share_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .smallCaptureBtn {
+  background: url('../img/holdArr/smallCaptrue_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .smallCaptureBtn {
+  background: url('../img/holdArr/smallCaptrue_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem  div:active .smallCaptureBtn {
+  background: url('../img/holdArr/smallCaptrue_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .smallCaptureBtn {
+  background: url('../img/holdArr/smallCaptrue_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem .allCaptureBtn {
+  background: url('../img/holdArr/allCaptrue_default.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:hover .allCaptureBtn {
+  background: url('../img/holdArr/allCaptrue_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem div:active .allCaptureBtn {
+  background: url('../img/holdArr/allCaptrue_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .hold-all-box .holdAllitem.disabled .allCaptureBtn {
+  background: url('../img/holdArr/allCaptrue_disable.png') no-repeat center center;
+  background-size: 100% 100%;
+}

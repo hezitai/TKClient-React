@@ -1,0 +1,36 @@
+.loadingContent{
+    height: 100%;
+    background-size: 100% 100%
+}
+.loadingContent .loadingFrame{
+    width: 624px;
+    height: 76px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+.login-loading{
+    position: absolute;
+    left: 25px;
+    top: 26px;
+    width: 0%;
+    height: 23px;
+    z-index: 2;
+}
+.loadingFrame .static-file-loading-text{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height:0.16rem;
+    /* font-size:0.16rem; */
+    font-family:PingFang-SC-Medium;
+    /* color:rgba(253,215,255,1); */
+    color:#777;
+    font-size: 20px;
+	display: block !important;
+}

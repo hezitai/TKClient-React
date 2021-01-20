@@ -1,0 +1,441 @@
+/*
+课件库样式
+*/
+.mask{
+    position: absolute;
+    top: 0.42rem;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+}
+.courseware_container{
+    position: absolute;
+    height: calc(100% - 0.42rem);
+    top: 0;
+    right: 0;
+    width:5.92rem;
+    z-index: 300;
+    background: rgba(34, 23, 70, 0.96);
+    border-left: 1px solid rgba(240, 240, 240, .1);
+    animation: slideInRight 0.3s;
+}
+/*左侧切换按钮*/
+.courseware_container .tool-icon-wrap{
+    display: inline-block;
+    height: 100%;
+    position: unset;
+    vertical-align: top;
+    background: rgba(121,92,191,0.27);
+}
+.courseware_container .tool-icon{
+    width: 0.88rem;
+    height: 0.44rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 0.2rem .08rem 0 .11rem;
+    background-color: #795CBF;
+    color: #fff;
+    border-radius: .22rem;
+}
+.courseware_container .tool-icon.active{
+    background-color: #fff;
+    color: #795CBF;
+}
+.courseware_container .tool-icon .tk-button-text{
+    font-size: 0.12rem;
+    text-align: center;
+    height: 0.44rem;
+    line-height: 0.44rem;
+}
+
+
+
+/*右侧课件列表*/
+.courseware_container .tool-extend-listbox {
+    width: 4.8rem;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%
+}
+.courseware_container .tool-extend-listbox .tk-file-list-container{
+    height: 100%;
+}
+.courseware_container .tk-file-list-container .tool-file-list-extend {
+    height: 100%;
+}
+.courseware_container .tk-list-container .tk-list-container-title{
+    align-items: center;
+    display:flex;
+    height: 0.62rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.courseware_container .tk-list-button-context.searchContainer .searchBtn{
+    background: url("../img/default/search_default.png") no-repeat center center;
+    background-size:100% 100%;
+    width: 0.15rem;
+    height: 0.14rem;
+    margin-top: 0.03rem;
+}
+.courseware_container .tk-list-button-context{
+     margin-left: 0.2rem;
+     color: #fff;
+     display:flex;
+ }
+.courseware_container .tk-list-button-context.searchContainer{
+    flex: 1;
+    align-items: center;
+}
+.courseware_container .tk-list-button-context.active-up .text,
+.courseware_container .tk-list-button-context.active-down .text{
+    color: #FFDC54;
+}
+.courseware_container .tk-list-button-context .btn-container .up {
+    background:url('../img/default/up_default.png') no-repeat center center;
+    background-size: 100%;
+}
+.courseware_container .tk-list-button-context .btn-container .down {
+    background:url('../img/default/dwon_default.png') no-repeat center center;
+    background-size: 100%;
+}
+.courseware_container .tk-list-button-context.active-up .btn-container .up {
+    background:url('../img/default/up_selected.png') no-repeat center center;
+    background-size: 100%;
+}
+.courseware_container .tk-list-button-context.active-down .btn-container .down {
+    background:url('../img/default/dwon_selected.png') no-repeat center center;
+    background-size: 100%;
+}
+.courseware_container .tk-list-filtrate{
+    display: flex;
+}
+.courseware_container .tk-list-container .tk-list-content{
+    margin: .15rem 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 0.77rem);
+}
+
+.courseware_container .tool-file-list-extend .t-participant-file-list{
+    height: 100%;
+}
+.courseware_container .tk-list-container {
+    width: 4.8rem;
+    height: 100%;
+}
+.courseware_container .tk-app-list .tk-list-item{
+    padding: 0 0.25rem 0 0.16rem;
+    height: 0.52rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.06rem;
+    width: 100%;
+}
+.courseware_container .tool-file-list-extend .t-participant-file-list .tk-icon-before-container .tk-listitem-icon,
+.courseware_container .tool-file-list-extend .t-participant-file-list .tk-icon-before-container{
+    width: 0.36rem;
+    height: 0.36rem;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-listitem-context{
+    padding-left: 0.1rem;
+    flex: 1;
+    height: 100%;
+    line-height: 0.52rem;
+    color: #fff;
+    font-size: 0.14rem;
+}
+/*白板：*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item:first-child .tk-icon-before{
+    background: url("../img/default/baiban.png") no-repeat center center;
+    background-size: 100%;
+}
+/*doc文档：*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-doc{
+    background: url("../img/default/word.png") no-repeat center center;
+    background-size: 100%;
+}
+/*ppt：*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-ppt{
+    background: url("../img/default/ppt.png") no-repeat center center;
+    background-size: 100%;
+}
+/*文本*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-txt{
+    background: url("../img/default/txt.png") no-repeat center center;
+    background-size: 100%;
+}
+/*pdf：*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-pdf{
+    background: url("../img/default/pdf.png") no-repeat center center;
+    background-size: 100%;
+}
+/*图片：*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-jpg{
+    background: url("../img/default/pic.png") no-repeat center center;
+    background-size: 100%;
+}
+/*xlsx：*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-xlsx{
+    background: url("../img/default/excle.png") no-repeat center center;
+    background-size: 100%;
+}
+/*h5课件*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-h5{
+    background: url("../img/default/icon_h5.png") no-repeat center center;
+    background-size: 100%;
+}
+/*在线h5课件*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-html{
+    background: url("../img/default/icon_html.png") no-repeat center center;
+    background-size: 100%;
+}
+/*未知课件*/
+.courseware_container .tool-file-list-extend.common .tk-list .tk-list-item .tk-icon-before.tk-icon-other{
+    background: url("../img/default/icon_unknow.png") no-repeat center center;
+    background-size: 100%;
+}
+.courseware_container .tool-file-list-extend .t-participant-file-list .tk-list-item .tk-icon-after-container{
+    float: right;
+    display: flex;
+    align-items: center;
+    width:1.08rem;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .tk-listitem-icon{
+    width: 0.18rem;
+    height: 0.11rem;
+    float: left;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 0.18rem;
+    cursor: pointer;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.off{
+    background: url("../img/default/close eye_default.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:hover{
+    background: url("../img/default/close eye_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:active{
+    background: url("../img/default/close eye_press.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-eye-icon.on{
+    background: url("../img/default/open eye_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-delete-icon{
+    width: 0.15rem;
+    height: 0.14rem;
+    background: url("../img/default/delete_default.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-delete-icon:hover{
+    background: url("../img/default/delete_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list .tk-list-item .tk-icon-after-container .file-list-delete-icon:active{
+    background: url("../img/default/delete_press.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.off{
+    width: 0.16rem;
+    height: 0.16rem;
+    background: url("../img/default/play_default.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:hover{
+    background: url("../img/default/play_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.off:active{
+    background: url("../img/default/play_press.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tk-app-list.media .tk-list-item .tk-icon-after-container .file-list-eye-icon.on{
+    width: 0.16rem;
+    height: 0.16rem;
+    background: url("../img/default/pause_default.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .tool-extend .tk-app-list-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.16rem 0;
+    border-radius: 0 0 .12rem .12rem ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+}
+.courseware_container .tool-extend .tk-app-list-button-container .upload-btn{
+    display: block;
+    width: 0.85rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    border-radius: 0.06rem;
+    border: 1px solid #FFDC54;
+    color: #FFDC54;
+    font-size: 0.14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 0.1rem;
+}
+.courseware_container .tool-extend .tk-app-list-button-container .upload-btn:hover{
+    color: #FFE067;
+}
+.courseware_container .tool-extend .tk-app-list-button-container .upload-btn:active{
+    color: #FFD73E;
+}
+.courseware_container .tool-extend .tk-app-list-button-container .upload-btn.H5{
+    margin-left: .06rem;
+    margin-right: 0.1rem;
+}
+.courseware_container .tk-list-button-context.searchContainer .btn-container.search{
+    width: 0rem;
+    height: 0.25rem;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s linear ;
+}
+.courseware_container .tk-list-button-context.searchContainer .btn-container.search.isShow{
+    opacity: 1;
+    width: 2.2rem;
+}
+.courseware_container .tk-list-button-context.searchContainer.isSearchStyle{
+    height: 0.35rem;
+    background:rgba(244,239,255,0.2);
+    line-height: 0.35rem;
+    border-radius: 0.18rem;
+    padding-left: 0.12rem;
+}
+.courseware_container .tk-list-button-context.searchContainer .btn-container.search input{
+    position: absolute;
+    color: rgba(244,239,255,0.2);
+    width: 85%;
+    border: none;
+    height: 100%;
+    background:rgba(244,239,255,0);
+}
+.courseware_container .tk-list-button-context.searchContainer .btn-container.search input::-webkit-input-placeholder{
+    color: rgba(244,239,255,0.2);
+}
+/*切换课堂文件*/
+.courseware_container .file_button{
+    width: 100%;
+    height: 0.36rem;
+    position: relative;
+    background:rgba(162,145,211,0.3);
+    border-bottom: 1px solid rgba(162,145,211,0.3);
+    cursor: pointer;
+}
+.courseware_container .file_button .navChildren{
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-left: 0.1rem;
+}
+.courseware_container .file_button .icon{
+    position: absolute;
+    right: 0.13rem;
+    top: 0.12rem;
+    display: inline-block;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: url("../img/default/up@2x (1).png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.courseware_container .file_button .icon.active{
+    background: url("../img/default/up@2x.png") no-repeat center center;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+}
+/*进度条样式*/
+.courseware_container .progress-bar-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.courseware_container .progress-bar-box .progress-bar-wrap ,
+.courseware_container .progress-bar-wrap .progress-bar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(193,179,231,0.5);
+    left: 0;
+    top: 0;
+    color: #fff;
+    z-index: 28;
+    border-radius: 0.06rem;
+    pointer-events: none;
+    cursor: default !important;
+}
+.courseware_container .progress-bar-wrap .progress-bar{
+    width: 0;
+    background:rgba(71,45,145,0.7);
+    z-index: 30;
+    text-align: center;
+    line-height: 0.52rem;
+    font-size: 0.12rem;
+    pointer-events: none;
+    cursor: default !important;
+}
+.courseware_container .cancel-file-upload{
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background: url(../img/black/close_default.png) no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    top:50%;
+    transform: translateY(-50%);
+    right: .06rem;
+}
+
+
+
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+}
+
+@keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}

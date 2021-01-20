@@ -1,0 +1,589 @@
+.skin_black .userlist-container {
+    width: 6.23rem;
+    height: calc(100% - 0.42rem);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 350;
+    background:rgba(31,32,39,1);
+    opacity:0.96;
+    animation: slideInRight 0.3s;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+.skin_black .mask{
+    position: absolute;
+    top: 0.42rem;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+}
+
+/* 标题部分 */
+.skin_black .userlist-container .title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: .58rem;
+    line-height: .58rem;
+    padding: 0 .1rem 0 0.16rem;
+    background: rgba(23,23,32, 0.6);
+}
+
+.skin_black .userlist-container .title-wrapper .userlist-title {
+    color: #fff;
+    font-size: .14rem;
+    min-width: .79rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.skin_black .userlist-container .title-wrapper .userlist-search {
+    display: flex;
+    flex-direction: row;
+    width: 4.86rem;
+    height: .34rem;
+    background: rgba(255,255,255, 0.32);
+    border-radius: .18rem;
+    align-items: center;
+}
+
+.skin_black .userlist-container .title-wrapper .userlist-search .searchBtn {
+    width: .15rem;
+    height: .13rem;
+    background-image: url("../image/black/icon_search@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: .14rem;
+}
+
+.skin_black .userlist-container .title-wrapper .userlist-search .searchInput {
+    margin-left: .15rem;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #A4A4A4;
+    font-size: .13rem;
+    line-height: .34rem;
+    width: 4rem;
+}
+
+.skin_black .userlist-container .title-wrapper .userlist-search .searchInput::-webkit-input-placeholder {
+    color: #A4A4A4;
+}
+
+
+
+/*列表部分*/
+.skin_black .userlist-container .list-wrapper{
+    height: calc(100% - .35rem - .6rem);
+}
+.skin_black .userlist-container .list-wrapper .list-box{
+    height:100%;
+    overflow-y: scroll;
+}
+
+/*滚动条样式*/
+.skin_black .userlist-container .list-wrapper .list-box::-webkit-scrollbar {/*滚动条整体样式*/
+    width: .08rem;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.skin_black .userlist-container .list-wrapper .list-box::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: .04rem;
+    -webkit-box-shadow: inset 0 0 .05rem #717171;
+    background: #717171;
+}
+.skin_black .userlist-container .list-wrapper .list-box::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    background: transparent
+}
+
+
+.skin_black .userlist-container .list-wrapper .list-box li {
+    padding: 0 .2rem;
+    display: flex;
+    height: .52rem;
+    line-height: .52rem;
+    align-items: center;
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li:hover {
+    background: rgba(97,100,104, 0.4);
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-before {
+    width: .32rem;
+    height: .32rem;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-before.disabled{
+    cursor: initial;
+}
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netWindowPc {
+    background-image: url('../image/black/icon_win_explorer@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netMacPc {
+    background-image: url('../image/black/icon_mac_explorer@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netIPad {
+    background-image: url('../image/black/icon_ipad@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netWindowClient {
+    background-image: url('../image/black/icon_win@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netMacClient {
+    background-image: url('../image/black/icon_imac@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netIPhone {
+    background-image: url('../image/black/icon_iphone@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netAndroid {
+    background-image: url('../image/black/icon_Androidphone@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netAndroidPad {
+    background-image: url('../image/black/icon_Androidpad@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netAndroidTV {
+    background-image: url('../image/black/icon_TV@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.unknownDevice {
+    background-image: url('../image/black/icon_unknow@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netWindowPc.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_win_explorer_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netMacPc.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_mac_explorer_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netIPad.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_ipad_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netWindowClient.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_win_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netMacClient.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_imac_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netIPhone.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_iphone_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netAndroid.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_Androidphone_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netAndroidPad.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_Androidpad_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.netAndroidTV.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_TV_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .use-pic.unknownDevice.udp-notOnceSuccess {
+    background-image: url('../image/black/icon_unknow_error@2x.png');
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .tk-listitem-context {
+    color: #fff;
+    font-size: .14rem;
+    margin-left: .15rem;
+    width: 2.17rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after-container{
+    display: flex;
+    align-items: center;
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after {
+    flex: 1;
+    width: .2rem;
+    height: .2rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: .3rem;
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after:last-child{
+    margin-right: 0;
+}
+
+/* 举手 */
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.hand-icon{
+    cursor: initial;
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.hand-icon.on{
+    background-image: url("../image/black/handup@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.hand-icon.off{
+    background-image: none;
+}
+
+/* 上下台 */
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.on{
+    background-image: url("../image/black/shangjiangtai_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.on:hover{
+    background-image: url("../image/black/shangjiangtai_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.on:active{
+    background-image: url("../image/black/shangjiangtai_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.on.disabled{
+    background-image: url("../image/black/shangjiangtai_disable@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.off{
+    background-image: url("../image/black/xiajiangtai_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.off:hover{
+    background-image: url("../image/black/xiajiangtai_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.off:active{
+    background-image: url("../image/black/xiajiangtai_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.v-user-update-icon.off.disabled{
+    background-image: url("../image/black/xiajiangtai_disable@2x.png");
+}
+
+/*视频*/
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.on{
+    background-image: url('../image/black/camera_default@2x.png');
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.on:hover{
+    background-image: url('../image/black/camera_hover@2x.png');
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.on:active{
+    background-image: url('../image/black/camera_press@2x.png');
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.on.disabled{
+    background-image: url('../image/black/camera_disable@2x.png');
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.off{
+    background-image: url('../image/black/close camera_default@2x.png');
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.off:hover{
+    background-image: url('../image/black/close camera_hover@2x.png');
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.off:active{
+    background-image: url('../image/black/close camera_press@2x.png');
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.video-icon.off.disabled{
+    background-image: url('../image/black/close camera_disable@2x.png');
+}
+/*音频*/
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.on{
+    background-image: url("../image/black/maikefeng_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.on:hover{
+    background-image: url("../image/black/maikefeng_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.on:active{
+    background-image: url("../image/black/maikefeng_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.on.disabled{
+    background-image: url("../image/black/maikefeng_disable@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.off{
+    background-image: url("../image/black/close maikefeng_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.off:hover{
+    background-image: url("../image/black/close maikefeng_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.off:active{
+    background-image: url("../image/black/close maikefeng_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.audio-icon.off.disabled{
+    background-image: url("../image/black/close maikefeng_disable@2x.png");
+}
+
+
+/*授权画笔*/
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.on{
+    background-image: url("../image/black/shouquan_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.on:hover{
+    background-image: url("../image/black/shouquan_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.on:active{
+    background-image: url("../image/black/shouquan_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.on.disabled{
+    background-image: url("../image/black/shouquan_disable@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.off{
+    background-image: url("../image/black/close shouquan_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.off:hover{
+    background-image: url("../image/black/close shouquan_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.off:active{
+    background-image: url("../image/black/close shouquan_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.pencil-icon.off.disabled{
+    background-image: url("../image/black/close shouquan_disable@2x.png");
+}
+
+/*禁言*/
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.on{
+    background-image: url("../image/black/jinyan_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.on:hover{
+    background-image: url("../image/black/jinyan_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.on:active{
+    background-image: url("../image/black/jinyan_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.on.disabled{
+    background-image: url("../image/black/jinyan_disable@2x.png");
+}
+
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.off{
+    background-image: url("../image/black/jinyan1_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.off:hover{
+    background-image: url("../image/black/jinyan1_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.off:active{
+    background-image: url("../image/black/jinyan1_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.mute-icon.off.disabled{
+    background-image: url("../image/black/jinyan1_disable@2x.png");
+}
+
+
+/*踢出*/
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.remove-icon{
+    background-image: url("../image/black/remove_default@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.remove-icon:hover{
+    background-image: url("../image/black/remove_hover@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.remove-icon:active{
+    background-image: url("../image/black/remove_press@2x.png");
+}
+.skin_black .userlist-container .list-wrapper .list-box li .tk-icon-after.remove-icon.disabled{
+    background-image: url("../image/black/remove_disable@2x.png");
+}
+
+/*助教弹出框*/
+.skin_black .userlist-container .user-remote-list-container{
+    width:.46rem;
+    height: 100%;
+}
+.skin_black .userlist-container .user-extend-list {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 1rem;
+    left: 0.66rem;
+    top:0;
+    background: rgba(255,255,255,0.9);
+    z-index: 130;
+    pointer-events: initial ;
+    cursor:pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 0.14rem;
+}
+
+.skin_black .userlist-container .triangle{
+    display: block;
+    width: 0.07rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.59rem;
+    background-size:100% 100%;
+    background-image: url("../image/black/jiantou@2x.png");
+    z-index: 131;
+}
+.skin_black .userlist-container .user-extend-list .extend-container{
+    position: relative;
+    height: auto;
+    right: auto;
+}
+.skin_black .userlist-container .user-extend-list .extend-container .extend-option{
+    width: 1.5rem;
+    height: 100%;
+    min-width: 1.5rem;
+    display: block;
+    color: #27272B;
+    padding: 0.01rem 0.1rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+}
+.skin_black .userlist-container .user-extend-list .extend-container .extend-option:first-child{
+    border-top-left-radius: 0.14rem;
+    border-top-right-radius: 0.14rem;
+    border-bottom: 0rem;
+
+}
+.skin_black .userlist-container .user-extend-list .extend-container .extend-option:last-child{
+    border-bottom-left-radius: 0.14rem;
+    border-bottom-right-radius: 0.14rem;
+    border-top: 0rem;
+}
+
+.skin_black .userlist-container .user-extend-list .extend-container .extend-option:not(:first-of-type):not(:last-of-type){
+    border-top: 0;
+    border-bottom: 0;
+}
+
+
+.skin_black .userlist-container .user-extend-list .extend-container .extend-option:hover{
+    background:rgba(0,119,255,1);
+    color: #fff;
+}
+
+.skin_black .userlist-container .user-extend-list .extend-container .extend-option:active{
+    background:rgba(0,119,255,1);
+    color: #fff;
+}
+.skin_black .userlist-container .user-extend-list .extend-container .extend-option.get-doc-address:hover{
+    background:rgba(0,119,255,1);
+    color: #fff;
+}
+
+
+
+
+
+
+/* 分页 */
+.skin_black .userlist-container .paging-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0.1rem;
+}
+
+.skin_black .userlist-container .paging-container .paging-left {
+    width: 0.07rem;
+    height: 0.14rem;
+    background-size: 100% 100%;
+    background-image: url("../image/black/btn_left_default@2x.png");
+    margin-right: 0.2rem;
+    cursor: pointer;
+}
+
+.skin_black .userlist-container .paging-container .paging-left:hover {
+    background-image: url("../image/black/btn_left_hover@2x.png");
+}
+
+.skin_black .userlist-container .paging-container .paging-left:active {
+    background-image: url("../image/black/btn_left_press@2x.png");
+}
+
+.skin_black .userlist-container .paging-container .paging-left.disabled {
+    cursor: default;
+    background-image: url("../image/black/btn_left_disable@2x.png");
+}
+
+.skin_black .userlist-container .paging-container .paging-right {
+    width: 0.07rem;
+    height: 0.14rem;
+    background-size: 100% 100%;
+    background-image: url("../image/black/btn_right_default@2x.png");
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+.skin_black .userlist-container .paging-container .paging-right:hover {
+    background-image: url("../image/black/btn_right_hover@2x.png");
+}
+
+.skin_black .userlist-container .paging-container .paging-right:active {
+    background-image: url("../image/black/btn_right_press@2x.png");
+}
+
+.skin_black .userlist-container .paging-container .paging-right.disabled {
+    cursor: default;
+    background-image: url("../image/black/btn_right_disable@2x.png");
+}
+
+.skin_black .userlist-container .paging-container .paging-container-info {
+    display: flex;
+    color: #fff;
+    font-size: 0.14rem;
+    align-items: center;
+}
+
+.skin_black .userlist-container .paging-container .paging-container-info .paging-input {
+    display: block;
+    font-size: 0.13rem;
+    line-height: 0.24rem;
+    border-radius: 0.14rem;
+    background-color: transparent;
+    width: 0.48rem;
+    height: 0.24rem;
+    border: 0.01rem solid #FFFFFF;
+    text-align: center;
+    outline: none;
+    margin-right: 0.13rem;
+    color: #fff;
+}
+
+.skin_black .userlist-container .paging-container .paging-container-info .paging-input:focus {
+    border-color: #52A7FF;
+}
+
+.skin_black .userlist-container .paging-container .paging-container-info .paging-sum {
+    margin-left: 0.1rem;
+}
+
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.skin_black .slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+}
+
+
+
+.skin_black .userlist-container .tk-list-item{
+    position: relative;
+}
+
+.skin_black .beyond-max-video {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: rgba(168,48,48,0.8);
+    left: 0rem;
+    /* background-color: #FF6464; */
+    /* opacity: .8; */
+    color: #ffffff;
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*自定义奖杯样式*/
+.skin_beyond_default .customTrophy-container{
+    width:5.38rem;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 300;
+    border: .05rem solid #a291d3;
+    background-color: #a291d3;
+    border-radius: .14rem;
+}
+.skin_beyond_default .customTrophy-container .container_top{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    font-size: 0.16rem;
+    color: #fff;
+}
+.skin_beyond_default .customTrophy-container .container_top .container-closeBtn{
+    position: absolute;
+    top: 0.13rem;
+    right: 0.2rem;
+    width: 0.13rem;
+    height: 0.13rem;
+    background: url("../../../../../../../publish/img/beyondDefault/common/close_default.png") no-repeat center center;
+    background-size: 100%;
+}
+.skin_beyond_default .customTrophy-container .container_top .container-closeBtn:hover{
+    background: url("../../../../../../../publish/img/beyondDefault/common/close_hover.png") no-repeat center ;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .customTrophy-container .container_top .container-closeBtn:active{
+    background: url("../../../../../../../publish/img/beyondDefault/common/close_press.png") no-repeat center ;
+    background-size: 100% 100%;
+}
+
+.skin_beyond_default .customTrophy-container .container_ul{
+    height: 2.9rem;
+    width: 5.3rem;
+    padding: 0.25rem;
+    background: #fff;
+    border-radius: 0 0 .12rem .12rem;
+}
+.skin_beyond_default .customTrophy-container .container_ul .customTrophysItem{
+    height:0.9rem;
+    width: 0.9rem;
+    border: 0.1rem solid rgba(0,0,0,0);
+    float: left;
+    margin: 0.15rem;
+    cursor: pointer;
+}
+.skin_beyond_default .customTrophy-container .container_ul .customTrophysItem:hover{
+    border: 0.1rem solid #F7F4FF;
+}
+.skin_beyond_default .customTrophy-container .container_ul .customTrophysItem:active{
+    border: 0.1rem solid #E9E4F6;
+}
+.skin_beyond_default .customTrophy-container .container_ul .customTrophysItem:nth-child(4n+0){
+    margin-right: 0;
+}

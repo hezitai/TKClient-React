@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*全体控制组件*/
+
+.skin_black .ControlPanel-main {
+  width: 1.58rem;
+  position: absolute;
+  left: 50%;
+  top: .51rem;
+  transform: translateX(-50%);
+  padding: .1rem 0;
+  background:rgba(31,32,39,0.96);
+  box-sizing: content-box;
+  border-radius: 0.24rem;
+  z-index: 1000;
+  border:1px solid rgba(44,44,48,1)
+}
+
+.skin_black .ControlPanel-main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.065rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.2rem;
+  height: 0.07rem;
+  background-image: url('../../../../../../../../publish/img/black/common/jiantou@2x.png');
+  background-size: 100% 100%;
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li {
+    width: 100%;
+    display: block;
+    height: .52rem;
+    line-height: .52rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li button {
+    width: 0.32rem;
+    height: 0.32rem;
+    background-size: 100% 100%;
+    margin: .1rem .1rem .1rem .3rem;
+    float: left;
+}
+
+.skin_black .ControlPanel-main-ul .S-all_mute_btn_span {
+    display: block;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li:hover {
+    background: rgba(0, 0, 0, .4);
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li:active {
+    background: rgba(0, 0, 0, .5);
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li.disabled{
+    cursor: default
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li.disabled span {
+    opacity: .3;
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li .S-all_mute_btn {
+    background-image: url('../img/option_black/quantijingyin_default.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:hover .S-all_mute_btn {
+    background-image: url('../img/option_black/quantijingyin_hover.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:active .S-all_mute_btn {
+    background-image: url('../img/option_black/quantijingyin_press.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li.disabled .S-all_mute_btn {
+    background-image: url('../img/option_black/quantijingyin_disable.png');
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li .S-all_speaking {
+    background-image: url('../img/option_black/quantifayan_default.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:hover .S-all_speaking {
+    background-image: url('../img/option_black/quantifayan_hover.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:active .S-all_speaking {
+    background-image: url('../img/option_black/quantifayan_press.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li.disabled .S-all_speaking {
+    background-image: url('../img/option_black/quantifayan_disable.png');
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li .S-tool-img-wrap {
+    background-image: url('../img/option_black/jingli_default.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:hover .S-tool-img-wrap {
+    background-image: url('../img/option_black/jingli_hover.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:active .S-tool-img-wrap {
+    background-image: url('../img/option_black/jingli_press.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li.disabled .S-tool-img-wrap {
+    background-image: url('../img/option_black/jingli_disable.png');
+}
+
+.skin_black .ControlPanel-main-ul .ControlPanel-li .S-oneKeyReset-btn {
+    background-image: url('../img/option_black/fuwei_default.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:hover .S-oneKeyReset-btn {
+    background-image: url('../img/option_black/fuwei_hover.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li:active .S-oneKeyReset-btn {
+    background-image: url('../img/option_black/fuwei_press.png');
+}
+.skin_black .ControlPanel-main-ul .ControlPanel-li.disabled .S-oneKeyReset-btn {
+    background-image: url('../img/option_black/fuwei_disable.png');
+}
+

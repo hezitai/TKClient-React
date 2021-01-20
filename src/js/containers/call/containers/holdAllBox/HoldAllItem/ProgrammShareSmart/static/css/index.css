@@ -1,0 +1,265 @@
+/*客户端桌面共享组件样式*/
+.skin_beyond_default .programm-share {
+	width: 3.22rem;
+	height: 2.88rem;
+	z-index: 120;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #A291D3;
+	border-radius: .14rem;
+}
+.skin_beyond_default .programm-share .programm-share-title{
+	width: 100%;
+	height: .44rem;
+	position: relative;
+	text-align: center;
+}
+.skin_beyond_default .programm-share .programm-share-title .programm-share-name {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.14rem;
+	font-weight: normal;
+	color:#fff;
+}
+
+.skin_beyond_default .programm-share .programm-share-body{
+	width: 3.14rem;
+	height: 2.4rem;
+	background: #fff;
+	margin-left: 1.5%;
+	border-radius: 0 0 .12rem .12rem;
+	padding: .26rem 5% 0;
+}
+.skin_beyond_default .programm-share .programm-share-body:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.skin_beyond_default .programm-share .programm-share-body .screen_width_tip{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: .8rem;
+    text-align: center;
+    color: #FF3535;
+    font-size: .14rem;
+}
+.skin_beyond_default .programm-share  .programm-share-body-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+/*因为波波bug暂时 增加margin-left：10%*/
+.skin_beyond_default .programm-share  .programm-share-body-main .programm-share-item {
+	height: 1.28rem;
+	width: 50%;
+}
+.skin_beyond_default .programm-share  .programm-share-body-main .programm-share-item-box {
+  width: 1.04rem;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.skin_beyond_default .programm-share  .programm-share-body-main .programm-share-item-img {
+  width: 100%;
+  height: 100%;
+}
+.skin_beyond_default .programm-share  .programm-share-body-main .tk-programm-share-btn {
+	display: inline-block;
+	color: #795CBF;
+	font-size: 0.14rem;
+	width: 100%;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	text-align: center;
+	margin-top: calc(20% - 0.28rem);
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0.2rem;
+	margin: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.skin_beyond_default .programm-share .programm-share-item-box-active .programm-share-item-border{
+	display: block;
+}
+
+/*区域共享*/
+.skin_beyond_default  .area-share-img {
+  background: url('../img/sharingModel/area_default.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+
+.skin_beyond_default  .area-share-img:hover {
+  background: url('../img/sharingModel/area_hover.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+
+.skin_beyond_default  .area-share-img:active {
+  background: url('../img/sharingModel/area_press.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+/*区域共享 end*/
+
+/*桌面共享 start*/
+ .skin_beyond_default .screen-share-img {
+  background: url('../img/sharingModel/screen_default.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+
+ .skin_beyond_default .screen-share-img:hover {
+  background: url('../img/sharingModel/screen_hover.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+
+ .skin_beyond_default .screen-share-img:active {
+  background: url('../img/sharingModel/screen_press.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+
+ .skin_beyond_default .screen-share-img-active {
+  background: url('../img/sharingModel/screen_press.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+
+ .skin_beyond_default .screen-share-img-active:hover {
+  background: url('../img/sharingModel/screen_press.png') no-repeat top;
+  -webkit-background-size: 0.8rem 0.8rem;
+  background-size: 0.8rem 0.8rem;
+}
+
+/*桌面共享 end*/
+
+/*开始共享按钮start*/
+.skin_beyond_default .tk-programm-share-start-btn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0.24rem;
+  margin: auto;
+  font-size: 0.16rem;
+  color: #fff;
+  width: 1.23rem;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  background-color: #7f59c5;
+  box-shadow: inset 0 -2px 1px rgba(105, 67, 174, 1);
+  border-radius: .25rem;
+}
+
+.skin_beyond_default .tk-programm-share-start-btn:hover {
+  background: #926bd9;
+  box-shadow: inset 0 -2px 1px rgba(129, 89, 202, 1);
+}
+
+.skin_beyond_default .tk-programm-share-start-btn:active {
+  background: #764fbd;
+  box-shadow: inset 0 -2px 1px rgba(118, 79, 189, 1);
+}
+/*开始共享按钮end*/
+
+/*停止共享按钮 start11*/
+.skin_beyond_default .screen-share-wrap {
+  background: url('../img/sharingModel/stop_share.png') no-repeat 50% 40%;
+  -webkit-background-size: 1.3rem 1.3rem;
+  background-size: 1.3rem 1.3rem;
+}
+
+.skin_beyond_default .screen-share-wrap_button {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 55%;
+  /* background-color: #7f59c5; */
+  background-color:#F25623;
+  box-shadow: inset 0 -2px 1px #F25623;
+  /* box-shadow: inset 0 -2px 1px rgba(105, 67, 174, 1); */
+  border-radius: .25rem;
+}
+
+.skin_beyond_default .screen-share-wrap_button:hover {
+  background-color:rgb(250, 92, 39);
+  box-shadow: inset 0 -2px 1px rgb(250, 92, 39);
+  /* background: #926bd9;
+  box-shadow: inset 0 -2px 1px rgba(129, 89, 202, 1); */
+}
+
+.skin_beyond_default .screen-share-wrap_button:active {
+    background-color:rgb(250, 92, 39);
+    box-shadow: inset 0 -2px 1px rgb(250, 92, 39);
+  /* background: #764fbd;
+  box-shadow: inset 0 -2px 1px rgba(118, 79, 189, 1); */
+}
+/*停止共享按钮 end*/
+
+/*关闭按钮 start*/
+.skin_beyond_default .programm-share-close {
+  background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_default.png') no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: .15rem;
+  right: .22rem;
+  float: right;
+  width: 0.13rem;
+  height: 0.13rem;
+}
+
+.skin_beyond_default .programm-share-close:hover {
+  background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_hover.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.skin_beyond_default .programm-share-close:active {
+  background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_press.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+/*关闭按钮 end*/
+
+/*选择共享程序start*/
+.skin_beyond_default .programm-share-select-box{
+	position: absolute;
+	bottom: 1.28rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+}
+.skin_beyond_default .programm-share-select-box .programm-share-select{
+	width: 5.26rem;
+	height: 0.38rem;
+	border-color: #863C18;
+	border-radius: 0.06rem;
+	border-width: 0.01rem;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding-right: .4rem;
+}
+.skin_beyond_default .programm-share-select-box .programm-share-select-tit {
+	text-align: center;
+	font-size: 0.14rem;
+	font-weight: bold;
+	line-height: 0.18rem;
+	margin-bottom: .13rem;
+	color: rgba(255,146,24,1);
+}
+/*共享程序 end*/

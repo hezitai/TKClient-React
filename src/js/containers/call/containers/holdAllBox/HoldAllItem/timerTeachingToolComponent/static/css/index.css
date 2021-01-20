@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/*计时器*/
+.skin_beyond_default .timer-div.teacher {
+	width: 2.93rem;
+	z-index: 130;
+	position: absolute;
+	top: 0;
+	border: .05rem solid #a291d3;
+	background-color: #a291d3;
+	border-radius: 0.14rem;
+}
+
+.skin_beyond_default .timer-div.student {
+	width: 2.93rem;
+	z-index: 130;
+	position: absolute;
+	top: 0;
+	border: .05rem solid #a291d3;
+	background-color: #a291d3;
+	border-radius: 0.14rem;
+}
+
+.skin_beyond_default .timer-teachTool-num-div {
+    margin-left: 0.02rem;
+    /* margin-top: 0; */
+    width: 0.5rem;
+    height: 0.78rem;
+    float: left;
+}
+
+.skin_beyond_default .timer-teachTool-header {
+	color: #fff;
+	position: relative;
+	text-align: center;
+	height: .38rem;
+	line-height: .38rem;
+}
+
+.skin_beyond_default .timer-teacher-content {
+	height: 1.62rem;
+	background: #fff;
+	border-radius: 0 0 .12rem .12rem;
+}
+.skin_beyond_default .timer-teachTool-startNowBtn{
+    width: 1.23rem;
+    height: .4rem;
+    font-size: .14rem;
+    text-align: center;
+	background-color: #795CBF;
+    color: #fff;
+    margin: 0rem auto 0;
+	line-height: .4rem;
+	border-radius:.25rem;
+	cursor: pointer;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.skin_beyond_default .timer-teachTool-startNowBtn:hover {
+    background: #926bd9;
+}
+.skin_beyond_default .timer-teachTool-startNowBtn:active {
+    background: #764fbd;
+}
+.skin_beyond_default .timer-teachTool-startBtn {
+	width: 0.34rem;
+	height: 0.34rem;
+	background: url('../img/timer/star_default.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: absolute;
+	right: .8rem;
+  	top: 0;
+	cursor: pointer;
+}
+
+.skin_beyond_default .timer-teachTool-startBtn:hover {
+	background: url('../img/timer/star_hover.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.skin_beyond_default .timer-teachTool-startBtn:active {
+	background: url('../img/timer/star_press.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.skin_beyond_default .timer-teachTool-stopBtn {
+	width: 0.34rem;
+	height: 0.34rem;
+	background: url('../img/timer/pause_default.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: absolute;
+	right: .8rem;
+  	top: 0;
+	cursor: pointer;
+}
+
+.skin_beyond_default .timer-teachTool-stopBtn:hover {
+	background: url('../img/timer/pause_hover.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.skin_beyond_default .timer-teachTool-stopBtn:active {
+	background: url('../img/timer/pause_press.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.skin_beyond_default .timer-teachTool-stopBtn.disabled {
+	background: url('../img/timer/pause_disabled.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	cursor: default;
+}
+
+.skin_beyond_default .timer-teachTool-againBtn {
+	width: 0.34rem;
+	height: 0.34rem;
+	background: url('../img/timer/again_default.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0.88rem;
+	top:0;
+	cursor: pointer;
+}
+
+.skin_beyond_default .timer-teachTool-againBtn:hover {
+	background: url('../img/timer/again_hover.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.skin_beyond_default .timer-teachTool-againBtn:active {
+	background: url('../img/timer/again_press.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+/*学生端暂停按钮*/
+.skin_beyond_default .student-teachTool-stopBtn {
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url('../img/timer/pause.png') no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: absolute;
+	top: .3rem;
+  left: 1.17rem;
+}
+
+.skin_beyond_default .timer-teacher-num{
+	overflow: hidden;
+	padding: .2rem .1rem 0 .3rem;
+}
+
+.skin_beyond_default .timer-teacher-btn{
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	height: .5rem;
+	bottom: 0;
+	left: 0;
+}
+
+.skin_beyond_default .timer-sutdentTool-wraps .timer-teacher-num{
+	padding-top: 0;
+}
+.skin_beyond_default .timer-sutdentTool-wraps .timer-teacher-btn{
+	height: 1.1rem;
+}
+
+/*计时器 上下按钮*/
+.skin_beyond_default .timer-teachTool-triangle-top{
+    width: 0.14rem;
+    height: 0.08rem;
+    background: url('../img/timer/up_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-left: 0.09rem;
+}
+.skin_beyond_default .timer-teachTool-triangle-top:hover{
+    background: url('../img/timer/up_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .timer-teachTool-triangle-top:active{
+    background: url('../img/timer/up_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .timer-teachTool-triangle-down{
+    width: 0.14rem;
+    height: 0.08rem;
+    background: url('../img/timer/down_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-left: 0.09rem;
+}
+.skin_beyond_default .timer-teachTool-triangle-down:hover{
+    background: url('../img/timer/down_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .timer-teachTool-triangle-down:active{
+    background: url('../img/timer/down_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .timer-teachTool-colon{
+    width: 0.16rem;
+    height: 0.45rem;
+    float: left;
+    font-size: 0.32rem;
+    color: #A291D3;
+    line-height: 0.45rem;
+    text-align: center;
+    margin-top: 0.15rem;
+    margin-right: .16rem;
+}
+
+.skin_beyond_default .timer-font-style-default{
+    color:#A291D3;
+}
+.skin_beyond_default .timer-teacher-num-content{
+    height: 0.46rem;
+    width: 0.32rem;
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+    line-height: 0.45rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #A291D3;
+	background: #F7F4FF;
+	border-radius: 0.02rem;
+}
+
+/*修改计时器关闭按钮样式*/
+.skin_beyond_default .timer-teacher-close-btn{
+    width: 0.13rem;
+    height: 0.13rem;
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: .13rem;
+    right: .2rem;
+    cursor: pointer;
+}
+.skin_beyond_default .timer-teacher-close-btn:hover{
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .timer-teacher-close-btn:active{
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+/*修改计时器学生端样式*/
+.skin_beyond_default .t-student .timer-teacher-content{
+    height: 1.06rem;
+    background: #fff;
+}
+.skin_beyond_default .t-student .timer-teacher-num-content{
+    height: 0.46rem;
+    margin-top: .215rem;
+}
+.skin_beyond_default .t-student .timer-teachTool-triangle-top{
+    margin-top:0;
+    margin-bottom:0;
+}
+.skin_beyond_default .t-student .timer-teachTool-triangle-down{
+    margin-top:0;
+}
+.skin_beyond_default .t-student .timer-teachTool-colon{
+    margin-top: 0.25rem;
+}
+
+.skin_beyond_default .timer-teachTool-wrap.touch-select-select.disabled .timer-teachTool-header,
+.skin_beyond_default .timer-teachTool-wrap.touch-select-select.disabled .timer-teacher-content,
+.skin_beyond_default .timer-teachTool-wrap.touch-select-select.disabled .timer-teachTool-startBtn,
+.skin_beyond_default .timer-teachTool-wrap.touch-select-select.disabled .timer-teachTool-stopBtn,
+.skin_beyond_default .timer-teachTool-wrap.touch-select-select.disabled .timer-teachTool-againBtn,
+.skin_beyond_default .timer-teachTool-wrap.touch-select-select.disabled .timer-teachTool-againBtn-unclickable{
+	pointer-events: none;
+}

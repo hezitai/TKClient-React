@@ -1,0 +1,141 @@
+button{
+    border: 0;
+    outline: none;
+}
+.server-help{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+}
+.server-help:hover{
+    color: #fff14f;
+}
+#serverHelp{
+    display: inline-block;
+    vertical-align: middle;
+}
+.server-help-btn{
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    background:url("../img/set_default.png") no-repeat ;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.server-help:hover .server-help-btn{
+    background-image: url("../img/set_hover.png");
+}
+.server-list-box{
+    width: 494px;
+    height: 415px;
+    background:url("../img/device_title_library.png") no-repeat ;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.server-list-box-close{
+    width: 22px;
+    height: 22px;
+    background: url("../img/close_default.png") no-repeat center;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+.server-list-box-close:hover{
+	background: url("../img/close_hover.png") no-repeat center;
+	background-size: 100% 100%;
+}
+.server-list-box-close:active{
+	background: url("../img/close_selected.png") no-repeat center;
+	background-size: 100% 100%;
+}
+.server-list-ok{
+	width: 100px;
+    height: 30px;
+    border-radius: 6px;
+	background: url("../img/button_can_default.png") no-repeat center center;
+	background-size: 100% 100%;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    border: 0;
+}
+.server-list-ok:hover{
+	background: url("../img/button_can_hover.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.server-list-ok:active{
+	background: url("../img/button_can_press.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.server-list-title{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.server-list-tip{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 10px;
+    color: #EB8D2D;
+    font-size: 12px;
+}
+#serverList{
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    height: calc(100% - 180px);
+    overflow: auto;
+}
+#serverList.loading{
+    background: url("../img/serverLoading.gif") no-repeat center center;
+    /* background-size: 30% auto; */
+    background-size: 36px 36px;
+}
+.server-list-item{
+    height: 40px;
+    line-height: 40px;
+    color: #863C18;
+    margin: 5px 0;
+    text-align: center;
+    background: #FBE9A7;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+}
+.server-list-item:hover{
+    background: #FFF3C5;
+    box-shadow:0px 0px 5px rgba(215,135,49,0.29);
+}
+.server-list-item.active{
+    background: #FFF3C5;
+}
+.server-list-item-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/arrows_unselected_default.png") no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+.server-list-item.active .server-list-item-icon{
+    background-image: url('../img/arrows_check_default.png')
+}

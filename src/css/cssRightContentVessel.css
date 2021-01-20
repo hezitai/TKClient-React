@@ -1,0 +1,628 @@
+@charset "UTF-8";
+.lc-container{
+	width: 14.6rem;
+	width: 100%;
+	height:100%;
+	flex: 1;
+	z-index: 206;
+	position: relative;
+	background: none;
+
+}
+
+.end-class-alert{
+    width: 4rem;
+    height: .77rem;
+    z-index: 99999;
+    position: fixed;
+    background: url("../img/Icon/endclassalert.png") no-repeat center center;
+    background-size: 100% 100%;
+    top: 0.35rem;
+    right: 3.44rem;
+}
+.count-down-element{
+    z-index: 99999;
+    position: fixed;
+    top: 1.20rem;;
+    /* right: 3.44rem; */
+    color:#ccc;
+}
+.lc-container::after{
+	content: "";
+	display: block;
+	/*width: calc(100% - 4.8%);*/
+	/*height: calc(100% - 3.64%);*/
+	width: calc(100% - 4%);
+	height: calc(100% - 2%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.lc-container::before{
+	content:"";
+	display: block;
+	position: absolute;
+	width: calc(100% );
+	height: calc(100% );
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 102;
+	/*left: -0.3rem;*/
+}
+/*手机端样式*/
+.lc-container.phone{
+	width: 100%;
+	height: 100%;
+	background: #161616;
+}
+#content.lc-container.add-fl.areaExchange  #lc_tool_container{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #page_wrap{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #studentTimerDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #answerDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #timerDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #qrCodeDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #dialDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #studentAnswerDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #responderDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #studentResponderDrag{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #coursewareRemarks{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #programmShare{
+	display: none !important;
+}
+#content.lc-container.add-fl.areaExchange  #moreBlackboardDrag{
+	display: none !important;
+}
+.lc-container .lc-full-vessel{
+	width: calc(100% - 4.6%);
+    height: calc(100% - 3.9%);
+	/*left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);*/
+	left:0;
+	top: 1.2%;
+	margin: 0 auto;
+	z-index: 120;
+}
+.lc-container .lc-full-vessel .isFullscreen{
+	background-size: 100% 100%;
+}
+.tl-all-participant-tools {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+}
+.tl-all-participant-tools .toolBox{
+	width: 100%;
+	height: 100%;
+	background:#202c4a url("../img/call/icon_box_normal.png") no-repeat center center;
+	background-size: 100% 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	cursor: pointer;
+}
+
+.tl-all-participant-tools .toolBox:hover {
+	background:#202c4a url("../img/call/icon_box_hover.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.tl-all-participant-tools .toolBox.active {
+	cursor: pointer;
+	background:#202c4a url("../img/call/icon_box_pressed.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.teach-expansion-column {
+	width: calc(100% * 1);
+	height: auto;
+	position: absolute;
+	right: 100%;
+	top:0rem;
+	background-color: #202c4a;
+	display: none;
+}
+
+.teach-expansion-column-one {
+	width: 1.2rem;
+	height: 0.5rem;
+	border: 0.01rem solid;
+	position: absolute;
+	left: -1.2rem;
+	background-color: #202c4a;
+	display: none;
+}
+
+.teach-expansion-column-client {
+	height: 1rem;
+}
+
+.teach-box-left {
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+.answer-implement-bg {
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-size: 100% 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+.answer-implement-bg:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.answer-implement-bg.disabled {
+	background-color: #202c4a;
+	opacity: 0.2;
+}
+
+.turnplate-implement-bg {
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-size: 100% 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+.turnplate-implement-bg:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.turnplate-implement-bg.disabled {
+	background-color: #202c4a;
+	opacity: 0.2;
+}
+
+.timer-implement-bg {
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-size: 100% 100%;
+	position: relative;
+	cursor: pointer;
+}
+.qrCode-implement-bg {
+	width: 50%;
+	height: 50%;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.customTrophysItemBg{
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-size: 100% 100%;
+	position: relative;
+	cursor: pointer;
+}
+.screen-shareing-wrap_button{
+    position: absolute;
+	display: block;
+    width: 2.1rem;
+    height: 0.30rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.88rem;
+    margin-top: -0.50rem;
+    border: .03rem solid #d7e5ff;
+	text-align: center;
+	overflow: hidden;
+	font-size:0.2rem ;
+	line-height: 0.3rem;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.timer-teachTool-startBtns
+{
+    width: 0.8rem;
+    height: 0.35rem;
+    text-align: center;
+    line-height: 0.35rem;
+    color:white;
+    float: left;
+    margin-left: 0.1rem;
+    cursor: pointer;
+    margin-top:0.1rem;
+}
+.stop-btn-Imgs
+{
+    width: 0.6rem;
+    height: 0.6rem;
+    background-position: 100% 100%;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    border-radius:0.3rem;
+}
+.timer-teachTool-closeSpans{
+    margin-right:0.05rem ;
+    cursor: default;
+}
+.timer-teachTool-closeSpans:hover
+{
+    color: #96CDCD;
+}
+.timer-teachTool-againBtns
+{
+    
+    width: 0.8rem;
+    height: 0.35rem;
+    background-position: 100% 100%;
+    text-align: center;
+    line-height: 0.35rem;
+    margin-top: 0.1rem;
+    color:white;
+    float: left;
+    margin-left: 0.1rem;
+    cursor: pointer;
+    display:none ;
+}
+
+.timer-implement-bg:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.timer-implement-bg.disabled {
+	background-color: #202c4a;
+	opacity: 0.2;
+}
+.qrCode-implement-bg:hover {
+	cursor: pointer;
+}
+
+.qrCode-implement-bg.disabled {
+	background-color: #202c4a;
+	opacity: 0.2;
+}
+
+.tl-all-participant-sharing {
+	width: 50%;
+	height: 50%;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.icon-base-style {
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-size: 100%!important;
+	position: relative;
+	cursor: pointer;
+}
+
+.icon-base-style:hover {
+	background-size: 100% 100%;
+}
+
+.icon-notice {
+	background: url("../img/Icon/icon-notice.png") no-repeat center center;
+}
+
+.icon-notice:hover {
+	background: url("../img/Icon/icon-notice-hover.png") no-repeat center center;
+}
+
+.icon-inform {
+	background: url("../img/Icon/icon-inform.png") no-repeat center center;
+}
+
+.icon-inform:hover {
+	background: url("../img/Icon/icon-inform-hover.png") no-repeat center center;
+}
+
+.icon-broadcast {
+	background: url("../img/Icon/icon-broadcast.png") no-repeat center center;
+}
+
+.icon-broadcast:hover {
+	background: url("../img/Icon/icon-broadcast.png") no-repeat center center;
+}
+
+.tl-more-black-board {
+	width: 50%;
+	height: 50%;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.tl-more-black-board.disabled {
+	background-color: #202c4a;
+	opacity: 0.2;
+}
+
+.responder-implement-bg {
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-size: 100% 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+.responder-implement-bg:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.responder-implement-bg.disabled {
+	background-color: #202c4a;
+	opacity: 0.2;
+}
+.tl-all-participant-sharing.disabled{
+	background-color: #202c4a;
+	opacity: 0.2;
+}
+
+.lc-full-vessel .capture-img-box{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	/* z-index: 130; */
+	z-index: 97;
+	position: absolute;
+	left:0;
+	top:0;
+	border-radius: 0.04rem;
+	border: 0.04rem solid #1aabff;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.lc-full-vessel .capture-img-box .capture-img-close{
+	height: 0.2rem;
+	width: 0.2rem;
+	position: absolute;
+	right: 0.03rem;
+	top:0.03rem;
+	background: url(../../publish/img/beyondDefault/common/jieping_close.png) no-repeat center center;
+	background-size: 100%;
+	z-index: 151;
+}
+.lc-full-vessel .capture-img-box .capture-img-layer{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 4;
+}
+.lc-full-vessel .capture-img{
+	width: auto;
+	height: auto;
+	display: block;
+}
+.lc-full-vessel .main-content-layer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 110;
+	background: rgba(255,255,255,0.01);
+}
+.all-wrap .all-wrap-layer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 110;
+}
+
+
+/* 王永威*/
+.change-width{
+	width: 1.56rem;
+}
+
+.programm-share-stop-img{
+	height:100%;
+	width:100%;
+}
+.tk-programm-share-active{
+	width: 100%;
+	height: 0.28rem;
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	text-align: center;
+
+}
+.tk-programm-share-radio{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+}
+.tk-full-share-btn{
+	position: absolute;
+	right: 25%;
+	font-size:0.20rem;
+	color: #3278fe;
+	margin-top: -20%;
+	border-radius:0.05rem 0.05rem 0.05rem 0.05rem;border:0.01rem solid #3278fe;width:1.20rem; height:0.28rem;
+}
+.tk-area-share-btn{
+	position: absolute;
+	right: 25%;
+	font-size:0.20rem;
+	color: #3278fe;
+	margin-top: -20%;
+	border-radius:0.05rem 0.05rem 0.05rem 0.05rem;border:0.01rem solid #3278fe;width:1.20rem; height:0.28rem;
+}
+.programm-share-select-close{
+	background: url(../img/call_layout/left/video/player/icon_share_closed.png) no-repeat center center;
+	background-size: 0.3rem 0.3rem;
+	position: absolute;
+	top: 0.01rem;
+	right: 0.01rem;
+	float: right;
+	width: 0.2rem;
+	height: 0.2rem;
+}
+.programm-share-select-name {
+	position: absolute;
+	width: 100%;
+	font-size:0.28rem;
+	text-align:center;
+	color:#3278fe;
+}
+
+.tk-programm-share-select-btn{
+	position: absolute;
+	right: 15%;
+	font-size: 0.20rem;
+	color: #3278fe;
+	bottom:0rem;
+	border-radius:0.05rem 0.05rem 0.05rem 0.05rem;border:0.01rem solid #3278fe;width:1.20rem; height:0.28rem;
+}
+.tk-programm-share-stop-btn{
+	position: absolute;
+	left: 15%;
+	font-size: 0.20rem;
+	color: #ff0400;
+	bottom:0rem;
+	border-radius:0.05rem 0.05rem 0.05rem 0.05rem;border:0.01rem solid #3278fe;width:1.20rem; height:0.28rem;
+}
+.programm-share-select-area{
+	position: absolute;
+	width: 90%;
+	height: 70%;
+	right:5%;
+	top:20%;
+}
+
+#windowsel{
+	width: 60%;
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	margin-top: 3.20rem;
+}
+
+
+
+
+
+.live-luckdraw-student{
+	z-index:999;
+	width: 5rem;
+	background-color: #232C48;
+	position: absolute;
+	left: 2rem;
+	top: 1rem;
+
+	/* -webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%); */
+}
+.live-luckdraw-student-img{
+	line-height:0rem;
+	position: relative;
+}
+.live-luckdraw-student-londing{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: .3rem;
+	font-size: .24rem;
+	bottom: .4rem;
+	line-height: .3rem;
+	color: #fff;
+	font-weight: 900;
+	-webkit-text-stroke: 0.01rem #6A3636;
+}
+.live-luckdraw-winnersListBox{
+
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	bottom: .6rem;
+	left: 1.05rem;
+}
+.live-luckdraw-winnersListTitle{
+	width: 100%;
+	height: .5rem;
+	text-align: center;
+	line-height: .5rem;
+	font-size: .2rem;
+	color: #fff;
+	font-weight: 700;
+	text-shadow: -.02rem -.02rem .02rem #B21515;
+}
+.live-luckdraw-winnersList{
+	/* background: rgba(255,255,255,.3); */
+	width: 100%;
+	height: 2.1rem;
+	margin-top: .4rem;
+}
+.live-luckdraw-winnerList-item{
+	width:45%;
+	height:.42rem;
+	float: left;
+	line-height: .6rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.live-luckdraw-winnerList-item.isme{
+	color:red;
+}
+.live-luckdraw-winnerList-item.isme:before{
+	content: '(我)';
+}
+.live-luckdraw-winnerList-item:nth-of-type(2),
+.live-luckdraw-winnerList-item:nth-of-type(4),
+.live-luckdraw-winnerList-item:nth-of-type(6),
+.live-luckdraw-winnerList-item:nth-of-type(8),
+.live-luckdraw-winnerList-item:nth-of-type(10){
+	float: right;
+}
+
+
+
+
+

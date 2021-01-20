@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px;width:100%;height:100%;margin: 0;padding: 0;" id="all_root"
+    data-appVersions="<%= htmlWebpackPlugin.options.appVersions %>"
+    data-packTime="<%= htmlWebpackPlugin.options.packTime %>">
+
+<head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8">
+    <meta name="author" content="talk,http://www.talk-cloud.com">
+    <!--强制让文档的宽度与设备的宽度为1：1 ， 并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <!--WebApp全屏模式隐藏地址栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--苹果强制全屏显示-->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--强制全屏显示-->
+    <meta name="full-screen" content="yes" />
+    <!--制定iphone中safari顶端的状态条的样式，（default：白色 ;  black:黑色，black-translucent：半透明）-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--告诉设备忽略将页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--告诉设备忽略将页面中的地址识别-->
+    <meta name="format-detection" content="address=no" />
+    <!--百度禁止转码-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--如果安装了 Google Chrome Frame，则使用 GCF 来渲染页面，如果没有安装 GCF，则使用最高版本的 IE 内核进行渲染。-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.publishDirFix %>css/index.css">
+    <link rel="stylesheet" href="../publish/cssTemplate/style.css">
+    <link href="https://cdn.bootcss.com/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+</head>
+<script>
+
+</script>
+
+<body class="normal" style="overflow: hidden; position: relative;width:100%;height:100%;margin: 0;padding: 0;">
+    <embed id="tknative" mainentry="true" hidden="true" type="application/x-ppapi-proxy">
+    <section id="tk_app" class="add-position-absolute-top0-left0 start-backgroundImg "
+        style="width: 100%;height: 100%;"></section>
+    <section class="static-file-loading start-backgroundImg " id="staticFileLoading"
+        style="display:none;overflow: hidden;top:0;left: 0; position: absolute;width:100%;height:100%;margin: 0;padding: 0;">
+        <!-- background: rgb(18, 26, 44); -->
+        <div class="loadingContent">
+            <div class="loadingFrame">
+                <div class="login-loading" id="loading"></div>
+                <div id="staticFileLoadingText" class="static-file-loading-text"></div>
+            </div>
+            <div id="serverListBox" class="server-list-box" style="display:none">
+                <button id="serverBoxClose" class="server-list-box-close"></button>
+                <h3 class="server-list-title" id="serverListTit"></h3>
+                <h3 class="server-list-tip" id="serverListTip"></h3>
+                <div class="server-list loading" id="serverList"></div>
+                <button class="server-list-ok" id="serverListOk"></button>
+            </div>
+        </div>
+        <p class="server-help" id="serverHelpBox" style="display:none">
+            <button class="server-help-btn"></button>
+            <span id="serverHelp"></span>
+        </p>
+    </section>
+    <!-- 监视功能模块--ByTyr -->
+    <!-- <section>
+        <div>
+            <section>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <section>
+                                    <video id="videoss" width="800px" height="500px" autoplay="autoplay"
+                                        style="display:none"></video>
+                                    <canvas id="canvasss" width="800px" height="500px" style="display:none"></canvas>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section> -->
+    <script type="text/javascript" charset="UTF-8"
+        src="<%= htmlWebpackPlugin.options.publishDirFix %>libs/js/utils/tk_adapter_tool.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="<%= htmlWebpackPlugin.options.publishDirFix %>libs/js/utils/<%= htmlWebpackPlugin.options.utilsName %>.js?versions=<%= htmlWebpackPlugin.options.utilsVersions %>">
+    </script>
+    <script type="text/javascript" charset="UTF-8"
+        src="<%= htmlWebpackPlugin.options.publishDirFix %>libs/js/utils/<%= htmlWebpackPlugin.options.popUpWindowsName %>.js?versions=<%= htmlWebpackPlugin.options.popUpWindowsVersions %>">
+    </script>
+    <script>
+        try {
+            window.$ = window.jQuery = require(
+                '<%= htmlWebpackPlugin.options.publishDirFix %>libs/js/jq/<%= htmlWebpackPlugin.options.jqName %>.js'
+                )
+        } catch (e) {};
+    </script>
+    <div style="display: none;" id="tkLoadJs"></div>
+    <script>
+        ;
+        (function () {
+            if (window.GLOBAL.getUrlParams('layout')) { //加载模板
+                var layoutId = window.GLOBAL.getUrlParams('layout');
+                if (!layoutId || layoutId === '0') {
+                    layoutId = 1
+                }
+                var layout = 'layout' + layoutId;
+                document.body.setAttribute("tkCustomDataLayout", layout);
+            }
+            if (window.GLOBAL.getUrlParams('tplId')) { //加载模板
+                var template = 'template_' + window.GLOBAL.getUrlParams('tplId');
+                if (!template || template === '0') {
+                    template = 'beyond'
+                }
+                document.body.className += " " + template + " ";
+                document.body.setAttribute("tkcustomdatatemplate", template);
+            }
+            var skinId = window.GLOBAL.getUrlParams('colourid') || window.GLOBAL.getUrlParams('skinId')
+            var skin = 'skin_' + (window.GLOBAL.getUrlParams('colourid') || window.GLOBAL.getUrlParams(
+            'skinId')); //加载皮肤
+            if (!skinId || skin === 'skin_default' || skin === 'skin_purple' || skin === 'skin_beyond_default' ||
+                skin === 'skin_beyond') {
+                skin = 'skin_beyond_default';
+            }
+            document.body.className += " " + skin + " ";
+            document.body.setAttribute("tkcustomdataskin", skin);
+            var skinUrl = undefined;
+            switch (skin) {
+                case 'skin_beyond_default': //beyond模板默认皮肤
+                    skinUrl = '<%= htmlWebpackPlugin.options.publishDirFix %>/cssTemplate/beyond.css';
+                    break;
+                case 'skin_black': //beyond模板默认皮肤
+                    skinUrl = '<%= htmlWebpackPlugin.options.publishDirFix %>/cssTemplate/beyond.css';
+                    break;
+            }
+            if (skinUrl) {
+                var link = document.createElement('link');
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.href = skinUrl;
+                link.id = 'skinContainer';
+                var head = document.getElementsByTagName('head')[0];
+                head.appendChild(link);
+            }
+
+            //获取当前的域名
+            var protocol = window.location.protocol === '' ? 'http:' : window.location.protocol;
+            var host = window.location.host;
+            // var port = window.location.port;
+            var pathname = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+            var WEBFUNC_GETSERVERAREA = "/ClientAPI/getserverarea";
+
+            var serverListArr = undefined;
+            var activeServer = undefined;
+
+            window.GLOBAL = window.GLOBAL || {};
+            window.__SDKDEV__ = ("<%= htmlWebpackPlugin.options.__SDKDEV__ %>" === 'true');
+            window.__APPVERSIONS__ = "<%= htmlWebpackPlugin.options.appVersions %>";
+            window.__APPVERSIONSTIME__ = "<%= htmlWebpackPlugin.options.appVersionsTime %>";
+            window.__SDKVERSIONS__ = "<%= htmlWebpackPlugin.options.sdkVersions %>";
+            window.__SDKVERSIONSTIME__ = "<%= htmlWebpackPlugin.options.sdkVersionsTime %>";
+            window.publishDirFix = "<%= htmlWebpackPlugin.options.publishDirFix %>";
+            var serverUpdateVersion = window.GLOBAL.getUrlParams('version');
+            var isNotUpdateClient = !(window.clientInfo && typeof window.clientInfo === 'object' && window
+                .clientInfo.isClient); //假设需要更新,不是客户端不用更新
+            var needAdvanceLoadStaticJsFileJson = {
+                jqUrl: false,
+                jqCodeUrl: false,
+                sdkUrl: false,
+                lcUrl: false,
+                webpackAssetsUrl: false,
+                commonUrl: false,
+            };
+            var language = (navigator.browserLanguage || navigator.systemLanguage || navigator.userLanguage ||
+                navigator.language);
+            var languageName = language && language.toLowerCase().match(/zh/g) ? 'chinese' : (language.toLowerCase()
+                .match(/ja/g) ? 'japan' : 'english');
+            var staticFileLoadingText = document.getElementById('staticFileLoadingText');
+            staticFileLoadingText.style.display = 'none'
+            var staticFileLoadingText = languageName === 'chinese' ? '资源加载中，当前进度' : (languageName === 'japan' ?
+                'ソースのインストール中,現在の進度' : 'Resource load, current progress ');
+            var staticFileLoadingElement = document.getElementById('staticFileLoading');
+            var loading = document.getElementById('loading')
+            var staticFileLoadingTextElement = document.getElementById('staticFileLoadingText');
+            staticFileLoadingTextElement.innerHTML = staticFileLoadingText + '0%';
+            if (window.GLOBAL.getUrlParams('refresh_thirdid') || window.GLOBAL.getUrlParams('reset')) {
+                staticFileLoadingElement.style.display = 'none';
+            } else {
+                staticFileLoadingElement.style.display = 'block';
+            }
+
+            //加载css
+            var lcStyleUrl =
+                "<%= htmlWebpackPlugin.options.publishDirFix %>js/plugs/literally/css/<%= htmlWebpackPlugin.options.lcName %>.css?versions=<%= htmlWebpackPlugin.options.lcVersions %>";
+            window.GLOBAL.loadStyle(lcStyleUrl);
+
+            var tkMainStyleUrl =
+                "<%= htmlWebpackPlugin.options.publishDirFix %>css/tkMain.css?appVersions=<%= htmlWebpackPlugin.options.appVersions %>&appVersionsTime=<%= htmlWebpackPlugin.options.appVersionsTime %>&forceUpdateTime=<%= htmlWebpackPlugin.options.forceUpdateTime %>" +
+                (serverUpdateVersion ? "&serverUpdateVersions=" + serverUpdateVersion : "");
+            window.GLOBAL.loadStyle(tkMainStyleUrl);
+
+            //封装ajax
+            var ajaxFun = function (url, method, data, calback) {
+                var ajax = new XMLHttpRequest();
+                if (method == 'get') {
+                    if (data) {
+                        url += '?';
+                        url += data;
+                        url += "&ts=" + new Date().getTime();
+                    } else {
+
+                    }
+                    ajax.open(method, url);
+
+                    ajax.send();
+                } else {
+                    url += "?ts=" + new Date().getTime();
+                    ajax.open(method, url);
+                    ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    if (data) {
+                        ajax.send(data);
+                    } else {
+                        ajax.send();
+                    }
+                }
+                ajax.onreadystatechange = function () {
+                    if (ajax.readyState == 4 && ajax.status == 200) {
+                        if (calback && typeof calback === 'function') {
+                            calback(ajax.responseText);
+                        }
+                    }
+                }
+            }
+
+            //绑定事件
+            var bindEvent = function () {
+                var serverListBox = document.getElementById('serverList');
+                var serverListItems = serverListBox.getElementsByClassName('server-list-item');
+                for (var i = 0; i < serverListItems.length; i++) {
+                    serverListItems[i].index = i;
+                    serverListItems[i].onclick = function () {
+                        for (var k = 0; k < serverListItems.length; k++) {
+                            serverListItems[k].setAttribute('class', 'server-list-item')
+                        }
+                        this.setAttribute('class', 'server-list-item active');
+                        activeServer = this.getAttribute('serverName');
+                    }
+                }
+            }
+
+            var staticServerText = languageName === 'chinese' ? '网络不畅？点击此处试试看吧' : (languageName === 'japan' ?
+                'インターネットが不安定です？ここをクリックしてください' : 'The network is not smooth? Click here to try it ');
+            var serverListTitText = languageName === 'chinese' ? '优选网络' : (languageName === 'japan' ? '最適なネットワーク' :
+                'Optimal server');
+            var serverListOkText = languageName === 'chinese' ? '确定' : (languageName === 'japan' ? 'OK' : 'OK');
+            var serverListTipText = languageName === 'chinese' ? '请选择离你所在位置最近的服务器' : (languageName === 'japan' ?
+                'そこから最も近いサーバーを選んでください。' : 'Please select the nearest server from where you are');
+            var serverListDom = document.getElementById('serverList');
+            var serverListBox = document.getElementById('serverListBox');
+            var serverListOk = document.getElementById('serverListOk')
+
+            document.getElementById('serverHelp').innerText = staticServerText;
+            document.getElementById('serverListTit').innerText = serverListTitText;
+            serverListOk.innerText = serverListOkText;
+            document.getElementById('serverListTip').innerHTML = serverListTipText;
+
+            serverListOk.onclick = function () {
+                if (activeServer !== undefined) {
+                    var hostStr = host.toString();
+                    var newHost = activeServer + hostStr.substring(hostStr.indexOf('.'));
+                    var newUrl = protocol + '//' + newHost + pathname + search + hash;
+                    window.location.replace(newUrl);
+                }
+            }
+
+            document.getElementById('serverHelpBox').onclick = function () {
+                if (serverListArr === undefined) {
+                    var url = protocol + '//' + host + WEBFUNC_GETSERVERAREA;
+                    // setTimeout(function(){
+                    // var url = 'https://demo.talk-cloud.net' + WEBFUNC_GETSERVERAREA;
+                    ajaxFun(url, 'post', undefined, function (response) {
+                        console.info('The getServerArea response is ', response);
+                        var res = JSON.parse(response);
+                        if (res.result === 0) {
+                            serverListArr = res.serverarealist;
+                            var serverList = res.serverarealist;
+                            var serverListBox = document.createElement('div');
+                            serverListBox.class = 'server-list';
+                            serverListBox.setAttribute('class', 'server-list');
+                            serverListBox.id = 'serverList';
+                            var type = languageName === 'chinese' ? 'chinesedesc' : (languageName ===
+                                'japan' ? 'japanesedesc' : 'englishdesc');
+                            for (var i = 0; i < serverList.length; i++) {
+                                var listItem = document.createElement('p');
+                                // listItem.class="server-list-item";
+                                listItem.setAttribute('class', 'server-list-item');
+                                listItem.setAttribute('serverName', serverList[i].serverareaname);
+                                listItem.innerText = serverList[i][type];
+                                var span = document.createElement('span');
+                                span.setAttribute('class', 'server-list-item-icon');
+                                // span.class="server-list-item-icon";
+                                listItem.appendChild(span)
+                                serverListBox.appendChild(listItem);
+                            }
+                            serverListDom.parentNode.replaceChild(serverListBox, serverListDom);
+                            bindEvent();
+                            serverListOk.style.display = 'block';
+                        }
+                    });
+                    // }, 5000);
+                }
+                serverListBox.style.display = 'block';
+            }
+
+            document.getElementById('serverBoxClose').onclick = function () {
+                serverListBox.style.display = 'none';
+            }
+
+            var startLoad = setTimeout(function () {
+                document.getElementById('serverHelpBox').style.display = 'inline-block';
+            }, 20000)
+
+            //加载js
+            var _loadTkMainCallback = function () {
+                var isLoadTkMain = true;
+                var loadFinshedNum = 0;
+                var needAdvanceLoadStaticJsFileJsonTotal = 0;
+                for (var key in needAdvanceLoadStaticJsFileJson) {
+                    needAdvanceLoadStaticJsFileJsonTotal++;
+                    if (!needAdvanceLoadStaticJsFileJson[key]) {
+                        isLoadTkMain = false;
+                    } else {
+                        loadFinshedNum++;
+                    }
+                }
+                if (isLoadTkMain && (window.clientInfo && typeof window.clientInfo === 'object' && window
+                        .clientInfo.isClient ? isNotUpdateClient : true)) {
+                    var tkMainUrl =
+                        "<%= htmlWebpackPlugin.options.publishDirFix %>js/tkMain.js?appVersions=<%= htmlWebpackPlugin.options.appVersions %>&appVersionsTime=<%= htmlWebpackPlugin.options.appVersionsTime %>&forceUpdateTime=<%= htmlWebpackPlugin.options.forceUpdateTime %>" +
+                        (serverUpdateVersion ? "&serverUpdateVersions=" + serverUpdateVersion : "");
+                    console.info('Page resource js file tkMainUrl load start!');
+                    window.GLOBAL.loadScript(tkMainUrl, function () {
+                        clearTimeout(startLoad);
+                        console.info('Page resource js file tkMainUrl load finshed!');
+                        loadFinshedNum++;
+                        staticFileLoadingTextElement.innerHTML = staticFileLoadingText + (parseInt((
+                                loadFinshedNum / (needAdvanceLoadStaticJsFileJsonTotal + 1)) *
+                            100)) + '%';
+                        loading.style.width = parseInt((loadFinshedNum / (
+                            needAdvanceLoadStaticJsFileJsonTotal + 1)) * 100) + '%'
+                        console.info('Page resource load finshed:' + staticFileLoadingText + (parseInt((
+                                loadFinshedNum / (needAdvanceLoadStaticJsFileJsonTotal + 1)
+                                ) * 100)) + '%');
+                        setTimeout(function () {
+                            staticFileLoadingElement.style.display = 'none';
+                        }, 50);
+                    }, {
+                        async: true
+                    });
+                } else {
+                    staticFileLoadingTextElement.innerHTML = staticFileLoadingText + (parseInt((loadFinshedNum /
+                        (needAdvanceLoadStaticJsFileJsonTotal + 1)) * 100)) + '%';
+                    loading.style.width = parseInt((loadFinshedNum / (needAdvanceLoadStaticJsFileJsonTotal +
+                        1)) * 100) + '%'
+                }
+                console.info('Page resource loading:' + JSON.stringify(needAdvanceLoadStaticJsFileJson),
+                    staticFileLoadingText + (parseInt((loadFinshedNum / (
+                        needAdvanceLoadStaticJsFileJsonTotal + 1)) * 100)) + '%');
+            };
+            try {
+                if (module) window.module = module;
+                module = undefined
+                var envMark = true
+            } catch (e) {
+                var envMark = false
+            }
+            var jqUrl =
+                "<%= htmlWebpackPlugin.options.publishDirFix %>libs/js/jq/<%= htmlWebpackPlugin.options.jqName %>.js";
+            console.info('Page resource js file jqUrl load start!');
+            window.GLOBAL.loadScript(jqUrl, function () {
+                needAdvanceLoadStaticJsFileJson.jqUrl = true;
+                console.info('Page resource js file jqUrl load finshed!');
+                _loadTkMainCallback();
+                var jqCodeUrl =
+                    "<%= htmlWebpackPlugin.options.publishDirFix %>libs/js/jq/jquery.qrcode.min.js";
+                console.info('Page resource js file jqCodeUrl load start!');
+                window.GLOBAL.loadScript(jqCodeUrl, function () {
+                    needAdvanceLoadStaticJsFileJson.jqCodeUrl = true;
+                    console.info('Page resource js file jqCodeUrl load finshed!');
+                    _loadTkMainCallback();
+                }, {
+                    async: true
+                });
+            }, {
+                async: true
+            });
+            if (envMark && window.module) module = window.module;
+            window.module = undefined
+            var sdkUrl =
+                "<%= htmlWebpackPlugin.options.publishDirFix %>libs/js/tk/<%= htmlWebpackPlugin.options.sdkName %>.js?sdkVersions=<%= htmlWebpackPlugin.options.sdkVersions %>&sdkVersionsTime=<%= htmlWebpackPlugin.options.sdkVersionsTime %>&forceUpdateTime=<%= htmlWebpackPlugin.options.forceUpdateTime %>" +
+                (serverUpdateVersion ? "&serverUpdateVersions=" + serverUpdateVersion : "");
+            console.info('Page resource js file sdkUrl load start!');
+            window.GLOBAL.loadScript(sdkUrl, function () {
+                needAdvanceLoadStaticJsFileJson.sdkUrl = true;
+                console.info('Page resource js file sdkUrl load finshed!');
+                _loadTkMainCallback();
+            }, {
+                async: true
+            });
+            var lcUrl =
+                "<%= htmlWebpackPlugin.options.publishDirFix %>js/plugs/literally/js/<%= htmlWebpackPlugin.options.lcName %>.js?versions=<%= htmlWebpackPlugin.options.lcVersions %>";
+            console.info('Page resource js file lcUrl load start!');
+            window.GLOBAL.loadScript(lcUrl, function () {
+                needAdvanceLoadStaticJsFileJson.lcUrl = true;
+                console.info('Page resource js file lcUrl load finshed!');
+                _loadTkMainCallback();
+            }, {
+                async: true
+            });
+
+            var webpackAssetsUrl =
+                "<%= htmlWebpackPlugin.options.publishDirFix %>js/webpackAssets.js?appVersions=<%= htmlWebpackPlugin.options.appVersions %>&appVersionsTime=<%= htmlWebpackPlugin.options.appVersionsTime %>&forceUpdateTime=<%= htmlWebpackPlugin.options.forceUpdateTime %>" +
+                (serverUpdateVersion ? "&serverUpdateVersions=" + serverUpdateVersion : "");
+            console.info('Page resource js file webpackAssetsUrl load start!');
+            window.GLOBAL.loadScript(webpackAssetsUrl, function () {
+                needAdvanceLoadStaticJsFileJson.webpackAssetsUrl = true;
+                console.info('Page resource js file webpackAssetsUrl load finshed!');
+                _loadTkMainCallback();
+                var commonUrl =
+                    "<%= htmlWebpackPlugin.options.publishDirFix %>js/common.js?appVersions=<%= htmlWebpackPlugin.options.appVersions %>&appVersionsTime=<%= htmlWebpackPlugin.options.appVersionsTime %>&forceUpdateTime=<%= htmlWebpackPlugin.options.forceUpdateTime %>" +
+                    (serverUpdateVersion ? "&serverUpdateVersions=" + serverUpdateVersion : "");
+                console.info('Page resource js file commonUrl load start!');
+                window.GLOBAL.loadScript(commonUrl, function () {
+                    needAdvanceLoadStaticJsFileJson.commonUrl = true;
+                    console.info('Page resource js file commonUrl load finshed!');
+                    _loadTkMainCallback();
+                }, {
+                    async: true
+                });
+            }, {
+                async: true
+            });
+            //检测客户端更新
+            if ((window.clientInfo && typeof window.clientInfo === 'object' && window.clientInfo.isClient && !
+                    isNotUpdateClient) || (window.clientInfo && typeof window.clientInfo === 'object' && Number(
+                        window.clientInfo.endtype) === 0 && window.clientInfo.clientversion <= 2018011800 &&
+                    talk_window && Number(talk_window.customcategory) === 8)) {
+                console.info('check client update start!');
+                window.checkClientUpdate(function () {
+                    console.info('check client update finshed!');
+                    isNotUpdateClient = true;
+                    _loadTkMainCallback();
+                });
+            }
+        })();
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+
+    
+    <script>
+        // const OSS = require('ali-oss');
+        //隐藏WaterMasks--ByTyr
+        // let waterMask = function (text) {
+        //     var defaultSettings = {
+        //         watermark_txt: text,
+        //         watermark_x: 20, //WaterMasks起始位置x轴坐标
+        //         watermark_y: 20, //WaterMasks起始位置Y轴坐标
+        //         watermark_rows: 1000, //WaterMasks行数
+        //         watermark_cols: 1000, //WaterMasks列数
+        //         watermark_x_space: 10, //WaterMasksx轴间隔
+        //         watermark_y_space: 90, //WaterMasksy轴间隔
+        //         watermark_color: '#000000', //WaterMasks字体颜色
+        //         watermark_alpha: 0.005, //WaterMasks透明度
+        //         watermark_fontsize: '25px', //WaterMasks字体大小
+        //         watermark_font: '微软雅黑', //WaterMasks字体
+        //         watermark_width: 200, //WaterMasks宽度
+        //         watermark_height: 50, //WaterMasks长度
+        //         watermark_angle: 20 //WaterMasks倾斜度数
+        //         //background: url('../../src/img/newInterface/reacticon/Group\ 14@2x.png') no - repeat center center;
+        //     };
+        //     //pointer-events: none
+        //     //采用配置项替换默认值，作用类似jquery.extend
+        //     if (arguments.length === 1 && typeof arguments[0] === "object") {
+        //         var src = arguments[0] || {};
+        //         for (key in src) {
+        //             if (src[key] && defaultSettings[key] && src[key] === defaultSettings[key])
+        //                 continue;
+        //             else if (src[key])
+        //                 defaultSettings[key] = src[key];
+        //         }
+        //     }
+
+        //     var oTemp = document.createDocumentFragment();
+
+        //     //获取页面最大宽度
+        //     var page_width = Math.max(document.body.scrollWidth, document.body.clientWidth);
+        //     //获取页面最大长度
+        //     var page_height = Math.max(document.body.scrollHeight, document.body.clientHeight);
+
+        //     //如果将WaterMasks列数设置为0，或WaterMasks列数设置过大，超过页面最大宽度，则重新计算WaterMasks列数和WaterMasksx轴间隔
+        //     if (defaultSettings.watermark_cols == 0 || (parseInt(defaultSettings.watermark_x + defaultSettings
+        //             .watermark_width *
+        //             defaultSettings.watermark_cols + defaultSettings.watermark_x_space * (defaultSettings
+        //                 .watermark_cols -
+        //                 1)) > page_width)) {
+        //         defaultSettings.watermark_cols = parseInt((page_width - defaultSettings.watermark_x +
+        //             defaultSettings.watermark_x_space) / (defaultSettings.watermark_width + defaultSettings
+        //             .watermark_x_space));
+        //         defaultSettings.watermark_x_space = parseInt((page_width - defaultSettings.watermark_x -
+        //             defaultSettings.watermark_width * defaultSettings.watermark_cols) / (defaultSettings
+        //             .watermark_cols -
+        //             1));
+        //     }
+        //     //如果将WaterMasks行数设置为0，或WaterMasks行数设置过大，超过页面最大长度，则重新计算WaterMasks行数和WaterMasksy轴间隔
+        //     if (defaultSettings.watermark_rows == 0 || (parseInt(defaultSettings.watermark_y + defaultSettings
+        //             .watermark_height *
+        //             defaultSettings.watermark_rows + defaultSettings.watermark_y_space * (defaultSettings
+        //                 .watermark_rows -
+        //                 1)) > page_height)) {
+        //         defaultSettings.watermark_rows = parseInt((defaultSettings.watermark_y_space + page_height -
+        //             defaultSettings.watermark_y) / (defaultSettings.watermark_height + defaultSettings
+        //             .watermark_y_space));
+        //         defaultSettings.watermark_y_space = parseInt(((page_height - defaultSettings.watermark_y) -
+        //             defaultSettings.watermark_height * defaultSettings.watermark_rows) / (defaultSettings
+        //             .watermark_rows -
+        //             1));
+        //     }
+        //     var x;
+        //     var y;
+        //     for (var i = 0; i < defaultSettings.watermark_rows; i++) {
+        //         y = defaultSettings.watermark_y + (defaultSettings.watermark_y_space + defaultSettings
+        //                 .watermark_height) *
+        //             i;
+        //         for (var j = 0; j < defaultSettings.watermark_cols; j++) {
+        //             x = defaultSettings.watermark_x + (defaultSettings.watermark_width + defaultSettings
+        //                     .watermark_x_space) *
+        //                 j;
+
+        //             var mask_div = document.createElement('div');
+        //             mask_div.id = 'mask_div' + i + j;
+        //             mask_div.appendChild(document.createTextNode(defaultSettings.watermark_txt));
+        //             //设置WaterMasksdiv倾斜显示
+        //             mask_div.style.webkitTransform = "rotate(-" + defaultSettings.watermark_angle + "deg)";
+        //             mask_div.style.MozTransform = "rotate(-" + defaultSettings.watermark_angle + "deg)";
+        //             mask_div.style.msTransform = "rotate(-" + defaultSettings.watermark_angle + "deg)";
+        //             mask_div.style.OTransform = "rotate(-" + defaultSettings.watermark_angle + "deg)";
+        //             mask_div.style.transform = "rotate(-" + defaultSettings.watermark_angle + "deg)";
+        //             mask_div.style.visibility = "";
+        //             mask_div.style.position = "absolute";
+        //             mask_div.style.pointerEvents = 'none';
+        //             //选不中
+        //             mask_div.style.left = x + 'px';
+        //             mask_div.style.top = y + 'px';
+        //             mask_div.style.overflow = "hidden";
+        //             mask_div.style.zIndex = "9999";
+        //             mask_div.style.pointerEvents = "none";
+        //             //mask_div.style.border="solid #eee 1px";
+        //             mask_div.style.opacity = defaultSettings.watermark_alpha;
+        //             mask_div.style.fontSize = defaultSettings.watermark_fontsize;
+        //             mask_div.style.color = defaultSettings.watermark_color;
+        //             mask_div.style.textAlign = "center";
+        //             mask_div.style.width = defaultSettings.watermark_width + 'px';
+        //             mask_div.style.height = defaultSettings.watermark_height + 'px';
+        //             mask_div.style.display = "block";
+        //             oTemp.appendChild(mask_div);
+        //         };
+        //     };
+        //     document.body.appendChild(oTemp);
+        // }
+
+        // waterMask(window.GLOBAL.ClassBroToken);
+        //回调函数
+        function receiveMessageFromIndex(event) {
+            // console.error('This message from Index', event.data);
+            if (typeof event.data == "string") {
+                window.GLOBAL.userToken = event.data.split('&')[1];
+                window.GLOBAL.classRoomId = event.data.split('&')[2]
+
+                if (event.data.split('&')[3] == 'tour') {
+                    window.GLOBAL.isTour = true;
+                } else {
+                    window.GLOBAL.isTour = false;
+                }
+            }
+        }
+        //监听message事件
+        // window.addEventListener("message", receiveMessageFromIndex, false);
+
+        //子页面向父页面发送消息
+        // parent.postMessage({
+        //     msg: 'iframe page loading finished'
+        // }, '*');
+        // $('#contactSer').click(function(){
+        //     console.error(1111111111111);
+        // });
+
+        // 监视功能模块--ByTyr
+        // window.addEventListener("message", takePhotosss, false);
+
+        //子页面向父页面发送消息
+        // parent.postMessage({
+        //     msg: 'iframe page loading finished'
+        // }, '*');
+        // $('#contactSer').click(function(){
+        //     console.error(1111111111111);
+        // });
+        // function takePhotosss(event){
+        // getMedia();
+        // takePhoto();
+        // }
+
+        // function getMedia() {
+
+        // }
+        // takePhoto();
+
+        // function takePhoto() {
+        //     let constraints = {
+        //         video: {
+        //             width: 800,
+        //             height: 500
+        //         },
+        //         audio: false,
+        //     };
+        //     //获得video摄像头区域
+        //     let video = document.getElementById("videoss");
+        //     //这里介绍新的方法，返回一个 Promise对象
+        //     // 这个Promise对象返回成功后的回调函数带一个 MediaStream 对象作为其参数
+        //     // then()是Promise对象里的方法
+        //     // then()方法是异步执行，当then()前的方法执行完后再执行then()内部的程序
+        //     // 避免数据没有获取到
+        //     let promise = navigator.mediaDevices.getUserMedia(constraints);
+        //     promise.then(function (MediaStream) {
+        //         video.srcObject = MediaStream;
+        //         video.play();
+        //     });
+
+        //     let everyTimeTakePhoto = 1000; //TIMES:FIVE MINUTES == 1200000
+        //     let url = null;
+        //     if (parent !== window) {
+        //         try {
+        //             url = parent.location.href;
+        //         } catch (e) {
+        //             url = document.referrer;
+        //         }
+        //     }
+
+        //     function uncompile(code) {
+        //         code = unescape(code);
+        //         var c = String.fromCharCode(code.charCodeAt(0) - code.length);
+        //         for (var i = 1; i < code.length; i++) {
+        //             c += String.fromCharCode(code.charCodeAt(i) - c.charCodeAt(i - 1));
+        //         }
+        //         return c;
+        //     }
+
+        //     function getQueryString(name) {
+        //         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        //         var r = url.substr(1).match(reg);
+        //         if (r != null) return unescape(r[2]);
+        //         return null;
+        //     };
+        //     let tk = uncompile(getQueryString('tk'));
+        //     let classroomId = getQueryString('classroomId');
+        //     // console.error(tk, classroomId);
+        //     // zhelikeyihuoqutoken
+
+        //     // let video = document.getElementById("videoss");
+        //     let canvas = document.getElementById("canvasss");
+        //     let ctx = canvas.getContext('2d');
+        //     // let img = document.getElementById( 'imgss' );
+        //     ctx.drawImage(video, 0, 0, 800, 500);
+        //     let datas = canvas.toDataURL('image/jpeg', 0.5);
+        //     //藏起来---
+
+        //     // let suffix = val.substr(val.indexOf("."));
+        //     let obj = timestamp();
+        //     let storeAs = obj;
+        //     let a = {};
+        //     let deepSecret = {};
+        //     deepSecret.secret = datas;
+        //     a.TopSecret = deepSecret;
+        //     // console.warn(datas.split(',')[1]);
+        //     var form = new FormData();
+        //     form.append("classroomId", classroomId);
+        //     // form.append("phone", phone);
+        //     form.append("base64", datas.split(',')[1]);
+
+            // let client = new OSS.Wrapper({
+            //     region: 'oss-hangzhou',
+            //     accessKeyId: 'LTAIk3OAzJkEsgQm',
+            //     accessKeySecret: 'ZS1O0kUFG46utT6QPipgqJiaYJPbRH',
+            //     bucket: 'classbro-oss'
+            // });
+            // client.options.endpoint.protocol = "https:"
+            // window.setInterval(function () {
+                // client.multipartUpload(storeAs, datas).then(function (result) {
+                // //     console.error(result);
+                // // }).catch(function (err) {
+                // //     console.error(err);
+                // // });
+                // let callback = {
+                //     callbackUrl:"http://test.classbro.com/api/uploadImg/uploadPicOSS",
+                //     callbackHost:"oss-cn-hangzhou.aliyuncs.com",
+                //     callbackBody:"classroomId=" + classroomId + "&phone=123&token=" + tk,
+                //     callbackBodyType:"application/x-www-form-urlencoded",
+
+                // };
+                // let callbackVar = {
+                //     classroomId:classroomId,
+                //     token:tk,
+                //     phone:'123',
+                // };
+                // $.ajax({
+                //     // "url": "https://www.classbro.com/api/uploadImg/uploadPic",
+                //     "url": "classbro-oss.oss-cn-hongkong.aliyuncs.com",
+                //     "method": "POST",
+                //     "headers": {
+                //         'x-oss-callback':callback,
+                //         'x-oss-callback-var':callbackVar
+                //     },
+                //     data: form,
+                //     processData: false,
+                //     contentType: false, 
+                //     success: function (r) {
+                //         console.warn('uploadPic');
+                //     },
+                //     error(){
+                //         console.error('uploadPic-Error');
+                //     }
+                // });  
+                // });
+
+                // $.ajax({
+                //     // "url": "https://www.classbro.com/api/uploadImg/uploadPic",
+                //     "url": "https://test.classbro.com/api/uploadImg/uploadPic",
+                //     "method": "POST",
+                //     "headers": {
+                //         "token": token,
+                //     },
+                //     data: form,
+                //     processData: false,
+                //     contentType: false, 
+                //     success: function (r) {
+                //         console.warn('uploadPic');
+                //     },
+                //     error(){
+                //         console.error('uploadPic-Error');
+                //     }
+                // });  
+            // }, everyTimeTakePhoto);
+
+
+            // function timestamp() {
+            //     var time = new Date();
+            //     var y = time.getFullYear();
+            //     var m = time.getMonth() + 1;
+            //     var d = time.getDate();
+            //     var h = time.getHours();
+            //     var mm = time.getMinutes();
+            //     var s = time.getSeconds();
+
+            //     console.log(y);
+
+            //     return "" + y + add0(m) + add0(d) + add0(h) + add0(mm) + add0(s);
+            // }
+
+            // function add0(m) {
+            //     return m < 10 ? '0' + m : m;
+            // }
+        // }
+    </script>
+    
+</body>
+
+</html>

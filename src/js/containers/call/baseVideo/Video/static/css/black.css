@@ -1,0 +1,434 @@
+.skin_black .video-permission-container{
+    width: 100%;
+    height: 100%;
+}
+
+/* 课件置底，视频置底 视频框距离调整 */
+.skin_black .teacher.CoursewareDown,
+.skin_black .student.CoursewareDown,
+.skin_black .teacher.VideoDown,
+.skin_black .student.VideoDown{
+    padding: 0 0.04rem 0 0; 
+}
+
+.skin_black .CoursewareDown:last-child,
+.skin_black .VideoDown:last-child{
+    padding: 0;
+}
+
+
+.skin_black .student.Encompassment{
+    padding:0.06rem 0;
+    margin: 0 0.06rem 0 0;
+}
+.skin_black .teacher.Encompassment{
+    padding:0.06rem 0;
+}
+.skin_black .teacher.Bilateral{
+    padding: 0.04rem 0;
+}
+
+.skin_black .student.Bilateral{
+    margin-right: 0.04rem;
+    margin-bottom: 0.04rem;
+}
+.skin_black .student.Bilateral:nth-child(2n+1){
+    margin-right: 0;
+}
+
+.skin_black .teacher.MorePeople{
+    margin-right: 0.04rem;
+    margin-top: 0.04rem;
+}
+.skin_black .student.MorePeople{
+    margin-right: 0.04rem;
+    margin-top: 0.04rem;
+}
+.skin_black .student.MorePeople:nth-child(2n){
+    margin-right: 0;
+}
+
+
+.skin_black .v-name-wrap .text-wrap .v-name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: .13rem;
+    color: #fff;
+    line-height: .28rem;
+    height: .28rem;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.62) 100%);
+    z-index: -2;
+    
+}
+.skin_black .v-name-wrap .text-wrap .v-name label{
+    display: inline-block;
+    max-width: 1.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.skin_black .video-participant-wrap .device-wrap .v-device-open-close .v-raisehand{
+    width: 0.27rem;
+    height: 0.27rem;
+    position: absolute;
+    right: 0.06rem;
+    top: 0.06rem;
+    background: url("../image/black/handup@2x.png");
+    background-size: 100%;
+}
+.skin_black .video-participant-wrap .device-wrap .Audiochangew{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 0.04rem;
+    bottom: 0.06rem;
+}
+.skin_black .video-participant-wrap .audio_close_icon{
+    width: 0.14rem;
+    height: 0.18rem;
+    background-size: 100% 100%;
+    background-image: url("../image/black/icon_metu@2x.png");
+    position: absolute;
+    left: 0.04rem;
+    bottom: 0.06rem;
+}
+.skin_black .video-participant-wrap .device-wrap .Audiochangew .Audiochangewlogo{
+    width:0.14rem;
+    height: 0.17rem;
+    background-image: url("../image/black/icon_yinliang@2x.png");
+    background-size: 100% 100%;
+}
+.skin_black .video-participant-wrap .device-wrap .Audiochangew .Audiochange {
+    max-width: 0.4rem;
+    height: 0.12rem;
+    display: inline-block;
+    background: url("../image/black/yinliangtiao_all.png") no-repeat;
+    background-size: 0.4rem 100%;
+    transition:all 0.8s;
+    position: relative;
+    margin-left: 0.04rem;
+}
+.skin_black .video-participant-wrap .device-wrap .Audiochangew .Audiochange::after{
+    content: "";
+    width: 0.4rem;
+    display: inline-block;
+    height: 0.12rem;
+    background: url("../image/black/yinliangtiao_no.png") no-repeat;
+    background-size: 100% 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.skin_black .v-name-wrap .text-wrap .gift-show-container{
+    border-radius: 0.12rem;
+	z-index: 99;
+	height: 0.24rem;
+	font-size: 0.14rem;
+	position: absolute;
+	right: 11.2%;
+	display: flex;
+	align-items: center;
+    top: 0.05rem;
+    left: 0.05rem;
+    right: unset;
+    padding: 0;
+}
+.skin_black .v-name-wrap .text-wrap .gift-icon{
+    display: block;
+    width: 0.26rem;
+    height: 0.26rem;
+    margin-right: 0;
+    background-image: url("../image/black/jiangbei@2x.png");
+    background-size: 100% 100%;
+    z-index:2;
+}
+.skin_black .v-name-wrap .text-wrap .gift-num{
+    line-height: 0.25rem;
+    height: 0.25rem;
+    background-color:rgba(44,44,44,0.5);
+    margin-left: -0.16rem;
+    display: block;
+    padding-left: 0.25rem;
+    position: relative;
+    z-index:1;
+    color: #fff;
+    border-top-right-radius: 0.15rem;
+    padding-right: 0.1rem;
+    border-bottom-right-radius: 0.15rem;
+    font-weight:400;
+}
+
+
+.skin_black .video-participant-wrap .device-wrap .v-device-open-close .v-user-pen.on{
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0.05rem;
+    right: 0.06rem;
+    display: block;
+    width: 0.13rem;
+	height: 0.13rem;
+}
+.skin_black .video-participant-wrap .device-wrap .v-device-open-close .v-user-pen.on:before{
+    content: "\e900";
+}
+.skin_black .video-participant-wrap .device-wrap .v-device-open-close .v-user-pen.off{
+	display: none;
+}
+.skin_black .video-participant-wrap .device-wrap .v-device-open-close .v-user-pen .primaryColor{
+    width:.13rem;
+    height:.03rem;
+    border-radius:.02rem;
+    display: block;
+    position: absolute;
+    bottom: -0.01rem;
+    left: 0;
+    z-index: -1;
+}
+.skin_black .video-hover-function-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 120;
+	display: none;
+	text-align: center;
+    bottom: 0;
+    background:rgba(0,0,0,0.6);
+    align-items: center;
+}
+/*视频按钮*/
+.skin_black .video-wrap.isHover:hover .video-hover-function-container{
+	display: flex;
+}
+.skin_black .video-hover-function-container .button-set.role-student{
+    flex-wrap: wrap;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: unset;
+}
+.skin_black .video-hover-function-container .button-set.role-student button{
+    width: 25%;
+    background-size: 0.3rem 0.3rem;
+    height: 0.3rem;
+    margin-right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.skin_black .video-hover-function-container .button-set.role-student button:nth-child(n+5){
+    margin-top: 0.3rem;
+}
+
+.skin_black .video-hover-function-container .scrawl-btn.yes{
+    background-image: url("../image/black/btn_close shouquan_default@2x.png");
+}
+.skin_black .video-hover-function-container .scrawl-btn.yes:hover{
+    background-image: url("../image/black/btn_close shouquan_hover@2x.png");
+}
+.skin_black .video-hover-function-container .scrawl-btn.yes:active{
+    background-image: url("../image/black/btn_close shouquan_press@2x.png");
+}
+
+.skin_black .video-hover-function-container .scrawl-btn.no{
+    background-image: url("../image/black/btn_shouquan_default@2x.png");
+}
+.skin_black .video-hover-function-container .scrawl-btn.no:hover{
+    background-image: url("../image/black/btn_shouquan_hover@2x.png");
+}
+.skin_black .video-hover-function-container .scrawl-btn.no:active{
+    background-image: url("../image/black/btn_shouquan_press@2x.png");
+}
+
+.skin_black .video-hover-function-container .platform-btn.yes{
+    background-image: url("../image/black/btn_xiatai_default@2x.png");
+}
+.skin_black .video-hover-function-container .platform-btn.yes:hover{
+    background-image: url("../image/black/btn_xiatai_hover@2x.png");
+}
+.skin_black .video-hover-function-container .platform-btn.yes:active{
+    background-image: url("../image/black/btn_xiatai_press@2x.png");
+}
+
+.skin_black .video-hover-function-container .platform-btn.no{
+    background-image: url("../image/black/btn_shangtai_default@2x.png");
+}
+.skin_black .video-hover-function-container .platform-btn.no:hover{
+    background-image: url("../image/black/btn_shangtai_hover@2x.png");
+}
+.skin_black .video-hover-function-container .platform-btn.no:active{
+    background-image: url("../image/black/btn_shangtai_press@2x.png");
+}
+
+
+
+.skin_black .video-hover-function-container .audio-btn.yes{
+    background-image: url("../image/black/btn_mute_default@2x.png");
+}
+.skin_black .video-hover-function-container .audio-btn.yes:hover{
+    background-image: url("../image/black/btn_mute_hover@2x.png");
+}
+.skin_black .video-hover-function-container .audio-btn.yes:active{
+    background-image: url("../image/black/btn_mute_press@2x.png");
+}
+
+.skin_black .video-hover-function-container .audio-btn.no{
+    background-image: url("../image/black/btn_audio_default@2x.png");
+}
+.skin_black .video-hover-function-container .audio-btn.no:hover{
+    background-image: url("../image/black/btn_audio_hover@2x.png");
+}
+.skin_black .video-hover-function-container .audio-btn.no:active{
+    background-image: url("../image/black/btn_audio_press@2x.png");
+}
+
+.skin_black .video-hover-function-container .video-btn.yes{
+    background-image: url("../image/black/btn_close camera_default@2x.png");
+}
+.skin_black .video-hover-function-container .video-btn.yes:hover{
+    background-image: url("../image/black/btn_close camera_hover@2x.png");
+}
+.skin_black .video-hover-function-container .video-btn.yes:active{
+    background-image: url("../image/black/btn_close camera_press@2x.png");
+}
+
+.skin_black .video-hover-function-container .video-btn.no{
+    background-image: url("../image/black/btn_camera_default@2x.png");
+}
+.skin_black .video-hover-function-container .video-btn.no:hover{
+    background-image: url("../image/black/btn_camera_hover@2x.png");
+}
+.skin_black .video-hover-function-container .video-btn.no:active{
+    background-image: url("../image/black/btn_camera_press@2x.png");
+}
+
+
+.skin_black .video-hover-function-container .gift-btn{
+    background-image: url("../image/black/btn_trophy_default@2x.png");
+}
+.skin_black .video-hover-function-container .gift-btn:hover{
+    background-image: url("../image/black/btn_trophy_hover@2x.png");
+}
+.skin_black .video-hover-function-container .gift-btn:active{
+    background-image: url("../image/black/btn_trophy_press@2x.png");
+}
+
+
+.skin_black .video-hover-function-container .restoreDrag-btn{
+    background-image: url("../image/black/btn_fuwei_default@2x.png");
+}
+.skin_black .video-hover-function-container .restoreDrag-btn:hover{
+    background-image: url("../image/black/btn_fuwei_hover@2x.png");
+}
+.skin_black .video-hover-function-container .restoreDrag-btn:active{
+    background-image: url("../image/black/btn_fuwei_press@2x.png");
+}
+
+.skin_black .video-hover-function-container .oneKeyReset-btn{
+    background-image: url("../image/black/btn_fuwei_default@2x.png");
+
+}
+.skin_black .video-hover-function-container .oneKeyReset-btn:hover{
+    background-image: url("../image/black/btn_fuwei_hover@2x.png");
+
+}
+.skin_black .video-hover-function-container .oneKeyReset-btn:active{
+    background-image: url("../image/black/btn_fuwei_press@2x.png");
+
+}
+
+.skin_black .video-hover-function-container .pointerReminder-btn.no{
+    background-image: url("../image/black/btn_jiaobian_default@2x.png");
+}
+.skin_black .video-hover-function-container .pointerReminder-btn.no:hover{
+    background-image: url("../image/black/btn_jiaobian_hover@2x.png");
+}
+.skin_black.video-hover-function-container .pointerReminder-btn.no:active{
+    background-image: url("../image/black/btn_jiaobian_press@2x.png");
+}
+
+
+.skin_black .video-hover-function-container .pointerReminder-btn.yes{
+    background-image: url("../image/black/btn_close_jiaobian_default@2x.png");
+}
+.skin_black .video-hover-function-container .pointerReminder-btn.yes:hover{
+    background-image: url("../image/black/btn_close_jiaobian_hover@2x.png");
+}
+.skin_black .video-hover-function-container .pointerReminder-btn.yes:active{
+    background-image: url("../image/black/btn_close_jiaobian_press@2x.png");
+}
+
+
+
+
+
+.skin_black .video-hover-function-container .areaExchange-btn{
+    background-image: url("../image/black/btn_change_default@2x.png");
+}
+.skin_black .video-hover-function-container .areaExchange-btn:hover{
+    background-image: url("../image/black/btn_change_hover@2x.png");
+}
+.skin_black .video-hover-function-container .areaExchange-btn:active{
+    background-image: url("../image/black/btn_change_press@2x.png");
+}
+
+
+.skin_black .video-hover-function-container .onlyAudio-btn.no{
+    background: url('../image/black/btn_yinpin_default@2x.png');
+}
+.skin_black .video-hover-function-container .onlyAudio-btn.no:hover{
+    background-image: url('../image/black/btn_yinpin_hover@2x.png');
+}
+.skin_black .video-hover-function-container .onlyAudio-btn.no:active{
+    background-image: url('../image/black/btn_yinpin_press@2x.png');
+}
+
+.skin_black .video-hover-function-container .onlyAudio-btn.yes{
+    background: url('../image/black/btn_yinpin_close_default@2x.png');
+}
+.skin_black .video-hover-function-container .onlyAudio-btn.yes:hover{
+    background-image: url('../image/black/btn_yinpin_close_hover@2x.png');
+}
+.skin_black .video-hover-function-container .onlyAudio-btn.yes:active{
+    background-image: url('../image/black/btn_yinpin_close_press@2x.png');
+}
+
+
+/* 如果是一对一不设置padding */
+.skin_black .oneToone .video-scale4-3,
+.skin_black .oneToone .video-scale16-9{
+    padding-bottom: 0;
+}
+
+
+@font-face {
+    font-family: 'tk-icon';
+    src:  url('../image/fonts/tk-icon.eot?g5gy6f');
+    src:  url('../image/fonts/tk-icon.eot?g5gy6f#iefix') format('embedded-opentype'),
+    url('../image/fonts/tk-icon.ttf?g5gy6f') format('truetype'),
+    url('../image/fonts/tk-icon.woff?g5gy6f') format('woff'),
+    url('../image/fonts/tk-icon.svg?g5gy6f#tk-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'tk-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pen:before {
+    content: "\e900";
+}

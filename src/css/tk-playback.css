@@ -1,0 +1,142 @@
+/*回放相关的样式*/
+@charset "UTF-8";
+.playback #all_wrap.all-wrap{
+    height: calc(100% - 0.5rem);
+}
+.playback #all_wrap.all-wrap .playback-barrier-bed{
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    /*background-color: rgba(0,0,0,0.3);*/
+    position: absolute;
+    top:0;
+    left:0;
+}
+/*.playback .chat-part{*/
+    /*height: 100%;*/
+/*}*/
+.chat-all-container  .chat-part.ofHide{
+    height: 100%;
+}
+.playback .video-controller-replay.video-controller{
+    width: 99%;
+    height: 0.84rem;
+    border-radius: 0.42rem;
+    background: rgba(38,16,68,0.6);
+    z-index: 989;
+}
+.whiteboard-sdk-px-to-rem.tk-video-player-container.playback{
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    background: none;
+    width: 100%;
+    height: 0.84rem;
+    z-index: 989;
+    opacity: 0;
+    transition: opacity 1s linear ;
+}
+.whiteboard-sdk-px-to-rem.tk-video-player-container.playback.show{
+    opacity: 1;
+}
+.whiteboard-sdk-px-to-rem.playback .tk-slider.tk-playback-progress-slider {
+    height: 0.06rem;
+    width: 93%;
+}
+.whiteboard-sdk-px-to-rem.playback .tk-slider.rc-slider .rc-slider-rail{
+    border-radius: 0.05rem;
+    background: #533F72;
+    height: 0.06rem;
+}
+.whiteboard-sdk-px-to-rem.playback .tk-slider.tk-playback-progress-slider.rc-slider .rc-slider-track{
+    border-radius: 0.05rem;
+    height: 0.06rem;
+    background: #fff;
+}
+.whiteboard-sdk-px-to-rem.playback  .tk-slider.tk-playback-progress-slider.rc-slider .rc-slider-handle{
+    display: none; /*TODO 暂时隐藏回放的进度条上的球*/
+    border: solid 0.02rem #ffffff;
+    background: #fff;
+}
+.whiteboard-sdk-px-to-rem.playback .tk-slider.rc-slider .rc-slider-handle{
+    margin-left: -0.05rem;
+    margin-top: -0.03rem;
+    width: 0.12rem;
+    height: 0.12rem;
+}
+/*.whiteboard-sdk-px-to-rem.playback .tk-slider.rc-slider .rc-slider-handle:active,*/
+/*.whiteboard-sdk-px-to-rem.playback .tk-slider.rc-slider .rc-slider-handle:focus{*/
+    /*box-shadow: 0 0 0.05rem #57c5f7;*/
+/*}*/
+.whiteboard-sdk-px-to-rem.playback .tk-slider.tk-playback-progress-slider.rc-slider .rc-slider-handle:active{
+    box-shadow: 0 0 0.05rem #57c5f7;
+}
+.playback.tk-video-player-container .tk-media-player.tk-media-player-total-control-box{
+    opacity:1;
+    bottom: 0.05rem;
+}
+.playback .replay-container{
+    width: 100%;
+    height: 0.05rem;
+}
+.whiteboard-sdk-px-to-rem.playback .volume-info-container .tk-slider.tk-playback-progress-slider{
+    margin-top: 0.1rem;
+}
+.whiteboard-sdk-px-to-rem.playback .media-player-box .volume-info-container{
+    width: 2rem;
+}
+.whiteboard-sdk-px-to-rem.playback .volume-info-container .tk-slider.tk-playback-progress-slider{
+    width: 80%;
+}
+.playback #playback_video_progress_slide.video-progress-bar-vessel{
+    width: 100%;
+    border-radius: 0;
+    height: 0.04rem;
+    background: transparent;
+}
+.playback #playback_video_progress_slide.video-progress-bar-vessel .video-progress-bar{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    z-index: 999;
+    background: transparent;
+    height: 0.05rem;
+}
+.playback .video-func-btn-container.video-func-btn-container-replay{
+    height: 100%;
+    padding: 0.18rem 0.25rem;
+    width: 100%;
+    /*background: #202c4a;*/
+}
+
+.play-pause-btn{
+    width: 0.49rem;
+    height: 0.49rem;
+    background-size: 100% 100%;
+}
+.whiteboard-sdk-px-to-rem.playback .media-player-box .media-player-info-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0 0.1rem 0.2rem;
+}
+/*.playback-progress-bar{*/
+    /*background: rgba(0,0,0,0.6)!important;*/
+/*}*/
+.playback .whiteboard-sdk-px-to-rem .tk-audio-player-container{
+    width: auto;
+    left: 1.5rem;
+}
+.playback .whiteboard-sdk-px-to-rem .media-player-box .volume-info-container{
+    display: none;
+}
+.playback .whiteboard-sdk-px-to-rem .media-player-box .media-player-info-container{
+    padding-left: 0;
+}
+.playback .whiteboard-sdk-px-to-rem.playback .media-player-box .media-player-info-container{
+    padding-left: 0.2rem;
+}
+.playback .whiteboard-sdk-px-to-rem .media-player-box .media-player-name-time-container{
+    height: 100%;
+    min-width: 1.3rem;
+    white-space:nowrap;
+}

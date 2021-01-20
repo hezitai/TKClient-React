@@ -1,0 +1,183 @@
+/* header */
+.skin_black .mask2{
+  position: absolute;
+  top: 0.42rem;
+  left:0;
+  right: 0; 
+  width: 100%;
+  z-index: 500;
+}
+.skin_black .header-wrap {
+    background-color: #2C2C30;
+    box-shadow: none;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-help {
+    background: url('../img/black/default/help.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-help:hover {
+    background: url('../img/black/hover/help.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-help:active,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-help.active {
+    background: url('../img/black/active/help.png') no-repeat;
+    background-size: 100%;
+}
+
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-switchLayout{
+    background-image: url("../img/black/default/btn_buju_default@2x.png");
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-switchLayout:hover{
+    background-image: url("../img/black/hover/btn_buju_hover@2x.png");
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-switchLayout:active,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-switchLayout.active{
+    background-image: url("../img/black/active/btn_buju_selected@2x.png");
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-switchLayout.disabled{
+    background-image: url("../img/black/disabled/btn_buju_disable@2x.png");
+}
+
+.skin_black .showHand {
+    color: #FF3F3F;
+    background: url('../img/default/default/handup@2x.png') no-repeat center;
+    background-size: 100%;
+    width: 1.26rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.12rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-roster {
+    background: url('../img/black/default/roster.png') no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-roster.hand::after{
+    content:'';
+    display: block;
+    width: 0.08rem;
+    height: 0.08rem;
+    background: #FF3F3F;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-roster:hover {
+    background: url('../img/black/hover/roster.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-roster:active,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-roster.active {
+    background: url('../img/black/active/roster.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-courseware {
+    background: url('../img/black/default/courseware.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-courseware:hover {
+    background: url('../img/black/hover/courseware.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-courseware:active ,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-courseware.active {
+    background: url('../img/black/active/courseware.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-tools {
+    background: url('../img/black/default/tools.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-tools:hover {
+    background: url('../img/black/hover/tools.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-tools:active ,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-tools.active {
+    background: url('../img/black/active/tools.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-option {
+    background: url('../img/black/default/option.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-option:hover {
+    background: url('../img/black/hover/option.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-option:active ,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-option.active {
+    background: url('../img/black/active/option.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-chat {
+    background: url('../img/black/default/chat.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-chat:hover {
+    background: url('../img/black/hover/chat.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-chat:active,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-chat.active {
+    background: url('../img/black/active/chat.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-setting {
+    background: url('../img/black/default/setting.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-setting:hover {
+    background: url('../img/black/hover/setting.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-setting:active ,
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-setting.active {
+    background: url('../img/black/active/setting.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-f11 {
+    background: url('../img/black/default/f11.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-f11:hover {
+    background: url('../img/black/hover/f11.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .Tk-header-othericon .Tk-header-icon.icon-reset {
+    background: url('../img/black/default/reset.png') no-repeat;
+    background-size: 100%;
+}
+
+.skin_black .h-btn-wrap button {
+    color: #FFFFFF;
+    background: url('../img/black/default/class.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .h-btn-wrap button:hover {
+    background: url('../img/black/hover/class.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .h-btn-wrap button:active {
+    background: url('../img/black/active/class.png') no-repeat;
+    background-size: 100%;
+}
+.skin_black .local-recording-container {
+    background: #3B3B3F ;
+}

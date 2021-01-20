@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*转盘*/
+.skin_black  .dial-teachComponent-bg
+{
+	width: 100%;
+	height: 100%;
+}
+
+.skin_black .dial-teachComponent-turntable {
+    width: 100%;
+    height: 100%;
+    background: url('../img/turntable_black/turntable.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black .dialCloseP {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url('../../../../../../../../../../publish/img/black/common/circle_close_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -0.36rem;
+    top: 0;
+    cursor: pointer;
+}
+.skin_black .dialCloseP:hover {
+    background: url('../../../../../../../../../../publish/img/black/common/circle_close_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_black  .dialCloseP:active{
+    background: url('../../../../../../../../../../publish/img/black/common/circle_close_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black .dial-teachComponent-pointer-button {
+    width: 0.62rem;
+    height: 0.81rem;
+    position: absolute;
+    background: url('../img/turntable_black/btn_start_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 666;
+    /* top: 1.2rem;
+    left: 1.33rem; */
+    top: calc( 50% - 0.405rem );
+    left: calc(50% - .31rem);
+}
+
+.skin_black  .dial-teachComponent-pointer-button:hover {
+    background: url('../img/turntable_black/btn_start_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black  .dial-teachComponent-pointer-button:active {
+    background: url('../img/turntable_black/btn_start_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}

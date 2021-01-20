@@ -1,0 +1,212 @@
+/*切换布局 组件样式*/
+.skin_beyond_default .layout-container {
+    width: 2.74rem;
+    position: absolute;
+    left: 50%;
+    top: .51rem;
+    transform: translateX(-50%);
+    padding: .16rem .23rem .21rem .21rem;
+    background: rgba(34,23,70, 0.96);
+    border: 1px solid rgba(80,58,143,1);
+    box-sizing: content-box;
+    border-radius: 0.24rem;
+    z-index: 1000;
+    cursor: initial;
+}
+.skin_beyond_default .layout-container::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -0.065rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.2rem;
+    height: 0.07rem;
+    background-image: url('../../../../../../../../publish/img/beyondDefault/common/jiantou@2x.png');
+    background-size: 100% 100%;
+}
+.skin_beyond_default .layout-container .layout-box{
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.skin_beyond_default .layout-container .layout-box .layout{
+    display: flex;
+    flex-direction: column;
+    margin-right: .26rem;
+    margin-bottom: .17rem;
+    cursor: pointer;
+}
+.skin_beyond_default .layout-container .layout-box .layout:nth-child(3n){
+    margin-right: 0;
+}
+.skin_beyond_default .layout-container .layout-box .layout:nth-child(n+4){
+    margin-bottom: 0;
+}
+.skin_beyond_default .layout-container .layout-box .layout .img{
+    width: .74rem;
+    height: .61rem;
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* 课件置底 */
+.skin_beyond_default .layout-container .layout-box .layout.CoursewareDown .img{
+    background-image: url("../img/beyond/kejanzhidi_default@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.CoursewareDown:hover .img{
+    background-image: url("../img/beyond/kejanzhidi_hover@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.CoursewareDown:active .img,
+.skin_beyond_default .layout-container .layout-box .layout.CoursewareDown.active .img{
+    background-image: url("../img/beyond/kejanzhidi_press@2x.png");
+}
+/* 视频置底 */
+.skin_beyond_default .layout-container .layout-box .layout.VideoDown .img{
+    background-image: url("../img/beyond/shipinzhidi_default@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.VideoDown:hover .img{
+    background-image: url("../img/beyond/shipinzhidi_hover@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.VideoDown:active .img{
+    background-image: url("../img/beyond/shipinzhidi_press@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.VideoDown.active .img{
+    background-image: url("../img/beyond/shipinzhidi_press@2x.png");
+}
+
+
+/* 围绕型 */
+.skin_beyond_default .layout-container .layout-box .layout.Encompassment .img{
+    background-image: url("../img/beyond/weirao_default@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.Encompassment:hover .img{
+    background-image: url("../img/beyond/weirao_hover@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.Encompassment:active .img{
+    background-image: url("../img/beyond/weirao_press@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.Encompassment.active .img{
+    background-image: url("../img/beyond/weirao_press@2x.png");
+}
+
+
+/* 左右排列 */
+.skin_beyond_default .layout-container .layout-box .layout.Bilateral .img{
+    background-image: url("../img/beyond/zuoyou_default@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.Bilateral:hover .img{
+    background-image: url("../img/beyond/zuoyou_hover@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.Bilateral:active .img{
+    background-image: url("../img/beyond/zuoyou_press@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.Bilateral.active .img{
+    background-image: url("../img/beyond/zuoyou_press@2x.png");
+}
+
+/* 超多人 */
+.skin_beyond_default .layout-container .layout-box .layout.MorePeople .img{
+    background-image: url("../img/beyond/duoren_default@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.MorePeople:hover .img{
+    background-image: url("../img/beyond/duoren_hover@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.MorePeople:active .img{
+    background-image: url("../img/beyond/duoren_press@2x.png");
+}
+.skin_beyond_default .layout-container .layout-box .layout.MorePeople.active .img{
+    background-image: url("../img/beyond/duoren_press@2x.png");
+}
+
+
+.skin_beyond_default .layout-container .layout-box .layout .text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.04rem;
+}
+
+.skin_beyond_default .layout-container .layout-box .layout .text-box .name{
+    color: #fff;
+    font-size: .12rem;
+    max-width: .74rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: .17rem;
+}
+.skin_beyond_default .layout-container .layout-box .layout.active .text-box .name{
+    color: #FFDC54;
+}
+.skin_beyond_default .layout-container .other-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .22rem;
+}
+.skin_beyond_default .layout-container .other-box .synStudent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.skin_beyond_default .layout-container .other-box .synStudent .checkbox{
+    width: .18rem;
+    height: .16rem;
+    background-image: url("../img/beyond/weigouxuan_default@2x.png");
+    background-size: 100% 100%;
+    display: block;
+}
+.skin_beyond_default .layout-container .other-box .synStudent:hover .checkbox{
+    background-image: url("../img/beyond/weigouxuan_hover@2x.png");
+}
+.skin_beyond_default .layout-container .other-box .synStudent:active .checkbox{
+    background-image: url("../img/beyond/weigouxuan_press@2x.png");
+}
+
+.skin_beyond_default .layout-container .other-box .synStudent.active .checkbox{
+    background-image: url("../img/beyond/gouxuan_default@2x.png");
+}
+.skin_beyond_default .layout-container .other-box .synStudent.active:hover .checkbox{
+    background-image: url("../img/beyond/gouxuan_hover@2x.png");
+}
+.skin_beyond_default .layout-container .other-box .synStudent.active:active .checkbox{
+    background-image: url("../img/beyond/gouxuan_press@2x.png");
+}
+.skin_beyond_default .layout-container .other-box .synStudent .text{
+    font-size:.14rem;
+    color:rgba(255,220,84,1);
+    line-height:.2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.skin_beyond_default .layout-container .other-box .confirmBtn{
+    color: #fff;
+    line-height: .3rem;
+    width: .8rem;
+    height: .3rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #7f59c5;
+    box-shadow: inset 0 -2px 1px rgba(105, 67, 174, 1);
+    border-radius:.25rem;
+}
+.skin_beyond_default .layout-container .other-box .confirmBtn:hover {
+    background: #926bd9;
+    box-shadow: inset 0 -2px 1px rgba(129,89,202, 1);
+}
+.skin_beyond_default .layout-container .other-box .confirmBtn:active {
+    background: #764fbd;
+    box-shadow: inset 0 -2px 1px rgba(118,79,189, 1);
+}
+.skin_beyond_default .layout-container-teachingAssistant{
+    transform: translateX(-75%);
+}
+.skin_beyond_default .layout-container-teachingAssistant::after{
+    left: 75%;
+}

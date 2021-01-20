@@ -1,0 +1,173 @@
+@charset "UTF-8";
+.tk-tool-bottom {
+    z-index: 105;
+}
+.header-left-page-time-container {
+    z-index: 140;
+    position: fixed;
+    left: 3.7rem;
+    bottom: 0rem;
+}
+.talkcloud-sdk-whiteboard.document-toolbar-root.teacher{
+    display: none;
+}
+.talkcloud-sdk-whiteboard.document-toolbar-root.student .previous-page-btn{
+    display: none;
+}
+.talkcloud-sdk-whiteboard.document-toolbar-root.student .skip-page-select{
+    display: none;
+}
+.talkcloud-sdk-whiteboard.document-toolbar-root.student .next-page-btn{
+    display: none;
+}
+.talkcloud-sdk-whiteboard.document-toolbar-root.student .zoom-big-btn{
+    display: none;
+}
+.talkcloud-sdk-whiteboard.document-toolbar-root.student .zoom-small-btn{
+    display: none;
+}
+.header-left-page-time-container .h-page-container .h-page-next-prev-container{
+    display: flex;
+    align-items: center;
+}
+.header-left-page-time-container .h-page-container .h-page-next-prev-container , .header-left-page-time-container .h-page-container .h-page-skip-container{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #fff;
+}
+
+.h-page-next-prev-container button{
+    width: 0.5rem;
+    height: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    background:  no-repeat center center;
+    background-size: 100% 100%;
+}
+.h-page-next-prev-container button.pointer-events{
+    pointer-events: none;
+    cursor: default !important;
+}
+.h-page-next-prev-container button.lc-prev-page{
+    width: 0.14rem;
+    height: 0.27rem;
+}
+.h-page-next-prev-container button.lc-next-page{
+    width: 0.14rem;
+    height: 0.27rem;
+    margin-left: 0.16rem;
+}
+
+.h-page-next-prev-container button.lc-zoom-small{
+    width: 0.22rem;
+    height: 0.22rem;
+    margin-left: 0.42rem;
+}
+.h-page-next-prev-container button.lc-zoom-big{
+    width: 0.22rem;
+    height: 0.22rem;
+    margin-left: 0.42rem;
+}
+.h-page-next-prev-container button.lc-full.no{
+    width: 0.38rem;
+    height: 0.38rem;
+    margin-left: 0.34rem;
+}
+
+.h-page-next-prev-container button.lc-full.yes{
+    background-image: url(../img/call_layout/lc/pages/icon_initial_screen_normal.png) ;
+}
+.h-page-next-prev-container button.lc-full.yes.disabled{
+    background-image: url(../img/call_layout/lc/pages/icon_initial_screen_disabled.png) !important ;
+}
+.h-page-next-prev-container button.lc-volume.no,.h-page-next-prev-container button.lc-volume.yes,.h-page-next-prev-container button.lc-courseware-remarks{
+    width: 0.38rem;
+    height: 0.38rem;
+    margin-left: 0.25rem;
+}
+.h-page-next-prev-container .page-print {
+    /*width: 0.68rem;*/
+    height: 100%;
+    margin: 0 0.16rem;
+    text-align: center;
+    font-size: 0.13rem;
+}
+.page-print-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.17rem;
+}
+.page-print-content .h-page-print-oblique{
+    display: inline-block;
+    margin: 0 0.12rem 0 0.15rem;
+}
+.h-page-next-prev-container .page-print .curr-page , .h-page-skip-container .page-num {
+    color: #fff;
+}
+.page-print .curr-page{
+    width: 0.38rem;
+    height: 0.28rem;
+    background-color: #52208E;
+    text-align: center;
+    border: 1px solid #3F1473;
+    border-radius: 0.03rem;
+}
+.page-print .curr-page:focus{
+    border-color:#AB81E0 ;
+    outline: none;
+}
+
+.page-print .all-page{
+    display:inline-block;
+    text-align:left ;
+}
+.h-page-skip-container .page-num , .h-page-skip-container .page-num-ok {
+    margin: 0 0.1rem;
+    background: #2c3c62;
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 0.5rem;
+    height: 0.34rem;
+}
+.h-page-skip-container .page-num-ok {
+    margin-right: 0.2rem;
+    width: auto;
+    padding: 0 0.16rem;
+}
+
+.header-left-page-time-container .h-page-container div.h-page-skip-container{
+    background: none;
+}
+.tk-audio-ppt-volume-slider{
+    /*left: 0.4rem;*/
+    height: 1.3rem;
+    width:0.01rem;
+    margin-top: -1.5rem;
+    margin-left: 0.25rem;
+}
+.rc-slider.tk-audio-ppt-volume-slider .rc-slider-handle{
+    border: solid 0.02rem #4468d0;
+    background-color: #4468d0 ;
+}
+.rc-slider.tk-audio-ppt-volume-slider .rc-slider-track{
+    background: #4468d0;
+}
+.rc-slider.tk-audio-ppt-volume-slider.rc-slider-vertical {
+    width: 0.14rem;
+    height: 1.2rem ;
+    padding: 0 0.05rem;
+    margin-top: -1.7rem;
+    margin-left: 0.15rem;
+    background-color: #232c48;
+    border-radius: 0 ;
+}
+.rc-slider.tk-audio-ppt-volume-slider .rc-slider-rail {
+    background-color: #d1dee3;
+}
+.rc-slider.tk-audio-ppt-volume-slider .rc-slider-vertical{
+    width: 0.14rem;
+    height: 100%;
+    padding: 0 0.05rem;
+}

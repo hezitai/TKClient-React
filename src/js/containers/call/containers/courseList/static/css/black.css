@@ -1,0 +1,81 @@
+/*课件库黑皮肤*/
+
+.mask{
+    position: absolute;
+    top: 0.42rem;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+}
+.skin_black .courseware_box{
+    /* background: rgba(31,32,39,0.96); */
+    background: rgba(95,102,114, 0.8);
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+.skin_black .courseware_box .courseware_left_button{
+    background:rgba(26,26,32,0.6);
+}
+.skin_black .courseware_box .tool-icon{
+    background-color: #3A3A3D;
+    color: #8C8C93;
+}
+.skin_black .courseware_box .tool-icon.active{
+    background-color: #0077FF;
+    color: #fff;
+}
+.skin_black .fileFilter .addCourse,
+.skin_black .fileFilter .addH5{
+    color: #ADADAD;
+    border: 1px solid #ADADAD;
+}
+.skin_black .fileContainer .classification{
+    background:rgba(171,171,171,0.3);
+}
+.skin_black .fileContainer .fileItem .closeIcon{
+    background: url("../black_img/close eye_default@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer .fileItem .closeIcon.on{
+    background: url("../black_img/open eye_press2.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer .fileItem .closeIcon:hover{
+    background: url("../black_img/close eye_hover@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer .fileItem .closeIcon:active{
+    background: url("../black_img/close eye_press@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer.media .fileItem .closeIcon{
+    background: url("../black_img/play_default@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer.media .fileItem .closeIcon.on{
+    background: url("../black_img/pause_default@2x.png") no-repeat center;
+    background-size: 100%;
+    pointer-events: none;
+    cursor: default !important;
+}
+.skin_black .fileContainer.media .fileItem .closeIcon:hover{
+    background: url("../black_img/play_hover@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer.media .fileItem .closeIcon:active{
+    background: url("../black_img/play_press@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer.media .fileItem .closeIcon.on:hover{
+    background: url("../black_img/pause_default@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .fileContainer.media .fileItem .closeIcon.on:active{
+    background: url("../black_img/pause_default@2x.png") no-repeat center;
+    background-size: 100%;
+}
+.skin_black .courseware_content .fileContainer .progress-bar-box{
+    background:rgba(92,92,92,0.5);
+}
+.skin_black .courseware_content .fileContainer .progress-bar-box .progress-bar{
+    background:rgba(0,119,255,0.7);
+}

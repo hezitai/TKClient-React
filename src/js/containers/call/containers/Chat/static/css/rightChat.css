@@ -1,0 +1,82 @@
+/* wyw 2018.11.26 右侧聊天区样式 */
+.skin_beyond_default #rightchatbox{
+    width: 100%;
+    height: 100%;
+    /* min-width: 4.1rem;
+    min-height: 7rem; */
+    border: 0;
+    border-radius: 0;
+    background: none;
+    position: relative;
+    top: 0;
+    /* background: rgba(37, 23, 70, 0.4); */
+    background-color:#E7ECF1;
+    z-index: 1;
+}
+.skin_beyond_default #rightchatbox .chat-title-tip{
+    width: 100%;
+    height: 0.44rem;
+    /* atTyr--xuaiugai */
+    /* height: 0.66rem; */
+    line-height: 0.4rem;
+    text-align: center;
+    /* background: #251746; */
+    background:#F7F7FF;
+    position: relative;
+}
+.skin_beyond_default #rightchatbox .chat-title-tip .chat_title_text{
+    /* display: inline;
+    width: 0;
+    height: auto;
+    margin-top: 0;
+    padding: 0; */
+    /* atTyr -- xuaiugai */
+    display: inline-block;
+    /* padding-right: .5rem; */
+    width: 94%;
+    height: .4rem;
+    /* background: url('../img/title-classbro.png') no-repeat center center; */
+    /* margin-top: .1rem; */
+    /* background-size: 100% 100%; */
+}
+.skin_beyond_default #rightchatbox .chat-title-tip .emotion2.on{
+      /* top: 0.1rem; */
+}
+.skin_beyond_default #rightchatbox .chat-title-tip .emotion2.off{
+      /* top: 0.1rem; */
+}
+.skin_beyond_default #rightchatbox .chat-part {
+      background: none;
+}
+.skin_beyond_default #rightchatbox .input-box{
+      background: none;
+      /* border-top: 0.01rem solid rgba(255,255,255,0.251); */
+      border-top:0.01rem solid #D6D6D6;
+      height: 1.52rem;
+      /* atTyr--xuaiugai */
+      /* height: 1.28rem; */
+      position: relative;
+}
+.skin_beyond_default #rightchatbox .chat-subject{
+    background: none;
+}
+.skin_beyond_default #rightchatbox .chat-input{
+    background: none;
+}
+.skin_beyond_default #rightchatbox .inputContentEditable{
+    /* color: #A291D3; */
+    color:#666;
+}
+.skin_beyond_default #rightchatbox .chat-part {
+    height: calc(100% - 1.52rem - .36rem);
+}
+.skin_beyond_default #rightchatbox .user-sended{
+    /* background:rgba(77,67,126,0.9); */
+    background: #F1F4F7;
+}
+.skin_beyond_default #rightchatbox .isme .user-sended{
+    /* color: #472D91; */
+    color:#4D4D4D;
+    /* background: rgba(247,244,255,0.9); */
+    background-color: #F1F4F7;
+}

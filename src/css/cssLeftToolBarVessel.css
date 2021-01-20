@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/*工具栏*/
+
+.tool-extend-container .tool-icon:active p{
+    color: #fff;
+}
+
+.tool-extend-container .tool-icon button{
+    width: 0.32rem;
+    height: 0.28rem;
+    display: block;
+    margin: 0.12rem auto 0rem;
+}
+
+.tool-extend-container .tool-icon.tl-left-lc{
+    background-image: url("../img/call_layout/left/icon_empty_normal.png") ;
+}
+
+.tool-extend-container .tool-icon.tl-left-course-list{
+    background-image: url("../img/call_layout/left/icon_course_normal.png") ;
+}
+
+.tool-extend-container .tool-icon.tl-left-movie-sharing-list{
+    background-image: url("../img/call_layout/left/icon_movie_normal.png") ;
+}
+.tool-extend-container .tool-icon.tl-left-movie-sharing-list:hover
+{
+    background: url("../img/call_layout/left/icon_movie_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.tool-extend-container .tool-icon.tl-left-message{
+    background-image: url("../img/call_layout/left/icon_message_normal.png") ;
+}
+
+.tool-extend-container .tool-icon.tl-left-add-document{
+    background-image: url("../img/call_layout/left/icon_add_normal.png") ;
+}
+
+.tool-extend-container .tool-icon.tl-left-user-list button{
+    background-size: 100% 100%;
+}
+.tool-extend-container .tool-icon.active.tl-left-user-list button{
+    background-size: 100% 100%;
+}
+
+
+
+.tool-extend-container .tool-icon.tl-left-user-list.circle.data-circle-show:after{
+    position: absolute;
+    width: 0.08rem;
+    height: 0.08rem;
+    background: #9c0b0b;
+    border-radius: 50%;
+    z-index: 999;
+    right: 0.03rem;
+    bottom: 0.03rem;
+    content: '';
+    display: block;
+}
+.tool-extend-container .tool-icon-wrap .tool-icon.tl-left-setting{
+    /* position: absolute;
+    bottom: 0.5rem;
+    left: 0; */
+    background-image: url("../img/call_layout/left/icon_setting_normal.png") ;
+}
+.tool-extend-container .tool-icon.tl-left-setting:hover
+{
+    background: url("../img/call_layout/left/icon_setting_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.tool-extend-container .tool-icon.tl-left-help{
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    background-image: url("../img/call_layout/left/icon_help_normal.png") ;
+}
+.tool-extend-container .tool-icon-wrap.hasSeekHelpBtn .tool-icon.tl-left-setting{
+    bottom: 1rem;
+}
+.tool-extend-container .tool-icon-wrap.hasSeekHelpBtn .tool-icon.tl-left-help{
+    bottom: 0.5rem;
+}
+.tool-extend-container .tool-icon.tl-left-help:hover
+{
+    background: url("../img/call_layout/left/icon_help_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.tool-extend-container .tool-icon.tl-left-seek-help{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/call_layout/left/icon_seek_help_normal.png") ;
+}
+.tool-extend-container .tool-icon.tl-left-seek-help:hover
+{
+    background: url("../img/call_layout/left/icon_seek_help_hover.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.tool-extend-container .tool-icon.tl-left-help:active{
+    background-image: url("../img/call_layout/left/icon_help_pressed.png") ;
+}
+.tool-extend-container .tool-icon.tl-left-help:active:hover
+{
+    background: url("../img/call_layout/left/icon_help_pressed.png") no-repeat center center;
+    background-size: 100% 100%;
+}

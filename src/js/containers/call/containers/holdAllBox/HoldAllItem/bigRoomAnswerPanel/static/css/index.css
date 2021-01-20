@@ -1,0 +1,556 @@
+/*答题器组件*/
+.skin_beyond_default .question-panel {
+    color: #fff;
+    width: 5.2rem;
+    border: .05rem solid #a291d3;
+    background-color: #a291d3;
+    border-radius: 0.14rem;
+}
+.skin_beyond_default .question-panel.running.student {
+    width: 4.2rem;
+}
+
+.skin_beyond_default .question-panel .header,
+.skin_beyond_default .question-panel .body,
+.skin_beyond_default .question-panel .footer{
+    position: relative;
+    width: 100%;
+}
+.skin_beyond_default .question-panel .body,
+.skin_beyond_default .question-panel .footer{
+    background-color: #fff;
+}
+
+/*答案选项 start*/
+.skin_beyond_default .question-panel .option-panel {
+    padding: .1rem .15rem;
+}
+.skin_beyond_default .question-panel .option-panel .options {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.skin_beyond_default .question-panel .option-wrap {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.skin_beyond_default .question-panel .option-panel .option {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: relative;
+    margin: .15rem 0 .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: transparent !important;
+}
+
+/*答案选项 end*/
+
+/*答题器中间统计模块 start*/
+.skin_beyond_default .question-panel .statistics {
+    padding: .15rem .3rem;
+}
+
+.skin_beyond_default .question-panel .statistics-header {
+    display: flex;
+    color: #8c8a8a;
+    justify-content: space-between;
+}
+.skin_beyond_default .question-panel .statistics-header .time {
+    text-align: center;
+}
+.skin_beyond_default .question-panel .statistics-header .cut {
+    cursor: pointer;
+    color: #fff !important;
+    border-radius: .15rem;
+    text-align: center;
+    padding: 0 .15rem 0 .05rem;
+    background: url('../img/answer/right_icon.png') no-repeat 86% 50% #FFCA00;
+    background-size: .06rem .12rem;
+}
+.skin_beyond_default .question-panel .statistics-header .item {
+    width: auto;
+    color: #795CBF;
+    padding-bottom: 0.028rem;
+}
+
+.skin_beyond_default .question-panel .statistics-item {
+    margin: .17rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: #A68FD8;
+    font-size: .14rem;
+}
+.skin_beyond_default .question-panel .statistics-item .total {
+    position: relative;
+    width: 100%;
+    height: .14rem;
+    margin: .05rem .1rem 0rem;
+    border-radius: .5rem;
+    background-color: #F8F4FF;
+}
+.skin_beyond_default .question-panel .statistics-item .process {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: #A68FD8;
+}
+.skin_beyond_default .question-panel .double.statistics-wrap {
+    height: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0.2rem;
+}
+.skin_beyond_default .question-panel .double.statistics-wrap .statistics-item {
+    width: 45%;
+    margin:0 3%;
+    height: 0.6rem;
+}
+/*答题器中间统计模块 end*/
+
+/*答题器中间详情模块 start*/
+.skin_beyond_default .question-panel .detail {
+    height: 2rem;
+    overflow-y: auto;
+    margin-top: 0.1rem;
+}
+.skin_beyond_default .question-panel .detail::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 0.03rem;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.skin_beyond_default .question-panel .detail::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 0.02rem;
+	background: #8c8a8a;
+}
+.skin_beyond_default .question-panel .detail::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	border-radius: 0.02rem;
+	background: #444;
+}
+.skin_beyond_default .question-panel .detail-item {
+    height: .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F7F4FF;
+    padding: 0 .15rem;
+    margin-top: .08rem;
+    border-radius: 0.06rem;
+}
+.skin_beyond_default .question-panel .detail-item:first-child {
+    margin-top: 0;
+}
+.skin_beyond_default .question-panel .detail-item span {
+    width: 33.3%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    color: #795CBF;
+}
+.skin_beyond_default .question-panel .detail-item .selectedAnswers{
+    width: 100%;
+    margin-left: 7%;
+    text-align: center;
+}
+.skin_beyond_default .question-panel .detail-item .useTime{
+    text-align: right;
+    width: 30%;
+}
+/*答题器中间详情模块 end*/
+
+/*答题器详情分页 start*/
+.skin_beyond_default .question-panel .paging-container{
+    color: #913705;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+.skin_beyond_default .question-panel .paging-container .paging-container-info{
+    display: flex;
+    color:#795CBF;
+    font-size: 0.14rem;
+    align-items: center;
+}
+.skin_beyond_default .question-panel .paging-container .paging-container-info .paging-input{
+    display: block;
+    font-size: 0.14rem;
+    line-height: 0.22rem;
+    -webkit-border-radius: 0.04rem;
+    border-radius: 0.15rem;
+    width: 0.48rem;
+    height: 0.24rem;
+    background-color: #fff;
+    border: 0.01rem solid #795CBF;
+    text-align: center;
+    outline: none;
+    margin-right: 0.08rem;
+}
+.skin_beyond_default .question-panel .paging-container .paging-container-info .paging-sum{
+    margin-left: 0.1rem;
+}
+.skin_beyond_default .question-panel .paging-container .paging-left {
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url('../img/answer/left_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+.skin_beyond_default .question-panel .paging-container .paging-right {
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url('../img/answer/right_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+.skin_beyond_default .question-panel .paging-container .paging-left.disabled {
+    background: url('../img/answer/left_disable.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .paging-container .paging-right.disabled {
+    background: url('../img/answer/right_disable.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .paging-container .paging-left:hover {
+    background: url('../img/answer/left_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .paging-container .paging-right:hover {
+    background: url('../img/answer/right_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .paging-container .paging-left:active {
+    background: url('../img/answer/left_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .paging-container .paging-right:active {
+    background: url('../img/answer/right_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+/*答题器详情分页 end*/
+
+/*头部header-------------------------------------------start-------*/
+.skin_beyond_default .question-panel .header {
+    position: relative;
+    text-align: center;
+    height: .38rem;
+    line-height: .38rem;
+}
+.skin_beyond_default .question-panel .header .btn.item {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*头部header-------------------------------------------end-------*/
+
+/*底部 -------------------------------------------start-------*/
+.skin_beyond_default .question-panel .footer {
+    padding: 0 .3rem .15rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 .12rem .12rem;
+    align-items: center;
+    color: #795CBF;
+}
+.skin_beyond_default .question-panel.uncommit .footer,
+.skin_beyond_default .question-panel.committed .footer {
+    justify-content: center;
+}
+.skin_beyond_default .question-panel.student .footer {
+    justify-content: left;
+}
+.skin_beyond_default .question-panel .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: .3rem;
+    right: .3rem;
+    width: auto;
+    /* border-top: 1px solid #fff; */
+    transform-origin: 0 0;
+    transform: scale(1, .2);
+    box-sizing: border-box;
+}
+/****底部文字提示****/
+.skin_beyond_default .question-panel .footer .footer-left{
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.skin_beyond_default .question-panel .footer .hint {
+    display: inline-block;
+    width: auto;
+    max-width: 2.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 .14rem 0 0rem;
+    vertical-align: middle;
+}
+.skin_beyond_default .question-panel .footer .hint.empty {
+    max-width: 1rem;
+}
+/****底部公布答案按钮****/
+.skin_beyond_default .question-panel.finished .footer .footer-left .item.pub-btn {
+    width: .84rem;
+    height: .28rem;
+    line-height: 0.28rem;
+    background: #A68ED8;
+    border-radius: 5rem;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+/****底部开始/发布/提交按钮****/
+.skin_beyond_default .question-panel.student .ques-state-btn {
+    position: unset;
+    margin: 0 auto;
+}
+.skin_beyond_default .question-panel .ques-state-btn {
+    width: 1.23rem;
+    position: absolute;
+    right: 0.20rem;
+    height: 0.4rem;
+    color: #fff;
+    background-color: #7f59c5;
+    box-shadow: inset 0 -2px 1px rgba(105, 67, 174, 1);
+    border-radius: .25rem;
+}
+.skin_beyond_default .question-panel .ques-state-btn:hover {
+    background: #926bd9;
+    box-shadow: inset 0 -2px 1px rgba(129, 89, 202, 1);
+}
+.skin_beyond_default .question-panel .ques-state-btn:active {
+    background: #764fbd;
+    box-shadow: inset 0 -2px 1px rgba(118, 79, 189, 1);
+}
+/*底部-------------------------------------------end-------*/
+
+/*答题器缩小关闭按钮 -------------------------------------------start-------*/
+.skin_beyond_default .question-panel .close-btn.hide{
+    display: none;
+}
+.skin_beyond_default .question-panel .close-btn,
+.skin_beyond_default .question-panel .size-btn {
+    height: 0.13rem;
+    width: 0.13rem;
+    margin-right: .2rem;
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .close-btn:hover {
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .close-btn:active {
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel.normal .size-btn {
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/shrink_default.png') no-repeat center center;
+    -webkit-background-size: .13rem .02rem;
+    background-size: .13rem .02rem;
+    margin-right: 0.26rem;
+}
+.skin_beyond_default .question-panel.normal .size-btn:hover {
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/shrink_hover.png') no-repeat center center;
+    -webkit-background-size: .13rem .02rem;
+    background-size: .13rem .02rem;
+}
+.skin_beyond_default .question-panel.normal .size-btn:active {
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/shrink_press.png') no-repeat center center;
+    -webkit-background-size: .13rem .02rem;
+    background-size: .13rem .02rem;
+}
+/*答题器缩小关闭按钮 -------------------------------------------end-------*/
+
+/*答题器添加/删除按钮 -------------------------------------------start-------*/
+.skin_beyond_default .question-panel .option-btn {
+    width: 0.84rem;
+    height: 0.28rem;
+    margin: .22rem 0 0rem .18rem;
+    -webkit-border-radius: .5rem;
+    border-radius: .15rem;
+    background-color: #A68ED8;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.skin_beyond_default .question-panel .option-btn:hover {
+    background: rgba(192, 168, 242, 1);
+}
+.skin_beyond_default .question-panel .option-btn.active {
+    background: rgba(144, 118, 200, 1);
+}
+.skin_beyond_default .question-panel .option-btn.disabled{
+    background-color: #DFD5F9;
+    color: #fff;
+}
+
+/*答题器 option按钮 -------------------------------------------end-------*/
+/*A*/
+.skin_beyond_default .question-panel .option-panel .option-0 {
+    background: url('../img/answer/a_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-0:hover {
+    background: url('../img/answer/a_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-0.active {
+    background: url('../img/answer/a_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*B*/
+.skin_beyond_default .question-panel .option-panel .option-1 {
+    background: url('../img/answer/b_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-1:hover {
+    background: url('../img/answer/b_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-1.active {
+    background: url('../img/answer/b_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*C*/
+.skin_beyond_default .question-panel .option-panel .option-2 {
+    background: url('../img/answer/c_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-2:hover {
+    background: url('../img/answer/c_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-2.active {
+    background: url('../img/answer/c_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*D*/
+.skin_beyond_default .question-panel .option-panel .option-3 {
+    background: url('../img/answer/d_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-3:hover {
+    background: url('../img/answer/d_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-3.active {
+    background: url('../img/answer/d_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*E*/
+.skin_beyond_default .question-panel .option-panel .option-4 {
+    background: url('../img/answer/e_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-4:hover {
+    background: url('../img/answer/e_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-4.active {
+    background: url('../img/answer/e_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*F*/
+.skin_beyond_default .question-panel .option-panel .option-5 {
+    background: url('../img/answer/f_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-5:hover {
+    background: url('../img/answer/f_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-5.active {
+    background: url('../img/answer/f_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*G*/
+.skin_beyond_default .question-panel .option-panel .option-6 {
+    background: url('../img/answer/g_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-6:hover {
+    background: url('../img/answer/g_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-6.active {
+    background: url('../img/answer/g_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*H*/
+.skin_beyond_default .question-panel .option-panel .option-7 {
+    background: url('../img/answer/h_default.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-7:hover {
+    background: url('../img/answer/h_hover.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel .option-panel .option-7.active {
+    background: url('../img/answer/h_press.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+/*答题器 option按钮 -------------------------------------------end-------*/
+
+/*答题器缩小样式-------------------------------------------start-------*/
+.skin_beyond_default .question-panel.minimized {
+    width: 0.82rem !important;
+    height: 0.82rem;
+    border-radius: .04rem;
+    background: url('../img/answer/datiqi_mini_default.png') no-repeat center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-color: transparent !important;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.skin_beyond_default .question-panel.minimized .header,
+.skin_beyond_default .question-panel.minimized .body,
+.skin_beyond_default .question-panel.minimized .footer {
+    display: none;
+}
+.skin_beyond_default .question-panel.minimized:hover {
+    background: url('../img/answer/datiqi_mini_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_beyond_default .question-panel.minimized:active {
+    background: url('../img/answer/datiqi_mini_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+/*答题器缩小样式-------------------------------------------end-------*/
+
+.skin_beyond_default .question-panel .detail-page {
+    text-align: center;
+    padding: .1rem 0;
+}

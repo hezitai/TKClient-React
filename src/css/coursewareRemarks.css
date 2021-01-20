@@ -1,0 +1,92 @@
+.courseware-remarks-box{
+    width: 9.89rem;
+    height: 2.2rem;
+    position: absolute;
+    /*top:calc(100% - 2.7rem);*/
+    z-index: 130;
+    /*transition: all 0.4s;*/
+    box-sizing: border-box;
+    border: 0.01rem solid rgb(208, 67, 49);
+    background-color: rgb(255, 107, 88);
+    overflow: hidden;
+    padding: 0 0.11rem 0.11rem;
+    border-radius: 0.06rem;
+}
+.courseware-remarks-box .remarks-title{
+    width: 100%;
+    height: 0.43rem;
+    text-align: center;
+    line-height: 0.43rem;
+    color: #fff;
+    position: relative;
+    box-shadow: none;
+}
+.courseware-remarks-box .remarks-title .remarks-close{
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    right: 0;
+    top:0.1rem;
+    background: url("../img/newInterface/remark/close_default.png") no-repeat center;
+    background-size: 100%  100%;
+}
+.courseware-remarks-box .remarks-title .remarks-close:hover{
+    background: url("../img/newInterface/remark/close_hover.png") no-repeat center;
+    background-size: 100%  100%;
+}
+.courseware-remarks-box .remarks-title .remarks-close:active{
+    background: url("../img/newInterface/remark/close_press.png") no-repeat center;
+    background-size: 100%  100%;
+}
+.courseware-remarks-box .remarks-content{
+    border-radius: 0.06rem;
+    width: 100%;
+    height: calc(100% - 0.42rem);
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.05rem 0.05rem 0.1rem 0.1rem;
+}
+.courseware-remarks-box .remarks-title-text.user-select-none{
+    background-color: #FF6B58;
+    height: 0.43rem;
+    font-size: 0.14rem;
+    line-height: 0.43rem;
+    text-shadow: 0 0.01rem #D04331, 0.01rem 0 #D04331, -0.01rem 0 #D04331, 0 -0.01rem #D04331;
+}
+.courseware-remarks-box .remarks-content p{
+    /*text-indent: 2em;*/
+    word-wrap: break-word;
+}
+.courseware-remarks-box .remarks-content::-webkit-scrollbar-thumb{
+    background:#D04331;
+    /*background-size: 0.06rem 0.18rem;*/
+    border-radius: 0.02rem;
+    /*position: relative;*/
+    /*box-shadow: 0 0 0.01rem 0 #5D86ED;*/
+    /*border-top: 0.01rem solid #6C9EF2;*/
+    /*border-bottom: 0.01rem solid #6C9EF2;*/
+}
+/*.courseware-remarks-box .remarks-content::-webkit-scrollbar-button:start{*/
+    /*background:url("../img/call_layout/lc/icon_scrollbar_start@3x.png") no-repeat center;*/
+    /*background-size:0.15rem auto;*/
+    /*height: 0.15rem;*/
+/*}*/
+/*.courseware-remarks-box .remarks-content::-webkit-scrollbar-button:end{*/
+    /*background:url("../img/call_layout/lc/icon_scrollbar_end@3x.png") no-repeat center;*/
+    /*background-size:0.15rem auto;*/
+    /*height: 0.15rem;*/
+/*}*/
+/*.courseware-remarks-box .remarks-content::-webkit-scrollbar-button:start:hover{
+    background:#4D6CE8 url("../img/call_layout/lc/icon_scrollbar_end.png") no-repeat center;
+    background-size:100% 100%;
+}
+.courseware-remarks-box .remarks-content::-webkit-scrollbar-button:end:hover{
+    background:#4D6CE8 url("../img/call_layout/lc/icon_scrollbar_start.png") no-repeat center;
+    background-size:100% 100%;
+}*/
+.courseware-remarks-box .remarks-content::-webkit-scrollbar{
+    width: 0.03rem;
+    border-radius: 0.02rem;
+    background-color: #FFD3CD;
+}

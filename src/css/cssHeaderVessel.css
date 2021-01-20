@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*@desc header start*/
+.videoing{
+    /* position: absolute;
+    top: -0.07rem;
+    left: 1.9rem; */
+    z-index: 999;
+    width: 1.25rem;
+    height: .35rem;
+}
+.header-wrap{
+    height: 100%;
+    /* background-color:#503A8F; */
+    background-color:#DFE4EC;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    position: relative;
+    z-index: 120;
+    box-shadow:0 0.04rem 0 #3C257C;
+}
+.ai-call{
+    border-radius: 10px;
+    position: fixed;
+    width:6.5rem;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0 auto 4rem;
+    background:rgba(0,0,0,0.8);
+    /* display: none; */
+}
+.ai-call .closeBtn{
+    color:#fff;
+    font-size: .3rem;
+    position: absolute;
+    top: 0rem;
+    right: 0.2rem;
+    cursor: pointer;
+}
+.dianjihujiao{
+    padding-top: .2rem;
+    cursor: pointer;
+}
+.dianjihuajiao1{
+    width: .3rem;
+    height: .3rem;
+}
+.dianjihuajiao2{
+    margin-left: .1rem;
+    width: 1rem;
+    height: .3rem;
+}
+.calling-loading{
+    /* position: fixed; */
+    width:1.9rem;
+    height: .55rem;
+    position: absolute;
+    right: .6rem;
+    top: 1.5rem;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; */
+}
+
+
+.h-left-wrap{
+    width: 15.1rem;
+    width: calc(100% - 4.11rem);
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.h-logo-wrap{
+    width: auto;
+    height: 0.28rem;
+    margin: 0.1rem 0.15rem  0.1rem 0.3rem ;
+    line-height: 1;
+}
+.h-logo-wrap img{
+    width: auto;
+    height: 100%;
+}
+
+.h-right-wrap.role-teaching-assistant{
+    display: block;
+}
+.h-right-wrap{
+   /* width: 3.9rem;*/
+    line-height: 0.48rem;
+/*    min-width: 2.2rem;
+    min-width: calc(2rem + 75px);*/
+    display: flex;
+    justify-content: center;
+}
+.h-right-wrap.only-clock{
+    display: flex;
+}
+.h-time-wrap{
+    color: #ffffff;
+    line-height: 0.48rem;
+    padding-left: 0.26rem;
+    margin:0 0rem 0 0.1rem;
+    font-family: "Aria" , "microsoft yahei";
+    font-size: 0.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.h-time-wrap .space{
+    display: inline-block;
+    padding: 0 0.05rem;
+}
+.h-time-wrap:before{
+    margin-right: 0.15rem;
+    width: 0.21rem;
+    height:0.21rem;
+    display: block;
+    content: "";
+    background-size: 100% 100%;
+}
+.h-time-wrap.no-start , .h-time-wrap.ready-start , .h-time-wrap.start{
+    color:#3C3C3C ;
+    /* color:#fff; */
+}
+.h-time-wrap.immediately-end , .h-time-wrap.end{
+    color:#ff0000 ;
+}
+.h-time-wrap.ready-end{
+    color:#fcd000 ;
+}
+
+/* .tipsBehandClassEnd:before{
+    content:'';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: .3rem solid transparent;
+    border-right: .3rem solid transparent;
+    border-bottom: .2rem solid #FC6235;
+    position: absolute;
+    right: .28rem;
+    top: -0.2rem;
+} */
+
+
+
+.Tk-header-othericon{
+    display: flex;
+    align-items: center;
+    padding-left: 0.41rem;
+}
+.Tk-header-othericon .Tk-header-icon{
+    width: 0.26rem;
+    height: 0.26rem;
+    margin-right: 0.25rem;
+    position: relative;
+    cursor: pointer;
+}
+.Tk-header-othericon .Tk-header-icon.icon-help{
+    background-size: 100% 100%;
+}
+.Tk-header-othericon .Tk-header-icon.icon-help:hover{
+}
+.Tk-header-othericon .Tk-header-icon.icon-help:active{
+}
+.Tk-header-othericon .Tk-header-icon.icon-setting{
+    background-size: 100% 100%;
+}
+.h-btn-wrap{
+    flex: 1;
+    align-items: center;
+    display: flex;
+/*    width: 60%;
+    width: calc(100% - 1.5rem);*/
+ /*   min-width: 2.12rem;
+    margin:0 0.1rem;*/
+}
+.h-btn-wrap button{
+    overflow: hidden;
+    outline: none;
+    border: none;
+    color: #EB4852;
+    font-size: 0.16rem;
+    line-height: 0.38rem;
+    margin-right:0.16rem;
+    margin-left:0.25rem;
+    width: 1.24rem;
+    height: 0.38rem;
+    background-size: 100% 100%;
+}
+.h-btn-wrap button.handDown{
+    background-size: 100% 100%;
+    color: #fff;
+}
+.h-btn-wrap button.handDown:hover{
+    background-size: 100% 100%;
+    /* color: #fff; */
+}
+.h-btn-wrap button:hover{
+    background-size: 100% 100%;
+}
+.h-btn-wrap button:active{
+    background-size: 100% 100%;
+    color: #fff;
+}
+.h-btn-wrap button.prohibition{
+    background-size: 100% 100%;
+    color: #fff;
+    cursor: default;
+    display: none;
+}
+/*.h-btn-wrap button.h-room-end{*/
+    /*background-image: url("../img/newInterface/mainInterface/button_press.png");*/
+/*}*/
+.h-btn-wrap button.h-room-start.h-room-one-to-one-end , .h-btn-wrap button.h-room-start.h-room-raise{
+    /* background: #f03a0e; */
+}
+.h-btn-wrap button.disabled{
+    opacity: 0.5;
+}

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*全体控制组件*/
+
+.skin_beyond_default  .ControlPanel-main {
+  width: 1.58rem;
+  position: absolute;
+  left: 50%;
+  top: .51rem;
+  transform: translateX(-50%);
+  padding: .1rem 0;
+  /* background: rgba(34,23,70, 0.96); 95,102,114*/
+  /* border: 1px solid rgba(80,58,143,1); */
+  background: rgba( 95,102,114, 0.9);
+  border: 1px solid rgba(95,102,114, 1);
+  box-sizing: content-box;
+  border-radius: 0.24rem;
+  z-index: 1000;
+}
+
+.skin_beyond_default  .ControlPanel-main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.09rem;
+  left: 47%;
+  transform: translateX(-50%);
+  /* width: 0.2rem;
+  height: 0.07rem;
+  background-image: url('../../../../../../../../publish/img/beyondDefault/common/jiantou@2x.png');
+  background-size: 100% 100%; */
+  width:0; height:0; border-width:0rem .11rem .11rem; border-style:none solid solid; border-color:transparent transparent rgba(95,102,114,0.9);
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li {
+    width: 100%;
+    display: block;
+    height: .52rem;
+    line-height: .52rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li button {
+    width: 0.32rem;
+    height: 0.32rem;
+    background-size: 100% 100%;
+    margin: .1rem .1rem .1rem .3rem;
+    float: left;
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .S-all_mute_btn_span {
+    display: block;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li:hover {
+    background: rgba(95,102,114, 1);
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li:active {
+    background: rgba(95,102,114, 1);
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li.disabled{
+    cursor: default
+}
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li.disabled span {
+    opacity: .3;
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li .S-all_mute_btn {
+    background-image: url('../img/option/quantijingyin_default.png');
+}
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li.disabled .S-all_mute_btn {
+    background-image: url('../img/option/quantijingyin_disable.png');
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li .S-all_speaking {
+    background-image: url('../img/option/quantifayan_default.png');
+}
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li.disabled .S-all_speaking {
+    background-image: url('../img/option/quantifayan_disable.png');
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li .S-tool-img-wrap {
+    background-image: url('../img/option/jingli_default.png');
+}
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li.disabled .S-tool-img-wrap {
+    background-image: url('../img/option/jingli_disable.png');
+}
+
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li .S-oneKeyReset-btn {
+    background-image: url('../img/option/fuwei_default.png');
+}
+.skin_beyond_default  .ControlPanel-main-ul .ControlPanel-li.disabled .S-oneKeyReset-btn {
+    background-image: url('../img/option/fuwei_disable.png');
+}
+

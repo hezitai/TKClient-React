@@ -1,0 +1,751 @@
+@charset "UTF-8";
+/*小白板*/
+.skin_black .black-board-container{
+    position: absolute;
+    width: 7.2rem;
+    z-index: 130;
+    left:0;
+    top:0;
+    overflow: hidden;
+    background: #212123;
+    border-radius: 0.14rem;
+}
+.skin_black .black-board-container .title-container{
+    height: 0.55rem;
+    line-height:0.55rem;
+    display: block;
+    justify-content: space-between;
+}
+.skin_black .black-board-container .title-container .title{
+    color: #ffffff;
+    font-size: 0.14rem;
+    padding-left: 0.3365rem;
+}
+
+.skin_black .black-board-container  .tap-container .prev , .skin_black .black-board-container  .tap-container .next{
+    width: 0.5rem;
+    height: 0.41rem;
+    background: no-repeat center center ;
+    background-size: 0.07583rem auto;
+    position: relative;
+    margin-top: 0.16rem;
+    margin-left: 0.01rem;
+}
+.skin_black .black-board-container  .tap-container .prev{
+    background-size: 100% 100%;
+}
+.skin_black .black-board-container  .tap-container .prev:hover{
+    background-size: 100% 100%;
+}
+.skin_black .black-board-container  .tap-container .prev:active{
+    background-size: 100% 100%;
+}
+.skin_black .black-board-container  .tap-container .prev.disabled{
+    opacity: 0.65;
+}
+.skin_black .black-board-container  .tap-container .next{
+    background-size: 100% 100%;
+}
+.skin_black .black-board-container  .tap-container .next:hover{
+    background-size: 100% 100%;
+}
+.skin_black .black-board-container  .tap-container .next:active{
+    background-size: 100% 100%;
+}
+.skin_black .black-board-container  .tap-container .next.disabled{
+    opacity: 0.65;
+}
+.skin_black .black-board-container  .tap-container {
+    display: flex;
+    margin-left: 8px;
+    width: 80%;
+}
+.skin_black .black-board-container .tap-container .tap {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.skin_black .black-board-container .tap-container .tap .tap-option {
+    height: 0.41rem;
+    line-height: 0.41rem;
+    width: 1.42rem;
+    margin-top: 0.16rem;
+}
+.skin_black .black-board-container .tap-container .tap .tap-option.active {
+    height: 0.5rem;
+    margin-top: 0.1rem;
+}
+.skin_black .black-board-container .tap-container .tap .tap-option.disabled{
+    pointer-events:none!important;
+    cursor: default !important;
+}
+.skin_black .black-board-container .tap-container .tap .tap-option::after , .skin_black .black-board-container  .tap-container .prev::after , .skin_black .black-board-container  .tap-container .next::before{
+    position: absolute;
+    width: 0.01rem;
+    height: 0.1325rem;
+    content: '';
+    right: 0;
+    top: 50%;
+    margin-top: -0.06725rem;
+}
+.skin_black .black-board-container  .tap-container .next::before{
+    right: auto;
+    left: 0;
+}
+.skin_black .black-board-container .tap-container .tap .tap-option:last-child::after{
+    display: none;
+}
+.skin_black .black-board-container  .tap-container .tap .tap-option .text{
+    width: calc(100% - 0.01rem);
+    height: 100%;
+    display: block;
+    color: #999999;
+    background: #4C4C4D;
+    text-align: center;
+    border-radius: 0.1rem 0.1rem 0rem 0rem;
+    cursor: pointer;
+}
+
+.skin_black .black-board-container  .tap-container .tap .tap-option .text:active,
+.skin_black .black-board-container .tap-container .tap .tap-option.active .text {
+    text-align: center;
+    background: #fff;
+    color: #65656C;
+    cursor: pointer;
+}
+
+.skin_black .black-board-container .tap-container .tap .tap-option.active .text:hover {
+    color: #65656C;
+}
+
+.skin_black .black-board-container .tap-container .tap .tap-option:hover{
+    height: 0.5rem;
+    margin-top: 0.1rem;
+}
+.skin_black .black-board-container .tap-container .tap .tap-option:hover .text{
+    text-align: center;
+    /* color: #fff; */
+}
+
+
+.skin_black .black-board-container .tab-content-container .tab-content .tab-content-option{
+    width:100%;
+    height:100%;
+    background: #ffffff;
+}
+.skin_black .black-board-container .blackboard-tool-container{
+    display: flex;
+    position: relative;
+    height: 0.59rem;
+}
+.skin_black .black-board-container .blackboard-tool-container .blackboard-tool{
+    flex: 1;
+}
+.skin_black .blackboard-tool .blackboard-tool-option{
+    float: left;
+}
+.skin_black .blackboard-tool-container .blackboard-tool .blackboard-tool-option .tool-btn {
+    width: 0.42rem;
+    height:0.42rem;
+    line-height: 0.42rem;
+    text-align: center;
+    margin: 0.08rem 0.3rem 0 0;
+}
+
+.skin_black .black-board-container .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon{
+    margin-left:0.3365rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.colors-icon .current-color{
+    width: 60%;
+    margin: 20% 20%;
+    height: 60%;
+    display: block;
+}
+
+.skin_black .blackboard-tool  .blackboard-tool-option .blackboard-color-size-box {
+    width: 2.18rem;
+    height: 2.3rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: calc(100% + 0.02rem);
+    right: calc(-1.6 * 0.36rem);
+    padding: 0 0.01rem;
+    color: #fff;
+    display: none;
+    z-index: 9;
+    background-size: 100% 100%;
+}
+
+.skin_black .blackboard-color-size-box p{
+    height: 0.32rem;
+    line-height: 0.32rem;
+    padding-left: 0.05rem;
+}
+.skin_black .blackboard-color-size-box .colors-container-title{
+    border-top:0.01rem solid #b8c1d0;
+    margin-top: 0.04rem;
+}
+.skin_black .blackboard-color-size-box .tool-size-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.1rem 0 0.08rem;
+    display: none;
+}
+.skin_black .blackboard-color-size-box .tool-size-container li{
+    width: 0.24rem;
+    height: 0.24rem;
+    border: 0.01rem solid #323232;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skin_black .blackboard-color-size-box .tool-size-container li span{
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.skin_black .blackboard-color-size-box .tool-size-container li.size-small span{
+    width: 0.03rem;
+    height: 0.03rem;
+}
+.skin_black .blackboard-color-size-box .tool-size-container li.size-middle span{
+    width: 0.06rem;
+    height: 0.06rem;
+}
+.skin_black .blackboard-color-size-box .tool-size-container li.size-big span{
+    width: 0.09rem;
+    height: 0.09rem;
+}
+.skin_black .blackboard-color-size-box .tool-size-container li.active{
+    border-color: #ffffff;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container {
+    width: 2.02rem;
+    height: 0.35rem;
+    margin-left: 0.07rem;
+    margin-top: 0.06rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option {
+    width: 0.2rem;
+    height: 0.2rem;
+    box-sizing: border-box;
+    /*margin-top: 0.05rem;*/
+}
+.skin_black .blackboard-tool .line-width-p{
+    color:#913706;
+    font-size: 0.12rem;
+    font-weight:800 ;
+    text-align: center;
+    margin-left: 0.15rem;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_5AC9FA{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_5AC9FA.active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_FFCC00{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_FFCC00.active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_ED3E3A{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_ED3E3A.active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_4740D2{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_4740D2.active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_007BFF{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_007BFF.active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_09C62B{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_09C62B.active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_000000{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_000000.active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_EDEDED{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool  .blackboard-tool-option .colors-container .color-option.color_EDEDED.active{
+    background-size: 100% 100%;
+}
+
+.skin_black .black-board-container .blackboard-thumbnail-image {
+    width: 0.32rem;
+    height:0.32rem;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.skin_black .blackboard-thumbnail-image:hover{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-thumbnail-image:active{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-minimize{
+    width: 1.55rem;
+    height: 1.27rem;
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-close-image{
+    width: 0.32rem;
+    height:0.32rem;
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-left: 0.15rem;
+}
+.skin_black .minimize-and-close-wrap-div{
+    position: absolute;
+    top: 0.1rem;
+    right: 0.2rem;
+}
+.skin_black .blackboard-close-image:hover{
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-close-image:active{
+    background-size: 100% 100%;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .rc-slider-step{
+    height: 0.1rem;
+    top: 0.12rem;
+    width: 131%;
+    background-size: 100% 100%;
+}
+.skin_black .blackboard-tool .blackboard-tool-option .rc-slider-rail{
+    background-color: #fff;
+}
+.skin_black .blackboard-tool .tkSliderDumb-container{
+    width: 2.02rem;
+    height: 0.32rem;
+    margin-left: 0.07rem;
+    border-radius: 0.05rem;
+    background: #fff;
+}
+.skin_black .blackboard-tool .rc-slider-handle{
+    margin-left: 2px;
+    margin-top: 5px;
+    border: none;
+    background-color: #FF6B58;
+}
+.skin_black .blackboard-tool .tkSliderDumb-container-wrap{
+    width: 2.02rem;
+}
+.skin_black .blackboard-tool .rc-slider-track{
+    background-color: #fff;
+}
+.skin_black .blackboard-tool .rc-slider{
+    width: 90%;
+}
+
+/*小白板*/
+.skin_black .black-board-container .blackboard-tool-container .blackboard-send-btn {
+    padding: 0rem;
+    width: 1.23rem;
+    height: 0.4rem;
+    color: #fff;
+    margin: 0.1rem 0rem 0 0;
+    line-height: 0;
+    overflow: hidden;
+    background: #0077FF;
+    border-radius: .25rem;
+}
+.skin_black .black-board-container .blackboard-tool-container .blackboard-send-btn:hover {
+    background: #1D86FF;
+}
+.skin_black .black-board-container .blackboard-tool-container .blackboard-send-btn.active {
+    background: #036FEB;
+}
+
+/*一对多白板翻页*/
+.skin_black .black-board-container .tap-container .prev,
+.skin_black .black-board-container .tap-container .next {
+    width: 0.5rem;
+    height: 0.46rem;
+    background: no-repeat center center;
+    -webkit-background-size: 0.07583rem auto;
+    background-size: 0.07583rem auto;
+    position: relative;
+    margin-top: 0.16rem;
+    margin-left: 0.01rem;
+    background: #fff
+}
+
+.skin_black .black-board-container .tap-container .prev {
+    margin-top: 0.1rem;
+    background: url('../img/whiteBoard_black/Triangle_left_default1.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black .black-board-container .tap-container .prev:hover {
+    margin-top: 0.1rem;
+    background: url('../img/whiteBoard_black/Triangle_left_hover1.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black .black-board-container .tap-container .prev.disabled {
+    opacity: 0.65;
+    background: url('../img/whiteBoard_black/Triangle_left_disable1.png') no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.1rem;
+}
+
+.skin_black .black-board-container .tap-container .next {
+    margin-top: 0.1rem;
+    background: url('../img/whiteBoard_black/Triangle_right_default1.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black .black-board-container .tap-container .next:hover {
+    margin-top: 0.1rem;
+    background: url('../img/whiteBoard_black/Triangle_right_hover1.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black .black-board-container .tap-container .next.disabled {
+    opacity: 0.65;
+    background: url('../img/whiteBoard_black/Triangle_right_disable1.png') no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.1rem;
+}
+
+/*小白板缩小关闭按钮*/
+.skin_black .black-board-container .blackboard-thumbnail-image {
+    width: 0.16rem;
+    height: 0.13rem;
+    background: url('../../../../../../../../publish/img/black/common/shrink_default.png') no-repeat center center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    cursor: pointer;
+    position: absolute;
+    top: .15rem;
+    right: .45rem;
+}
+
+.skin_black .black-board-container .blackboard-thumbnail-image:hover {
+    background: url('../../../../../../../../publish/img/black/common/shrink_hover.png') no-repeat center center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.skin_black .black-board-container .blackboard-thumbnail-image:active {
+    background: url('../../../../../../../../publish/img/black/common/shrink_press.png') no-repeat center center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.skin_black .blackboard-close-image {
+    width: 0.13rem;
+    height: 0.13rem;
+    background: url('../../../../../../../../publish/img/black/common/close_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-left: 0.15rem;
+    position: absolute;
+    top: .15rem;
+    right: 0.05rem;
+}
+
+.skin_black .blackboard-close-image:hover {
+    background: url('../../../../../../../../publish/img/black/common/close_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_black .blackboard-close-image:active {
+    background: url('../../../../../../../../publish/img/black/common/close_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+
+
+/*白板笔*/
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon.active {
+    background: url('../img/whiteBoard_black/pen_press.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon {
+    background: url('../img/whiteBoard_black/pen_default.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon:hover {
+    background: url('../img/whiteBoard_black/pen_hover.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.pencil-icon:active {
+    background: url('../img/whiteBoard_black/pen_press.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+/*白板笔调色框的样式*/
+.skin_black .pen_colorPicker {
+    position: absolute;
+    bottom: .59rem;
+    left: .07rem;
+    z-index: 999;
+}
+
+.skin_black .pencil_sharp_corner {
+    width: .2rem;
+    height: .07rem;
+    background: url('../img/whiteBoard_black/sharp_corner.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    left: .35rem;
+    bottom: -.08rem;
+}
+
+.skin_black .blackboard-tool .tkSliderDumb-container-wrap,
+.skin_black .blackboard-tool .tkSliderDumb-container-wrap-text,
+.skin_black .blackboard-tool .tkSliderDumb-container-wrap-eraser {
+    width: auto;
+    display: flex;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 0 0 .24rem .24rem;
+    height: .56rem;
+    padding: 0.12rem .15rem 0 .15rem;
+}
+
+.skin_black .blackboard-tool-container .color-picker{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.skin_black .blackboard-tool .tkSliderDumb-container-wrap-eraser {
+    border-radius: .24rem;
+}
+
+.skin_black .blackboard-tool .line-width-p {
+    color: #fff;
+    font-size: 0.12rem;
+    font-weight: normal;
+    margin-top: 0.02rem;
+}
+
+.skin_black .blackboard-tool .tkSliderDumb-container {
+    width: 2.02rem;
+    height: 0.32rem;
+    margin-left: 0.07rem;
+    -webkit-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+    background: transparent;
+}
+
+.skin_black .blackboard-tool-container .blackboard-tool .blackboard-tool-option .rc-slider-step {
+    top: 0;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .rc-slider-step {
+    height: 0.08rem;
+    top: 0.12rem;
+    width: 103%;
+    background: #fff;
+    border-radius: .1rem;
+
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .rc-slider-rail {
+    background-color: transparent;
+}
+
+.skin_black .blackboard-tool .rc-slider-track {
+    background-color: transparent;
+}
+
+.skin_black .blackboard-tool .rc-slider-handle {
+    margin-left: 2px;
+    margin-top: 0rem;
+    top: -0.05rem;
+    border: none;
+    background-color: #FF6B58;
+    width: .18rem;
+    height: .18rem;
+    background: rgba(255, 255, 255, 1);
+    border: 4px solid rgba(255, 255, 255, 0.22);
+}
+
+
+.skin_black .blackboard-tool .tkSliderDumb-container {
+    position: relative;
+}
+
+.skin_black .blackboard-tool .tkSliderDumb-container .rc-slider {
+    height: .08rem;
+    position: absolute;
+    top: .12rem;
+}
+
+/*白板文字*/
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.text-icon.active {
+    background: url('../img/whiteBoard_black/text_press.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.text-icon {
+    background: url('../img/whiteBoard_black/text_default.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.text-icon:hover {
+    background: url('../img/whiteBoard_black/text_hover.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.text-icon:active {
+    background: url('../img/whiteBoard_black/text_press.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+/*白板文字调整大小*/
+.skin_black .pencil_val {
+    color: #fff;
+    padding: .02rem .2rem;
+}
+
+.skin_black .text_size {
+    position: absolute;
+    bottom: .59rem;
+    left: .25rem;
+    z-index: 999;
+}
+
+.skin_black .text_sharp_corner {
+    width: .2rem;
+    height: .07rem;
+    background: url('../img/whiteBoard_black/sharp_corner.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0.9rem;
+    bottom: -.08rem;
+}
+
+/*白板橡皮擦*/
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon.active {
+    background: url('../img/whiteBoard_black/eraser_press.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon {
+    background: url('../img/whiteBoard_black/eraser_default.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon.disable{
+    opacity: 0.5;
+}
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon:hover {
+    background: url('../img/whiteBoard_black/eraser_hover.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+.skin_black .blackboard-tool .blackboard-tool-option .tool-btn.eraser-icon:active {
+    background: url('../img/whiteBoard_black/eraser_press.png') no-repeat center center;
+    -webkit-background-size: 0.36rem 0.28rem;
+    background-size: 0.36rem 0.28rem;
+}
+
+/*白板橡皮擦的大小调整*/
+.skin_black .eraser_size {
+    position: absolute;
+    bottom: .59rem;
+    left: .5rem;
+    z-index: 999;
+}
+
+.skin_black .eraser_sharp_corner {
+    width: .2rem;
+    height: .07rem;
+    background: url('../img/whiteBoard_black/sharp_corner.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1.35rem;
+    bottom: -.08rem;
+}
+
+
+/*小白板最小化*/
+.skin_black .minimize-window-wrap{
+    width: 0.82rem;
+    height: 0.82rem;
+    position: absolute;
+    z-index: 110;
+}
+.skin_black .restore-big-window {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-size: 100% 100%;
+    margin-top: 0.05rem;
+    margin-right: 0.15rem;
+}
+.skin_black .minimize-window-header{
+    width: 100%;
+    height: 0.38rem;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.skin_black .minimize-window-header p{
+    color: #FFFFFF;
+    line-height: 0.38rem;
+    margin-left: 0.15rem;
+}
+.skin_black .minimize-window-wrap.blackboardThumbnailImageId {
+    background: url('../img/whiteBoard_black/xiaobaiban_mini_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.skin_black .minimize-window-wrap.blackboardThumbnailImageId:hover {
+    background: url('../img/whiteBoard_black/xiaobaiban_mini_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.skin_black .minimize-window-wrap.blackboardThumbnailImageId:active {
+    background: url('../img/whiteBoard_black/xiaobaiban_mini_press.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}

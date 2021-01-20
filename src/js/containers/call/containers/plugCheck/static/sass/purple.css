@@ -1,0 +1,235 @@
+.skin_beyond_default .plug_check_model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container {
+    /* background: #A291D3; */
+    background:#F35623;
+    width: 691px;
+    height: 690px;
+    border-radius: 14px;
+    position: relative;
+}
+
+.classbroe1{
+    background: url('../img/no1.png');
+    background-size: 100% 100%;
+    width: 400px;
+    height: 190px;
+}
+.classbroe2{
+    background: url('../img/no4.png');
+    background-size: 100% 100%;
+    width: 300px;
+    height: 270px;
+}
+.classbroe4{
+    background: url('../img/no5.png');
+    background-size: 100% 100%;
+    width: 300px;
+    height: 180px;
+}
+.classbroe3{
+    background: url('../img/no3.png');
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+}
+.red-classbro{
+    color:red;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container div {
+    font-family: PingFangSC-Semibold;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 106px;
+    /* background: #A291D3; */
+    background: #F35623;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_title_icon {
+    width: 88px;
+    height: 71px;
+    margin: 0 10px 0 34px;
+    background: url("../img/plug_check_image@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_title_h {
+    flex: 1;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_title_h1 {
+    color: #6a6d72;
+    font-size: 16px;
+    font-weight: 600;
+    height: 28px;
+    color: white;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_title_h2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    line-height: 18px;
+    padding-right: 26px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_type_true {
+    padding: 14px 0 14px 26px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #58595e;
+    line-height: 25px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_click {
+    padding: 0 26px 14px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #58595E;
+    line-height: 20px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_click a {
+    color: #4B9FFF;
+    text-decoration: underline;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_direct {
+    padding: 14px 18px 14px 19px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #58595E;
+    line-height: 25px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_chrome {
+    display: block;
+    width: 100%;
+    height: 119px;
+    background: url("../img/plug_check_01@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_chrome_english {
+    background: url("../img/plug_check_01_en@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_success {
+    height: 49px;
+    width: 199px;
+    margin-left: 48px;
+    background: url("../img/plug_check_02@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_developer {
+    height: 54px;
+    width: 201px;
+    padding: 0 0 14px 0;
+    margin-left: 48px;
+    background: url("../img/plug_check_developer@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_developer_english {
+    background: url("../img/plug_check_developer_en@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_solid {
+    margin: 0 26px 10px;
+    width: 347px;
+    height: 1px;
+    border: 2px dashed #ededed;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_close {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    background: url("../img/plug_check_close@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_icon {
+    display: block;
+    margin: 0 26px;
+    height: 119px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_type_false {
+    margin: 0 26px;
+    height: 144px;
+    background: #fbfbfb;
+    border-radius: 8px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_type_false_english {
+    height: 160px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_type_false2 {
+    margin: 20px 26px 6px;
+    height: 150px;
+    background: #fbfbfb;
+    border-radius: 8px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_type_false2_english {
+    height: 180px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_content {
+    width: 683px;
+    margin: 0 4px 4px 4px;
+    height: 580px;
+    background: #fff;
+    border-radius: 0px 0px 14px 14px;
+    overflow-y:scroll; 
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_content_english {
+    height: 619px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_border {
+    margin: 18px 26px 2px;
+    width: 623px;
+    height: 1px;
+    border: 2px dashed #ededed;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container .plug_check_fenge {
+    padding-left: 14px;
+}
+
+.skin_beyond_default .plug_check_model .plug_check_container_english {
+    height: 730px;
+}
+
+/*# sourceMappingURL=purple.css.map */

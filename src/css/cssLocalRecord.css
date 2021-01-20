@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.local-recording-container{
+    display: flex;
+    align-items: center;
+    background: #6550A3;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    padding: 0 0.3rem 0 0.21rem;
+    border-radius: 0.2rem;
+    margin-left: 0.5rem;
+}
+.local-recording-container .text{
+    display: block;
+    color: #fff;
+    font-size: 0.13rem;
+}
+.local-recording-container .text.notStart{
+    color: #4b7bff;
+}
+.local-recording-container .text.recording , .local-recording-container .text.recordPaused{
+    padding-left: 0.115rem;
+    position: relative;
+}
+.local-recording-container .text.recording{
+    color: #ff021d;
+}
+.local-recording-container .text.recording::before , .local-recording-container .text.recordPaused::before{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    width: 0.1rem;
+    height:0.1rem;
+    content: '' ;
+    background:  no-repeat center center;
+    background-size: 0.1rem auto;
+}
+/*.local-recording-container .text.recording::before{*/
+    /*background-image: url("../img/call_layout/localRecord/icon_recording.png");*/
+/*}*/
+/*.local-recording-container .text.recordPaused::before{*/
+    /*background-image: url("../img/call_layout/localRecord/icon_pauserecording.png");*/
+/*}*/
+.local-recording-container .text.recordPaused{
+    color: #FF2E18;
+}
+.local-recording-container .play-pause-record , .local-recording-container .start-stop-record{
+    width: 0.18rem;
+    height: 0.18rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 0.13rem;
+}
+.local-recording-container .start-stop-record.notStart{
+    margin-right: 0.115rem;
+}
+.local-recording-container .start-stop-record.notStart[disabled]{
+    pointer-events: none;
+}
+.local-recording-container .checkbox{
+    width: 0.17rem;
+    height: 0.17rem;
+    background-size: 100% 100%;
+    margin-right: 0.115rem;
+    
+}
+.local-recording-container .play-pause-record {
+    margin-right: 0.15rem;
+}

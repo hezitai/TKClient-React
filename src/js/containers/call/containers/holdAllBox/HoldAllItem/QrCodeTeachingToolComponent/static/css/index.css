@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*扫码上传图片*/
+.skin_beyond_default  .qrCode-teachTool-wrap {
+    width: 3.28rem;
+    z-index: 130;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: .05rem solid #a291d3;
+    background-color: #a291d3;
+    border-radius: 0.14rem;
+}
+
+.skin_beyond_default .qrCode-teachTool-wrap  .qrCode-teachTool-header {
+    position: relative;
+    text-align: center;
+    height: .38rem;
+    line-height: .38rem;
+    color: #fff;
+}
+
+.skin_beyond_default .qrCode-teachTool-wrap .attentionStyle {
+    position: absolute;
+    bottom: 0.06rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FF5418;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.14rem;
+    z-index: 999;
+}
+
+.skin_beyond_default  .qrCode-teachTool-wrap .qrCode {
+    height: 2.6rem;
+    background: #fff;
+    border-radius: 0 0 .12rem .12rem;
+    text-align: center;
+}
+
+.skin_beyond_default  .qrCode-teachTool-wrap .qrCode canvas {
+    width: 2rem;
+    height: 2rem;
+    margin-top: .18rem;
+}
+
+.skin_beyond_default  .qrCode-teachTool-wrap .qrCode-teachTool-closeSpan {
+    width: 0.13rem;
+    height: 0.13rem;
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_default.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    top: .13rem;
+    right: .2rem;
+}
+
+.skin_beyond_default  .qrCode-teachTool-wrap .qrCode-teachTool-closeSpan:hover {
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_hover.png') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.skin_beyond_default  .qrCode-teachTool-wrap .qrCode-teachTool-closeSpan:active {
+    background: url('../../../../../../../../../../publish/img/beyondDefault/common/close_press.png') no-repeat center center;
+}
